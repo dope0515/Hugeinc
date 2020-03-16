@@ -39,7 +39,20 @@
         .margin_top_60 {margin-top: 60px;}
         .margin_top_72 {margin-top: 72px;}
         .margin_top_96 {margin-top: 96px;}
-        
+
+        .home_secrion_01_wrap {width: 100vw; height: 100vh; box-sizing: border-box; display: flex; background-image: url(img/hugeinc.png); background-size: cover;}
+        .home_section_01_index {width: 12.5vw; height: 100vh; padding-top: 20vh; box-sizing: border-box;}
+        .home_section_01_index_wrap {display: flex; justify-content: flex-end;}
+        .home_section_01_number {font-family: 'HugeGothic-Bold'; font-size: 22px; color: white; line-height: 22px; margin-right: 15px; letter-spacing: 1px;}
+        .home_section_01_line {border-bottom: 1px solid white; width: 5vw; height: 11px;}
+        .home_section_01_contents {width: 75vw; height: 100vh; padding: 20vh 0; padding-left: 15px;box-sizing: border-box;}
+        .home_section_01_contents_wrap {width: 45%; height: 60vh;}
+        .home_section_01_contents_subtitle {font-family: HugeGothic-Bold; font-size: 22px; color: white; line-height: 22px; letter-spacing: 1px;}
+        .home_section_01_contents_subwrap {width: 100%; height: calc(100% - 22px);display: flex; flex-direction: column; justify-content: center;}
+        .home_section_01_contents_title {font-family: HugeGothic-Bold; font-size: 72px; color: white;}
+        .home_section_01_contents_title_hr {border-top: 1px solid white; width: 5vw; margin: 30px 0;}
+        .home_section_01_contents_description {font-family: galaxie-Book; font-size: 18px; line-height: 36px; color: white; width: 85%;}
+
 </style>
 
 <script>
@@ -54,6 +67,7 @@
     <div style="width: 48px; height: 48px; color: #ea178c; text-align: center; line-height: 48px;">H</div>
 </div>
 
+<!-- Home section -->
 <section> <!-- Home section open-->
     <div style="width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center; position: relative;">
         <h1 style="text-align: center;">Hello.</h1>
@@ -64,104 +78,35 @@
     </div>
 </section> <!-- Home section close-->
 
-<section> <!-- page1 open -->
-
-    <div style="background-image: url(img/hugeinc.png); background-repeat: no-repeat; width: 100vw; height: 100vh; background-size: cover;"> <!--home section 가로세로를 100%로 지정이 안됨..-->
-        
-         <div style="width: 100vw; height: 100vh; display: flex;"> <!-- box open -->
-        
-            <div style="width: 12.5vw; height: 100vh; display: flex;"> <!-- index box open -->
-                <div style="display: flex; width: 12.5vw; height: 5vh; margin-top: 25vh;">
-                <div style="color: white; font-family: HugeGothic-Bold; font-size: 25px; display: flex; width: 7vw; height: 5vh; justify-content: flex-end ;">01.</div>
-                <div style="border-top: 1px solid white; width: 5.5vw; height:5vh; display: flex;  margin-top: 13px; margin-left: 5px; margin-right: 5px;"></div> <!-- line box -->
+<!-- page 2-->
+<section class="home_section_01"> <!-- page 2 open-->
+    
+        <div class="home_secrion_01_wrap"> <!--home_secrion_01_wrap_open -->
+            <div class="home_section_01_index">
+                <div class="home_section_01_index_wrap">
+                    <p class="home_section_01_number">01.</p>
+                    <div class="home_section_01_line"></div>
                 </div>
-            </div> <!-- index box close -->
-       
-        <div style="width: 75vw; height: 100vh; display: flex; color: white; flex-direction: column;"> <!-- home section title box open -->
-                <div style="width: 75vw; height: 24vh; display: flex;"></div>
-                <div style="width: 37.5vw; height: 60vh; display: flex; flex-direction: column; justify-content: center;">
-                    <div style="width: 12.5vw; height: 5vh; background-color: display: flex; font-family: HugeGothic-Bold; font-size: 25px; align-items: center;">win.</div>
-                    <div style="width: 37vw; height: 49vh; display: flex; flex-direction: column; justify-content: center;">
-                        <div style="width: 37vw; height: 20vh; font-family: HugeGothic-Bold; font-size: 90px; letter-spacing: -2px; display: flex; align-items: center;">Huge Thanks.</div>
-                        <div style="width: 5.5vw; height: 6vh;border-top: 1px solid white; display: flex;"></div> <!-- 페이지를 줄일 때 HUGE 밑으로 안내려감 이거 여쭤보기-->
-                        <div style="width: 29vw; display: flex; font-family: galaxie-Book; font-size: 18px; line-height: 35px;">Campaign US named Huge its 2019 Innovation Agency of the year.</div>
+            </div> <!--home_secrion_01_wrap_close -->
+
+            <div class="home_section_01_contents"> <!-- home_section_01_contents_open-->
+                <div class="home_section_01_contents_wrap">
+                    <div class="home_section_01_contents_subtitle">Win.</div>
+                    <div class="home_section_01_contents_subwrap">
+                        <h2 class="home_section_01_contents_title">Huge Thanks.</h2>
+                        <div class="home_section_01_contents_title_hr"></div>
+                        <p class="home_section_01_contents_description">Campaign US named Huge its 2019 Innovation Agency of the year.</p>
                     </div>
-                
-                
-                
                 </div>
-                <div style="width: 75vw; height: 20vh; display: flex;"></div>
+            </div> <!-- home_section_01_contents_close-->
 
-            
-      
-        </div> <!-- home section title box close -->
-        
-        
-        
-        <div style="width: 12.5vw; height: 100vh; display: flex; color: white;"> <!-- content box 3 open -->
-        
-       
-        </div> <!-- content box 3 close -->
-    
-    
-        </div> <!-- box close -->
-    
-    
-    
-        </div> <!--home section close --> 
+            <div class="home_section_01_detail" > <!--home_section_01_detail_open-->
 
 
-</section> <!-- page1 close -->
-
-<section> <!-- page3 open -->
-
-    <div style="background-image: url(img/hugeinc10.png); background-repeat: no-repeat; width: 100vw; height: 100vh; background-size: cover;"> <!--home section 가로세로를 100%로 지정이 안됨..-->
-        
-         <div style="width: 100vw; height: 100vh; display: flex;"> <!-- box open -->
-        
-            <div style="width: 12.5vw; height: 100vh; display: flex;"> <!-- index box open -->
-                <div style="display: flex; width: 12.5vw; height: 5vh; margin-top: 25vh;">
-                <div style="color: black; font-family: HugeGothic-Bold; font-size: 25px; display: flex; width: 7vw; height: 5vh; justify-content: flex-end ;">03.</div>
-                <div style="border-top: 1px solid  black; width: 5.5vw; height:5vh; display: flex;  margin-top: 13px; margin-left: 5px; margin-right: 5px;"></div> <!-- line box -->
-                </div>
-            </div> <!-- index box close -->
-       
-        <div style="width: 75vw; height: 100vh; display: flex; color:  black; flex-direction: column;"> <!-- home section title box open -->
-                <div style="width: 75vw; height: 24vh; display: flex;"></div>
-                <div style="width: 37.5vw; height: 60vh; display: flex; flex-direction: column; justify-content: center;">
-                    <div style="width: 12.5vw; height: 5vh; background-color: display: flex; font-family: HugeGothic-Bold; font-size: 25px; align-items: center;">Leadership.</div>
-                    <div style="width: 37vw; height: 49vh; display: flex; flex-direction: column; justify-content: center;">
-                        <div style="width: 37vw; height: 30vh; font-family: HugeGothic-Bold; font-size: 90px; letter-spacing: -2px; display: flex; align-items: center;">Huge Appointment.</div>
-                        <div style="width: 5.5vw; height: 6vh;border-top: 1px solid  black; display: flex;"></div> <!-- 페이지를 줄일 때 HUGE 밑으로 안내려감 이거 여쭤보기-->
-                        <div style="width: 29vw; display: flex; font-family: galaxie-Book; font-size: 18px; line-height: 35px;">After three years leading global straregic growth for Huge, Matt Weiss has been appointed President, Huge BK.</div>
-                    </div>
-                
-                
-                
-                </div>
-                <div style="width: 75vw; height: 20vh; display: flex;"></div>
-
-            
-      
-        </div> <!-- home section title box close -->
-        
-        
-        
-        <div style="width: 12.5vw; height: 100vh; display: flex; color: black;"> <!-- content box 3 open -->
-        
-       
-        </div> <!-- content box 3 close -->
-    
-    
-        </div> <!-- box close -->
-    
-    
-    
-        </div> <!--home section close --> 
+        </div>
 
 
-</section> <!-- page3 close -->
-
+</section><!-- page 2 close-->
 
 
 

@@ -10,50 +10,9 @@
     <meta name="author" content="park seung joo">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/destyle.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
     <link rel="shorcut icon" href="img/favicon.ico">
     <link rel="icon" href="img/favicon.ico">
-
-<style>
-    body {margin: 0; padding: 0; margin: 0;  width: 1920px; height: 1080px;}
-        @font-face {
-            font-family:galaxie-Book;
-            src: url(font/GalaxieCopernicus-Book.woff);}
-        @font-face {
-            font-family:HugeGothic-Bold;
-            src: url(font/HugeGothic-Bold.woff);}
-
-        h1 { font-family: HugeGothic-Bold; font-size: 300px; color: black; font-weight: 600;}
-        p { font-family:galaxie-Book; font-size:14px; color: black; font-weight: 100;}
-        
-        .home_section {width: 100vw; height: 100vh;}
-        .home_section_wrap {width: 100vw; height: 100vh;}
-        .logo {width: 60px; font-size: 36px; color: #e8228c; font-weight: 900; position: fixed; top:60px; left:930px}
-        .home_section_h1 {justify-content: center;}
-        
-        .margin_auto {margin: 0 auto;}
-        .width_100vw {width: 100vw;}
-        .height_100vh {height: 100vh;}
-        .text_align_center {text-align: center;}
-        .margin_top_36 {margin-top: 36px;}
-        .margin_top_48 {margin-top: 48px;}
-        .margin_top_60 {margin-top: 60px;}
-        .margin_top_72 {margin-top: 72px;}
-        .margin_top_96 {margin-top: 96px;}
-
-        .home_secrion_01_wrap {width: 100vw; height: 100vh; box-sizing: border-box; display: flex; background-image: url(img/hugeinc.png); background-size: cover;}
-        .home_section_01_index {width: 12.5vw; height: 100vh; padding-top: 20vh; box-sizing: border-box;}
-        .home_section_01_index_wrap {display: flex; justify-content: flex-end;}
-        .home_section_01_number {font-family: 'HugeGothic-Bold'; font-size: 22px; color: white; line-height: 22px; margin-right: 15px; letter-spacing: 1px;}
-        .home_section_01_line {border-bottom: 1px solid white; width: 5vw; height: 11px;}
-        .home_section_01_contents {width: 75vw; height: 100vh; padding: 20vh 0; padding-left: 15px;box-sizing: border-box;}
-        .home_section_01_contents_wrap {width: 45%; height: 60vh;}
-        .home_section_01_contents_subtitle {font-family: HugeGothic-Bold; font-size: 22px; color: white; line-height: 22px; letter-spacing: 1px;}
-        .home_section_01_contents_subwrap {width: 100%; height: calc(100% - 22px);display: flex; flex-direction: column; justify-content: center;}
-        .home_section_01_contents_title {font-family: HugeGothic-Bold; font-size: 72px; color: white;}
-        .home_section_01_contents_title_hr {border-top: 1px solid white; width: 5vw; margin: 30px 0;}
-        .home_section_01_contents_description {font-family: galaxie-Book; font-size: 18px; line-height: 36px; color: white; width: 85%;}
-
-</style>
 
 <script>
 
@@ -68,7 +27,7 @@
 </div>
 
 <!-- Home section -->
-<section> <!-- Home section open-->
+<section> <!-- Home section open -->
     <div style="width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center; position: relative;">
         <h1 style="text-align: center;">Hello.</h1>
     </div>
@@ -76,37 +35,269 @@
         <div style="text-align: center; height: 60px;">Today at Huge.</div>
         <div style="width: 1px; height: 30px; border-left: 1px solid black; "></div>
     </div>
-</section> <!-- Home section close-->
+</section> <!-- Home section close -->
 
-<!-- page 2-->
-<section class="home_section_01"> <!-- page 2 open-->
+<!-- page 1 -->
+<section class="home_section home_img_01"> <!-- page 1 open -->
     
-        <div class="home_secrion_01_wrap"> <!--home_secrion_01_wrap_open -->
-            <div class="home_section_01_index">
-                <div class="home_section_01_index_wrap">
-                    <p class="home_section_01_number">01.</p>
-                    <div class="home_section_01_line"></div>
+        <div class="home_section_wrap"> <!-- home_section_wrap_open -->
+            
+            <div class="home_section_index">
+                <div class="home_section_index_wrap">
+                    <p class="home_section_number color_white">01.</p>
+                    <div class="home_section_line border_line_white"></div>
                 </div>
-            </div> <!--home_secrion_01_wrap_close -->
+            </div> <!-- home_section_wrap_close -->
 
-            <div class="home_section_01_contents"> <!-- home_section_01_contents_open-->
-                <div class="home_section_01_contents_wrap">
-                    <div class="home_section_01_contents_subtitle">Win.</div>
-                    <div class="home_section_01_contents_subwrap">
-                        <h2 class="home_section_01_contents_title">Huge Thanks.</h2>
-                        <div class="home_section_01_contents_title_hr"></div>
-                        <p class="home_section_01_contents_description">Campaign US named Huge its 2019 Innovation Agency of the year.</p>
+            <div class="home_section_contents"> <!-- home_section_contents_open -->
+                <div class="home_section_contents_wrap">
+                    <div class="home_section_contents_subtitle color_white">Win.</div>
+                    <div class="home_section_contents_subwrap">
+                        <h2 class="home_section_contents_title color_white">Huge Thanks.</h2>
+                        <div class="home_section_contents_title_hr border_line_white"></div>
+                        <p class="home_section_contents_description color_white">Campaign US named Huge its 2019 Innovation Agency of the year.</p>
                     </div>
                 </div>
-            </div> <!-- home_section_01_contents_close-->
+            </div> <!-- home_section_contents_close -->
 
-            <div class="home_section_01_detail" > <!--home_section_01_detail_open-->
+        <div class="home_section_detail" > <!-- home_section_detail_open -->
 
 
         </div>
 
 
-</section><!-- page 2 close-->
+</section><!-- page 1 close -->
+
+<!-- page 2 -->
+<section class="home_section home_img_02"> <!-- page 2 open -->
+    
+    <div class="home_section_wrap">   
+    
+        <div class="home_section_index"> <!-- home_section_02_wrap_open -->
+            <div class="home_section_index_wrap">
+                <div class="home_section_number color_white ">02.</div>
+                <div class="border_line_white  home_section_line "></div>
+            </div>
+        </div> <!-- home_section_02_wrap_open -->
+        
+        <div class="home_section_contents"> <!-- home_section_02_contents_open -->
+            <div class="home_section_contents_wrap">
+                <div class="home_section_contents_subtitle color_white">work.</div>
+                    <div class="home_section_contents_subwrap ">
+                        <div class="home_section_contents_title color_white">#FreeThePeriod</div>
+                        <div class="home_section_contents_title_hr border_line_white "></div>
+                        <div class="home_section_contents_description color_white">To highlight pertiod inequality, Huge partnered with PERIOD. to build a coin-operated toilet paper dispenser and installed it in men's restrooms.</div>
+                    </div>
+            </div>
+        </div> <!-- home_section_02_contents_open -->
+        
+        <div class="home_section_02_detail"></div>
+
+    </div>  
+
+<!-- page 3 -->
+<section class="home_section home_img_03"> <!-- page 3 open -->
+    
+    <div class="home_section_wrap"> <!-- home_section_wrap_open -->
+        
+        <div class="home_section_index">
+            <div class="home_section_index_wrap">
+                <p class="home_section_number">03.</p>
+                <div class="home_section_line border_line_black"></div>
+            </div>
+        </div> <!-- home_section_wrap_close -->
+
+        <div class="home_section_contents"> <!-- home_section_contents_open -->
+            <div class="home_section_contents_wrap">
+                <div class="home_section_contents_subtitle color_black">Leadership.</div>
+                <div class="home_section_contents_subwrap">
+                    <h2 class="home_section_contents_title color_black">Huge Appointment.</h2>
+                    <div class="home_section_contents_title_hr border_line_black"></div>
+                    <p class="home_section_contents_description color_black">After three years leading global strategic growth for Huge, Matt Weiss has been appointed President, Huge BK.</p>
+                </div>
+            </div>
+        </div> <!-- home_section_contents_close -->
+
+    <div class="home_section_detail" > <!-- home_section_detail_open -->
+
+
+    </div>
+
+
+</section><!-- page 3 close -->
+
+<!-- page 4 -->
+<section class="home_section home_img_04"> <!-- page 4 open -->
+    
+    <div class="home_section_wrap"> <!-- home_section_wrap_open -->
+        
+        <div class="home_section_index">
+            <div class="home_section_index_wrap">
+                <p class="home_section_number color_white">04.</p>
+                <div class="home_section_line border_line_white "></div>
+            </div>
+        </div> <!-- home_section_wrap_close -->
+
+        <div class="home_section_contents"> <!-- home_section_contents_open -->
+            <div class="home_section_contents_wrap">
+                <div class="home_section_contents_subtitle color_white">Work.</div>
+                <div class="home_section_contents_subwrap">
+                    <h2 class="home_section_contents_title color_white">It's in the bag.</h2>
+                    <div class="home_section_contents_title_hr border_line_white "></div>
+                    <p class="home_section_contents_description color_white">Huge rebrands grocery delivery service Shipt.</p>
+                </div>
+            </div>
+        </div> <!-- home_section_contents_close -->
+
+    <div class="home_section_detail" > <!-- home_section_detail_open -->
+
+
+    </div>
+
+
+</section><!-- page 4 close -->
+
+<!-- page 5 -->
+<section class="home_section home_img_05"> <!-- page 5 open -->
+    
+    <div class="home_section_wrap"> <!-- home_section_wrap_open -->
+        
+        <div class="home_section_index">
+            <div class="home_section_index_wrap">
+                <p class="home_section_number color_black">05.</p>
+                <div class="home_section_line border_line_black "></div>
+            </div>
+        </div> <!-- home_section_wrap_close -->
+
+        <div class="home_section_contents"> <!-- home_section_contents_open -->
+            <div class="home_section_contents_wrap">
+                <div class="home_section_contents_subtitle color_black">Leadership.</div>
+                <div class="home_section_contents_subwrap">
+                    <h2 class="home_section_contents_title color_black">Hello Fura.</h2>
+                    <div class="home_section_contents_title_hr border_line_black "></div>
+                    <p class="home_section_contents_description color_black">Huge welcomes Fura Johannesdottir as Chief Design Officer.</p>
+                </div>
+            </div>
+        </div> <!-- home_section_contents_close -->
+
+    <div class="home_section_detail" > <!-- home_section_detail_open -->
+
+
+    </div>
+
+
+</section><!-- page 5 close -->
+
+<!-- page 6 -->
+<section class="home_section home_img_06"> <!-- page 6 open -->
+    
+    <div class="home_section_wrap"> <!-- home_section_wrap_open -->
+        
+        <div class="home_section_index">
+            <div class="home_section_index_wrap">
+                <p class="home_section_number color_white ">06.</p>
+                <div class="home_section_line border_line_white"></div>
+            </div>
+        </div> <!-- home_section_wrap_close -->
+
+        <div class="home_section_contents"> <!-- home_section_contents_open -->
+            <div class="home_section_contents_wrap">
+                <div class="home_section_contents_subtitle color_white ">Work.</div>
+                <div class="home_section_contents_subwrap">
+                    <h2 class="home_section_contents_title color_white ">#ColorCommentary.</h2>
+                    <div class="home_section_contents_title_hr border_line_white"></div>
+                    <p class="home_section_contents_description color_white ">Huge partnered with Pantone on a social media campaign for the Big Game.</p>
+                </div>
+            </div>
+        </div> <!-- home_section_contents_close -->
+
+    <div class="home_section_detail" > <!-- home_section_detail_open -->
+
+
+    </div>
+
+
+</section><!-- page 6 close -->
+
+<!-- page 7 -->
+<section class="home_section home_img_07"> <!-- page 7 open -->
+    
+    <div class="home_section_wrap"> <!-- home_section_wrap_open -->
+        
+        <div class="home_section_index">
+            <div class="home_section_index_wrap">
+                <p class="home_section_number color_black">07.</p>
+                <div class="home_section_line border_line_black"></div>
+            </div>
+        </div> <!-- home_section_wrap_close -->
+
+        <div class="home_section_contents"> <!-- home_section_contents_open -->
+            <div class="home_section_contents_wrap">
+                <div class="home_section_contents_subtitle color_black">Culture.
+                </div>
+                <div class="home_section_contents_subwrap">
+                    <h2 class="home_section_contents_title color_black">Black History Month.</h2>
+                    <div class="home_section_contents_title_hr border_line_black"></div>
+                    <p class="home_section_contents_description color_black">This is not a moment, issa movement. H by Jacqueline DeBerry</p>
+                </div>
+            </div>
+        </div> <!-- home_section_contents_close -->
+
+    <div class="home_section_detail" > <!-- home_section_detail_open -->
+
+
+    </div>
+
+
+</section><!-- page 7 close -->
+
+<!-- footer -->
+
+<section> <!-- footer open-->
+
+    <div class="footer_section_wrap"> <!-- footer_section open-->
+
+        <div class="footer_section_index"></div> 
+
+        <div class="footer_section_contents"> <!-- footer_section_contents open-->
+            
+            <div class="footer_section_contents_wrap">
+                
+                <div class="">
+                    <div>Huge</div>
+                    <div>|</div>
+                    <div>Make something you love.</div>
+                </div>
+
+                <div>
+                    <ul>
+                        <li>Hello</li>
+                        <li>Work</li>
+                        <li>About</li>
+                        <li>Careers</li>
+                        <li>Contact</li>
+                    </ul>
+
+                    <div>2020 Huge LLC Legal</div>
+                    <div>CCPA Privacy</div>
+                    <div>Modern Slaavery Act Statement</div>
+                </div>
+
+            </div>
+
+        </div> <!-- footer_section_contents close-->
+
+        <div class="footer_section_detail"></div>
+
+    </div> <!-- footer_section close-->
+
+</section> <!-- footer close-->
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,45 @@
+body {margin: 0; padding: 0; margin: 0;  width: 1920px; height: 1080px;}
+        @font-face {
+            font-family:galaxie-Book;
+            src: url(../font/GalaxieCopernicus-Book.woff);}
+        @font-face {
+            font-family:HugeGothic-Bold;
+            src: url(../font/HugeGothic-Bold.woff);}
+
+        h1 { font-family: HugeGothic-Bold; font-size: 300px; color: black; font-weight: 600;}
+        p { font-family:galaxie-Book; font-size:14px; color: black; font-weight: 100;}
+        
+        .home_section {width: 100vw; height: 100vh;}
+        .home_section_wrap {width: 100vw; height: 100vh;}
+        .logo {width: 60px; font-size: 36px; color: #e8228c; font-weight: 900; position: fixed; top:60px; left:930px}
+        .home_section_h1 {justify-content: center;}
+        
+        /* home 클래스 */
+        .home_section_wrap {width: 100vw; height: 100vh; box-sizing: border-box; display: flex;}
+        .home_section_index {width: 12.5vw; height: 100vh; padding-top: 20vh; box-sizing: border-box;}
+        .home_section_index_wrap {display: flex; justify-content: flex-end;}
+        .home_section_number {font-family: 'HugeGothic-Bold'; font-size: 22px; line-height: 22px; margin-right: 15px; letter-spacing: 1px;}
+        .home_section_line { width: 5vw; height: 11px;}
+        .home_section_contents {width: 75vw; height: 100vh; padding: 20vh 0; padding-left: 15px;box-sizing: border-box;}
+        .home_section_contents_wrap {width: 45%; height: 60vh;}
+        .home_section_contents_subtitle {font-family: 'HugeGothic-Bold'; font-size: 22px; color: line-height: 22px; letter-spacing: 1px;}
+        .home_section_contents_subwrap {width: 100%; height: calc(100% - 22px);display: flex; flex-direction: column; justify-content: center;}
+        .home_section_contents_title {font-family: 'HugeGothic-Bold'; font-size: 72px;}
+        .home_section_contents_title_hr {width: 5vw; margin: 30px 0;}
+        .home_section_contents_description {font-family: 'galaxie-Book'; font-size: 18px; line-height: 36px; width: 85%;}
+
+        .home_img_01 { background-image: url(../img/hugeinc.png); background-size: cover; width: 100vw; height: 100vh;}
+        .home_img_02 { background-image: url(../img/hugeinc16.png); background-size: cover; width: 100vw; height: 100vh;}
+        .home_img_03 {background-image: url(../img/hugeinc10.png); background-size: cover; width: 100vw; height: 100vh;}
+        .home_img_04 {background-image: url(../img/hugeinc12.png); background-size: cover; width: 100vw; height: 100vh;}
+        .home_img_05 {background-image: url(../img/hugeinc2.jpg); background-size: cover; width: 100vw; height: 100vh;}
+        .home_img_06 {background-image: url(../img/hugeinc3.jpg); background-size: cover; width: 100vw; height: 100vh;}
+        .home_img_07 {background-image: url(../img/hugeinc1.jpg); background-size: cover; width: 100vw; height: 100vh;}
+
+        /* text color*/
+        .color_white {color: white;}
+        .color_black {color: black;}
+
+        /* border line color*/
+        .border_line_white {border-bottom: 1px solid white;}
+        .border_line_black {border-bottom: 1px solid black;}

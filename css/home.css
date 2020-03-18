@@ -19,6 +19,16 @@ body {margin: 0; padding: 0; margin: 0;  width: 1920px; height: 1080px;}
         .hugeinc_logo {width: 74px; height: 74px; background-color: white ;position: fixed; left:calc(50vw - 37px); top: 50px; display: flex; justify-content: center; align-items: center; font-size: 36px; font-family: HugeGothic-Bold; font-weight: 600; z-index: 10000;}
         .hugeinc_logo div {width: 48px; height: 48px; color: #ea178c; text-align: center; line-height: 48px;}
 
+        .main_home_wrap {width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center; position: relative;}
+        .main_home_wrap h1 {text-align: center;}
+        .main_home_content_wrap {width: 100vw; height: 90px; font-family: 'galaxie-Book'; position: absolute; bottom: 0; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+        .main_home_content_wrap:first-child {text-align: center; height: 60px;}
+        .main_home_content_wrap :nth-child(2) {width: 1px; height: 30px; border-left: 1px solid black; margin-top: 30px;}
+
+
+
+
+
         .home_section_wrap {width: 100vw; height: 100vh; box-sizing: border-box; display: flex;}
         .home_section_index {width: 12.5vw; height: 100vh; padding-top: 20vh; box-sizing: border-box;}
 

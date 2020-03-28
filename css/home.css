@@ -68,13 +68,13 @@
     .footer_aside { font-family: 'galaxie-Book'; font-size: 12px; line-height: 20px; text-align: right;}
 
 /* home img */
-.home_img_01 { background-image: url(../img/hugeinc.png); background-size: cover; width: 100vw; height: 100vh;}
-.home_img_02 { background-image: url(../img/hugeinc16.png); background-size: cover; width: 100vw; height: 100vh;}
-.home_img_03 {background-image: url(../img/hugeinc10.png); background-size: cover; width: 100vw; height: 100vh;}
-.home_img_04 {background-image: url(../img/hugeinc12.png); background-size: cover; width: 100vw; height: 100vh;}
-.home_img_05 {background-image: url(../img/hugeinc2.jpg); background-size: cover; width: 100vw; height: 100vh;}
-.home_img_06 {background-image: url(../img/hugeinc3.jpg); background-size: cover; width: 100vw; height: 100vh;}
-.home_img_07 {background-image: url(../img/hugeinc1.jpg); background-size: cover; width: 100vw; height: 100vh;}
+.home_img_01 { background-image: url(../img/main/hugeinc.png); background-size: cover; width: 100vw; height: 100vh;}
+.home_img_02 { background-image: url(../img/main/hugeinc16.png); background-size: cover; width: 100vw; height: 100vh;}
+.home_img_03 {background-image: url(../img/main/hugeinc10.png); background-size: cover; width: 100vw; height: 100vh;}
+.home_img_04 {background-image: url(../img/main/hugeinc12.png); background-size: cover; width: 100vw; height: 100vh;}
+.home_img_05 {background-image: url(../img/main/hugeinc2.jpg); background-size: cover; width: 100vw; height: 100vh;}
+.home_img_06 {background-image: url(../img/main/hugeinc3.jpg); background-size: cover; width: 100vw; height: 100vh;}
+.home_img_07 {background-image: url(../img/main/hugeinc1.jpg); background-size: cover; width: 100vw; height: 100vh;}
 
 /* home section id*/
 #home_1 {}

@@ -1,0 +1,34 @@
+body {background-color: black;}
+
+
+
+/*img_grid_tile*/
+.img_grid { width: 89.8%; min-width: 1000px; margin: 0 auto; display: flex; flex-wrap: wrap;}
+    
+.img_grid_tile {display: flex; flex-direction: column; justify-content: flex-end; position: relative;}
+.img_grid a :hover {width: 29.9%; height: 14%;}
+.img_grid_tile_title { margin: 0 9.25%; line-height: 1; position: relative; }
+    
+
+/* img_grid*/
+.scott_sport_img {background-image: url(../img/work/img_grid/scott_sports.jpg); width: 29.9vw; height:59.8vh; background-size: cover; background-repeat: no-repeat;}
+.android_img {background-image: url(../img/work/img_grid/android.jpg); width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
+.amc_theatres_img {background-image: url(../img/work/img_grid/amc_theatres.jpg); width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
+.canada_goose_img {background-image: url(../img/work/img_grid/canada_goose.jpg); width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
+.google_img {background-image: url(../img/work/img_grid/google.jpg); width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
+.gucci_img {background-image: url(../img/work/img_grid/gucci.jpg); width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
+.hulu_img {background-image: url(../img/work/img_grid/hulu.jpg); width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
+.kohl_img {background-image: url(../img/work/img_grid/kohl.jpg);width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
+.lg_img {background-image: url(../img/work/img_grid/lg.jpg); width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
+.lenovo_img {background-image: url(../img/work/img_grid/lenovo.jpg); width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
+.nbc_unicersal_img {background-image: url(../img/work/img_grid/nbc_unicersal.jpg); width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
+.nike_img {background-image: url(../img/work/img_grid/nike.jpg); width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
+.pfizer_img {background-image: url(../img/work/img_grid/pfizer.jpg); width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
+.SK-II_img {background-image: url(../img/work/img_grid/SK-II.jpg); width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
+.randstad_img {background-image: url(../img/work/img_grid/randstad.png); width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
+.telus_img {background-image: url(../img/work/img_grid/telus.jpg); width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
+.zelle_img {background-image: url(../img/work/img_grid/zelle.jpg); width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
+
+
+/*border_box padding*/
+.padding_bottom_40px {box-sizing: border-box; padding-bottom: 40px;}

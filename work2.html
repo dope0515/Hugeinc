@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    
+    <title>Huge Inc</title>
+    <meta charset="utf-8">
+    
+    <!-- 사이트 메타 태그 -->
+    <meta name="description" content="Huge Inc website">
+    <meta name="keywords" content="Design, Agency, Web, UI, UX">
+    <meta name="author" content="park seung joo">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    
+    <!-- 브라우저 css 링크 -->
+    <link rel="stylesheet" type="text/css" href="css/destyle.css"> <!-- 초기화 링크 -->
+    <link rel="stylesheet" type="text/css" href="css/work.css"> <!-- work css -->
+    <link rel="stylesheet" type="text/css" href="css/common.css"> <!-- base css -->
+    <link rel="stylesheet" type="text/css" href="css/font.css"> <!-- 폰트 링크 -->
+    
+    <!-- 파비콘 링크 -->
+    <link rel="shorcut icon" href="img/favicon.ico">
+    <link rel="icon" href="img/favicon.ico">
+
+<script>
+
+/* 변수 선언 */
+var header_state = 0; /* 헤더 보이기 상태 */
+
+function logoClick() {
+    
+    if (header_state == 0) {document.getElementById("home_header").style = "visibility:visible;"; header_state = 1;} /* 헤더 visible 상태로 기억 */
+    
+    else {document.getElementById("home_header").style = "visibility:hidden;"; header_state = 0;} /* 헤더 hidden 상태로 기억 */
+   
+}
+</script>
+
+</head>
+
+
+<body>
+<!-- logo -->
+<div id="hugeinc_logo" onclick="logoClick()">
+    <div>H</div>
+</div>
+
+<!--header open-->
+<header id="home_header">
+    <nav class="gnb_wrap"> 
+        <ul class="menu_wrap"> <!-- 메뉴 ul 시작-->
+            <li>
+                <a>Hello.</a>
+                <p>Today at huge.</p>
+                <div></div>
+            </li>
+
+            <li>
+                <a>Work.</a>
+                <p>What we've made.</p>
+                <div></div>
+            </li>
+
+            <li>
+                <a>About.</a>
+                <p>Who we are.</p>
+                <div></div>
+            </li>
+
+            <li>
+                <a>Careers.</a>
+                <p>Join the team.</p>
+                <div></div>
+            </li>
+
+            <li>
+                <a>Contact.</a>
+                <p>Get in touch</p>
+                <div></div>
+            </li>
+        </ul> <!-- 메뉴 ul 끝-->
+
+        <div class="gnb_aside">
+            <p>Explore our thought leadership at</p>
+            <a>MAGENTA<span>.</span></a>
+        </div>
+
+    </nav>
+
+</header>
+<!--header close-->
+
+<section style="width: 100%; position: relative; display: flex; align-items: center; flex-direction: column;">
+    <video autoplay muted loop style="min-width: 100%; min-height: 100%;">
+        <source src="video/huge_work.mp4" type="video/mp4">
+        당신의 브라우저는 이 비디오 형식을 지원하지 않습니다!
+    </video>
+
+    <div style="position: absolute; width: 100px; height: 100px; top: 50%; left: calc(50% - 50px);display: flex; justify-content: center; align-items: center;">
+        <h2 style="width:74px; height: 74px; background-color: rgba(234, 23, 140, 0.6); color: white; z-index: 100; position: absolute; display: flex; justify-content: center;align-items: center;">></h2>
+    </div>
+
+    <div style="width: 100%; height: 210px; box-sizing: border-box; display: flex; justify-content: center; align-items: center;">
+        <div style="font-size:56px; font-family: 'galaxie-Book'; color: white; margin: 0px 80.9219px 0px 80.9063px;">Make something you love.</div>
+    </div>
+</section>
+<section class="img_grid">
+    
+    <a class="scott_sport_img img_grid_tile" href="scottsports.html">
+        <h3 class="img_grid_tile_title padding_bottom_40px">Scott Sports.</h3>
+        <div> </div>
+    </a>
+
+    <a class="android_img img_grid_tile" href="android.html">
+        <h3 class="img_grid_tile_title padding_bottom_40px">Android.</h3>
+        <div></div>
+    </a>
+    
+    <a class="amc_theatres_img img_grid_tile" href="amctheatres.html">
+        <h3 class="img_grid_tile_title padding_bottom_40px">AMC Theatres.</h3>
+        <div></div>
+    </a>
+
+    <a class="canada_goose_img img_grid_tile" href="canada_goose.html">
+        <h3 class="img_grid_tile_title padding_bottom_40px">Canada Goose.</h3>
+        <div></div>
+    </a>
+
+    <a class="google_img img_grid_tile" href="google.html">
+        <h3 class="img_grid_tile_title padding_bottom_40px">Google.</h3>
+        <div></div>
+    </a>
+
+    <a class="gucci_img img_grid_tile" href="android.html">
+        <h3 class="img_grid_tile_title padding_bottom_40px">Gucci.</h3>
+        <div></div>
+    </a>
+
+    <a class="hulu_img img_grid_tile" href="hulu.html">
+        <h3 class="img_grid_tile_title padding_bottom_40px">Hulu.</h3>
+        <div></div>
+    </a>
+
+    <a class="kohl_img img_grid_tile" href="kohl.html">
+        <h3 class="img_grid_tile_title padding_bottom_40px">Kohl's.</h3>
+        <div></div>
+    </a>
+
+    <a class="lg_img img_grid_tile" href="lg.html">
+        <h3 class="img_grid_tile_title padding_bottom_40px">LG.</h3>
+        <div></div>
+    </a>
+
+    <a class="lenovo_img img_grid_tile" href="lenovo.html">
+        <h3 class="img_grid_tile_title padding_bottom_40px">Lenovo.</h3>
+        <div></div>
+    </a>
+
+    <a class="nbc_unicersal_img img_grid_tile" href="nbc_unicersal.html">
+        <h3 class="img_grid_tile_title padding_bottom_40px">NBC Unicersal.</h3>
+        <div></div>
+    </a>
+
+    <a class="nike_img img_grid_tile" href="nike.html">
+        <h3 class="img_grid_tile_title padding_bottom_40px">Nike.</h3>
+        <div></div>
+    </a>
+
+    <a class="pfizer_img img_grid_tile" href="pfizer.html">
+        <h3 class="img_grid_tile_title padding_bottom_40px">Pfizer.</h3>
+        <div></div>
+    </a>
+
+    <a class="SK-II_img img_grid_tile" href="SK-II.html">
+        <h3 class="img_grid_tile_title padding_bottom_40px">Procter & Gamble.</h3>
+        <div></div>
+    </a>
+
+    <a class="randstad_img img_grid_tile" href="randstad.html">
+        <h3 class="img_grid_tile_title padding_bottom_40px">Randstad.</h3>
+        <div></div>
+    </a>
+
+    <a class="telus_img img_grid_tile" href="telus.html">
+        <h3 class="img_grid_tile_title padding_bottom_40px">Telus.</h3>
+        <div></div>
+    </a>
+
+    <a class="zelle_img img_grid_tile" href="zelle.html">
+        <h3 class="img_grid_tile_title padding_bottom_40px">Zelle.</h3>
+        <div></div>
+    </a>
+
+</section>
+
+
+
+<!-- footer 시작-->
+<footer class="home_footer bg_color_black color_white">
+
+<ul>
+    <li class="footer_content_left">
+        <a title="https://hugeinc.com">HUGE</a>
+        <p>Make something you love.</p>
+    </li>
+
+
+    <li class="footer_content_right">
+        
+        <div> 
+            <a href="hello.html">Hello</a> 
+            <a href="Work.html">Work</a> 
+            <a href="About.html">About</a> 
+            <a href="careers.html">Careers</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <p class="footer_aside color_c8c8c8">©2020 Huge LLC. Legal.<br>
+            CCPA Privacy<br>
+            Modern Slaavery Act Statement
+        </p>
+
+    </li>
+</ul>
+
+</footer>
+<!-- footer 끝-->
+</body>
+
+</html>

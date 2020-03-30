@@ -1,34 +1,63 @@
-body {background-color: black;}
+/*work 01*/
+.work_01 {width: 100vw; position: relative; display: flex; align-items: center; flex-direction: column;}
+.work_01 div {position: absolute; width: 100px; height: 100px; top: 50%; left: calc(50% - 50px);display: flex; justify-content: center; align-items: center;}
+.work_01 h2 {width:74px; height: 74px; background-color: rgba(234, 23, 140, 0.6); color: white; z-index: 100; position: absolute; display: flex; justify-content: center;align-items: center;}
 
+/*work 02*/
+.work_02 {width: 100vw; height: 210px; box-sizing: border-box; display: flex; justify-content: center; align-items: center; border: 0; padding: 0; margin: 0; background-color: black;font-size:56px; font-family: 'galaxie-Book'; color: white; margin: 0 auto;}
 
 
 /*img_grid_tile*/
-.img_grid { width: 89.8%; min-width: 1000px; margin: 0 auto; display: flex; flex-wrap: wrap;}
+.work_03 {background-color: black; width: 100vw; padding-bottom: 95px;}
+.work_03_ul { width: 90vw; margin: 0 auto; display: flex; flex-wrap: wrap; }
     
-.img_grid_tile {display: flex; flex-direction: column; justify-content: flex-end; position: relative;}
-.img_grid a :hover {width: 29.9%; height: 14%;}
-.img_grid_tile_title { margin: 0 9.25%; line-height: 1; position: relative; }
+.work_03_ul li {display: flex; flex-direction: column; justify-content: flex-end; position: relative; font-family: 'HugeGothic-Bold'; font-size: 44px; color: white; padding: 0 0 28px 40px; box-sizing: border-box; width: 30vw; height:30vw; background-size: cover; background-repeat: no-repeat;}
+
+
     
 
 /* img_grid*/
-.scott_sport_img {background-image: url(../img/work/img_grid/scott_sports.jpg); width: 29.9vw; height:59.8vh; background-size: cover; background-repeat: no-repeat;}
-.android_img {background-image: url(../img/work/img_grid/android.jpg); width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
-.amc_theatres_img {background-image: url(../img/work/img_grid/amc_theatres.jpg); width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
-.canada_goose_img {background-image: url(../img/work/img_grid/canada_goose.jpg); width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
-.google_img {background-image: url(../img/work/img_grid/google.jpg); width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
-.gucci_img {background-image: url(../img/work/img_grid/gucci.jpg); width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
-.hulu_img {background-image: url(../img/work/img_grid/hulu.jpg); width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
-.kohl_img {background-image: url(../img/work/img_grid/kohl.jpg);width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
-.lg_img {background-image: url(../img/work/img_grid/lg.jpg); width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
-.lenovo_img {background-image: url(../img/work/img_grid/lenovo.jpg); width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
-.nbc_unicersal_img {background-image: url(../img/work/img_grid/nbc_unicersal.jpg); width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
-.nike_img {background-image: url(../img/work/img_grid/nike.jpg); width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
-.pfizer_img {background-image: url(../img/work/img_grid/pfizer.jpg); width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
-.SK-II_img {background-image: url(../img/work/img_grid/SK-II.jpg); width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
-.randstad_img {background-image: url(../img/work/img_grid/randstad.png); width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
-.telus_img {background-image: url(../img/work/img_grid/telus.jpg); width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
-.zelle_img {background-image: url(../img/work/img_grid/zelle.jpg); width: 29.9vw; height: 59.8vh; background-size: cover; background-repeat: no-repeat;}
+.work_03_ul li:nth-child(1) {background-image: url(../img/work/img_grid/scott_sports.jpg);}
+.work_03_ul li:nth-child(2){background-image: url(../img/work/img_grid/android.jpg);}
+.work_03_ul li:nth-child(3) {background-image: url(../img/work/img_grid/amc_theatres.jpg);}
+.work_03_ul li:nth-child(4) {background-image: url(../img/work/img_grid/canada_goose.jpg);}
+.work_03_ul li:nth-child(5) {background-image: url(../img/work/img_grid/google.jpg); }
+.work_03_ul li:nth-child(6) {background-image: url(../img/work/img_grid/gucci.jpg);}
+.work_03_ul li:nth-child(7) {background-image: url(../img/work/img_grid/hulu.jpg);}
+.work_03_ul li:nth-child(8) {background-image: url(../img/work/img_grid/kohl.jpg);}
+.work_03_ul li:nth-child(9) {background-image: url(../img/work/img_grid/lg.jpg);}
+.work_03_ul li:nth-child(10) {background-image: url(../img/work/img_grid/lenovo.jpg);}
+.work_03_ul li:nth-child(11) {background-image: url(../img/work/img_grid/nbc_unicersal.jpg);}
+.work_03_ul li:nth-child(12) {background-image: url(../img/work/img_grid/nike.jpg);}
+.work_03_ul li:nth-child(13) {background-image: url(../img/work/img_grid/pfizer.jpg);}
+.work_03_ul li:nth-child(14) {background-image: url(../img/work/img_grid/SK-II.jpg);}
+.work_03_ul li:nth-child(15) {background-image: url(../img/work/img_grid/randstad.png);}
+.work_03_ul li:nth-child(16) {background-image: url(../img/work/img_grid/telus.jpg);}
+.work_03_ul li:nth-child(17) {background-image: url(../img/work/img_grid/zelle.jpg);}
 
 
-/*border_box padding*/
-.padding_bottom_40px {box-sizing: border-box; padding-bottom: 40px;}
+
+/*work_04*/
+.work_04 {background-color: #111111; width: 100%; padding: 140px 0; box-sizing: border-box;}
+
+.work_04_wrap {width: 74.68354%; display: flex; box-sizing: border-box; margin: 0 auto;}
+
+.work_04_wrap_left {width: 32.20339%;}
+    .work_04_wrap_left hr {width: 46.36842%; height: 1px; border-top: 1px solid white;}
+    .work_04_wrap_left h4 {font-family: 'HugeGothic-Bold'; font-size: 22px; color: white; line-height: 44px;}
+
+.work_04_wrap_right {width: 66.10169%; display: flex; justify-content: flex-start; flex-wrap: wrap; align-items: center; align-content: flex-start;}
+    .work_04_wrap_right li {width: 15.3846%; margin-right: 10.25641%; margin-bottom: 50px; box-sizing: border-box;}
+    .work_04_wrap_right li img {width: 100%;}
+    .work_04_wrap_right li:nth-child(4n) {margin-right: 0;}
+
+
+/* work 05 */
+.work_05 {width: 100vw; background-image: url(../img/work/9.jpg); background-size: cover; position: relative;}
+.work_05 > div:first-child {background-color: rgba(0, 0, 0, 0.7); width: 100vw; padding: 200px 0;}
+
+.work_05_wrap {width:100vw; display: flex; justify-content: center;}
+    .work_05_left {width: 18.98734%; padding-bottom: 18.98734%; padding-left: 300px; margin-right: 1.25%; background-image: url(../img/work/magenta-hero.gif); background-size: cover;}
+    .work_05_right {width: 43.03797%; margin-right: 1.26582%; margin-left: 5.06329%; display: flex; flex-direction: column; justify-content: center}
+        .work_05_right h2 {font-size: 80px; color: white;}
+        .work_05_right p {font-family: 'galaxie-Book'; font-size: 18px; color: white; line-height: 24px;}

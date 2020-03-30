@@ -2,7 +2,7 @@
 body {margin: 0; padding: 0; margin: 0;  width: 1920px; height: 1080px;}
 h1 { font-family: 'HugeGothic-Bold'; font-size: 300px; color: black; font-weight: 600;}
 h2 {font-family: 'HugeGothic-Bold'; font-size: 30px; font-weight: 600; line-height: 100px;}
-h3 {font-family: 'HugeGothic-Bold'; font-size: 44px; color: white;}
+h3 {font-family: 'HugeGothic-Bold'; font-size: 44px; color: white; line-height: 22px;}
 p { font-family:'galaxie-Book'; font-size:14px; font-weight: 100;}
 
 /* text color*/

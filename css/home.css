@@ -4,29 +4,11 @@
     #hugeinc_logo:hover {cursor: pointer;}
     #hugeinc_logo div {width: 48px; height: 48px; color: #ea178c; text-align: center; line-height: 48px;}
 
-/* header gnb 클래스 */
-
-#home_header {width: 100vw; height: 440px; background-color: #f7f7f7; visibility: hidden;}
-
-.gnb_wrap { width: 100vw; height: 440px; display: flex; justify-content: center; align-items: center; position: relative; box-sizing: border-box;}
-
-.menu_wrap { width: 1050px; height: 90px; display: flex; justify-content: space-between; align-items: center; margin: 0 auto;}
-    .menu_wrap li {width: 190px; height: 90px; display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 0 10px;}
-        .menu_wrap li a:hover {color: #ea178c; cursor: pointer;}
-        .menu_wrap a {font-family: 'HugeGothic-Bold'; font-size: 36px;line-height: 32px;}
-        .menu_wrap p {font-family: 'galaxie-Book'; font-size: 14px; margin-top: 8px; letter-spacing: -1px;}
-        .menu_wrap div {border-bottom: 1px solid black; width: 48px; height: 90px;}
-
-.gnb_aside { position: absolute; top: 360px; bottom: auto; display: flex; width: 300px; left: calc(50% - 150px); line-height: 16px;}
-    .gnb_aside a:hover {color: #ea178c; cursor: pointer;}
-    .gnb_aside p {font-family: 'galaxie-Book'; font-size: 12px;}
-    .gnb_aside a {font-family: 'HugeGothic-Bold'; font-size: 16px; margin-left: 4.8px;}
-    .gnb_aside span {color: #ea178c;}
 
  /* main home 클래스 */
 
 .main_home_wrap {width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center; position: relative;}
-    .main_home_wrap h1 {text-align: center;}
+    .main_home_title h1 {font-size: 300px; color: black; font-weight: 600; letter-spacing: -8px;;text-align: center;}
 
 .main_home_content_wrap {width: 100vw; height: 90px; font-family: 'galaxie-Book'; position: absolute; bottom: 0; display: flex; flex-direction: column; justify-content: center; align-items: center;}
     .main_home_content_wrap:first-child {text-align: center; height: 60px;}
@@ -48,7 +30,7 @@
 .home_section_contents_subwrap {width: 100%; height: calc(100% - 22px);display: flex; flex-direction: column; justify-content: center;}
     .home_section_contents_subwrap h2 {font-family: 'HugeGothic-Bold'; font-size: 72px; line-height: 72px;}
     .home_section_contents_subwrap div {width: 5vw; margin: 30px 0;}
-    .home_section_contents_subwrap p {font-family: 'galaxie-Book'; font-size: 16px; line-height: 36px; width: 85%; font-weight: 100;}
+    .home_section_contents_subwrap p {font-family: 'galaxie-Book'; font-size: 18px; line-height: 36px; width: 85%; font-weight: 100; text-rendering:optimizelegibility; -webkit-font-smoothing: antialiased;}
 
 /* footer section */
 

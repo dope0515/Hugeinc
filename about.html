@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    
+    <title>Huge Inc</title>
+    <meta charset="utf-8">
+    
+    <!-- 사이트 메타 태그 -->
+    <meta name="description" content="Huge Inc website">
+    <meta name="keywords" content="Design, Agency, Web, UI, UX">
+    <meta name="author" content="park seung joo">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    
+    <!-- 브라우저 css 링크 -->
+    <link rel="stylesheet" type="text/css" href="css/destyle.css"> <!-- 초기화 링크 -->
+    <link rel="stylesheet" type="text/css" href="css/about.css"> <!-- work css -->
+    <link rel="stylesheet" type="text/css" href="css/common.css"> <!-- base css -->
+    <link rel="stylesheet" type="text/css" href="css/font.css"> <!-- 폰트 링크 -->
+    
+    <!-- 파비콘 링크 -->
+    <link rel="shorcut icon" href="img/main//favicon.ico">
+    <link rel="icon" href="img/main/favicon.ico">
+
+<script>
+
+/* 변수 선언 */
+var header_state = 0; /* 헤더 보이기 상태 */
+
+function logoClick() {
+    
+    if (header_state == 0) {document.getElementById("home_header").style = "visibility:visible;"; header_state = 1;} /* 헤더 visible 상태로 기억 */
+    
+    else {document.getElementById("home_header").style = "visibility:hidden;"; header_state = 0;} /* 헤더 hidden 상태로 기억 */
+   
+}
+</script>
+
+</head>
+
+
+<body>
+<!-- logo -->
+<div id="hugeinc_logo" onclick="logoClick()">
+    <div>H</div>
+</div>
+
+<!--header open-->
+<header id="home_header">
+    <nav class="gnb_wrap"> 
+        <ul class="menu_wrap"> <!-- 메뉴 ul 시작-->
+            <li>
+                <a href="index.html">Hello.</a>
+                <p>Today at huge.</p>
+                <div></div>
+            </li>
+
+            <li>
+                <a href="work.html">Work.</a>
+                <p>What we've made.</p>
+                <div></div>
+            </li>
+
+            <li>
+                <a href="about.html">About.</a>
+                <p>Who we are.</p>
+                <div></div>
+            </li>
+
+            <li>
+                <a>Careers.</a>
+                <p>Join the team.</p>
+                <div></div>
+            </li>
+
+            <li>
+                <a>Contact.</a>
+                <p>Get in touch</p>
+                <div></div>
+            </li>
+        </ul> <!-- 메뉴 ul 끝-->
+
+        <div class="gnb_aside">
+            <p>Explore our thought leadership at</p>
+            <a>MAGENTA<span>.</span></a>
+        </div>
+
+    </nav>
+
+</header>
+<!--header close-->
+
+<!--main section 시작-->
+<main>
+
+<section class="hero hero_about">
+    <h1 class="hero_title color_white">Born in Brooklyn.</h1>   
+</section>
+
+
+<section class="about_us">
+
+    <div class="about_us_container">
+
+        <div class="section_subtitle">
+            <hr class="section_subtitle_rule_black">
+            <h6>About us.</h6>
+        </div>
+
+        <div class="about_us_section_content">
+            <h2 class="about_us_title h3_serif">We grow businesses by creating experiences people love.</h2>
+            <p class="about_us_text">Today, people embrace companies with the customer experiences that best meet their needs. Huge transforms companies by designing these best-in-class experiences, driven by strong creative and rooted in the technology, data, and organizational strategy required for operational excellence. We combine these capabilities into a single solution, creating unified brand experiences that change industries and foster meaningful relationships with users. This user-centric approach has made us the fastest-growing agency of the past decade.</p>
+        </div>
+    </div>
+</section>
+<!--how we do it / our service-->
+<section class="our_service">
+
+    <div class="our_service_container">
+            
+        <div class="section_subtitle_nopadding">
+                    <hr class="section_subtitle_rule_white">
+                    <h6 class="color_white">How we do it.</h6>
+        </div>
+
+        <div class="our_service_content_container">
+                <div class="our_service_content">
+                    <h4 class="our_service_content_title color_white">The unified brand experience.</h4>
+
+                    <p class="our_service_content_text color_white">Lean, interdisciplinary teams work in close collaboration with clients, helping them to solve their user’s biggest problems. Our user-centric, data-driven approach focuses on creating a seamless experience across all digital, physical and communications touchpoints. This unified brand experience results in a much more consistent, impactful, and valuable relationship with the user
+                    </p>
+                </div>
+
+                <div class="our_service_infographic">
+                    <img class="our_service_infographic_img" src="img/about/diagram.png">
+                </div>
+
+        </div>
+
+    </div>
+
+    <div class="our_service_list_container color_white">
+            <ul class="our_service_list">
+                <h6>Strategy.</h6>
+                <li><p><a>Business Consulting</a></p></li>
+                <li><p><a>Innovation</a></p></li>
+                <li><p><a>Branding</a></p></li>
+                <li><p><a>Data Science</a></p></li>
+                <li><p><a>Research</a></p></li>
+            </ul>
+
+            <ul class="our_service_list">
+                <h6>Product.</h6>
+                <li><p><a>Experience Design</a></p></li>
+                <li><p><a>Physical Design</a></p></li>
+                <li><p><a>Service Design</a></p></li>
+                <li><p><a>Technology</a></p></li>
+                <li><p><a>Search Optimization</a></p></li>
+            </ul>
+
+            <ul class="our_service_list">
+                <h6>Marketing.</h6>
+                <li><p><a>Campaigns</a></p></li>
+                <li><p><a>Content</a></p></li>
+                <li><p><a>Social & PR</a></p></li>
+                <li><p><a>Media</a></p></li>
+                <li><p><a>CRM</a></p></li>
+            </ul>
+
+    </div>
+
+</section>
+
+<!--made with love / our_culture-->
+<section class="our_culture">
+    <div class="our_culture_container">
+        <div class="section_subtitle_nopadding">
+            <hr class="section_subtitle_rule_black">
+            <h6>Made with love.</h6>
+        </div>
+        <div class="our_culture_title"><h2>A culture of innovation.</h2></div>
+    
+
+        <ul class="our_culture_list">
+            <li>
+                <h5><a>Schools.</a></h5>
+                <p>Training the next generation of digital leaders.</p>
+            </li>
+            <li>
+                <h5><a>Magenta.</a></h5>
+                <p>Our publication for people who care about design and technology.</p>
+            </li>
+            <li>
+                <h5><a>Huge Café.</a></h5>
+                <p>Brewing great coffee and testing big ideas.</p>
+            </li>
+            <li>
+                <h5><a>Huge Change.</a></h5>
+                <p>Partnering with non-profits for social impact.</p>
+            </li>
+            <li>
+                <h5><a>Smart Office.</a></h5>
+                <p>Making our office work for us.</p>
+            </li>
+            <li>
+                <h5><a>Open Source.</a></h5>
+                <p>Styleguide and other Github contributions.</p>
+            </li>
+            <li>
+                <h5><a>Photography.</a></h5>
+                <p>Photos shot by Huge employees around the world.</p>
+            </li>
+            <li></li>
+            <li>
+                <h5><a>Swag.</a></h5>
+                <p>Limited edition merch that is always fresh and never sorry.</p>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li>
+                <h5><a>Mixtape.</a></h5>
+                <p>Our favorite music curated each month.</p>
+            </li>
+            
+        </ul>
+    </div>
+
+    <div class="our_culture_background">
+        <img src="img/about/bag.png">
+    </div>
+
+</section>
+
+<section class="our_office">
+    <div class="our_office_container">
+        
+        <div class="section_subtitle_nopadding">
+            <hr class="section_subtitle_rule_white">
+            <h6 class="color_white">Our offices.</h6>
+        </div>
+
+        <ul class="our_office_list">
+            <li>
+                <h5><a>Atlanta.</a></h5>
+                <p>atl@hugeinc.com</p>
+            </li>
+            <li>
+                <h5><a>Bogotá.</a></h5>
+                <p>bog@hugeinc.com</p>
+            </li>
+            <li>
+                <h5><a>Brooklyn.</a></h5>
+                <p>bk@hugeinc.com</p>
+            </li>
+            <li>
+                <h5><a>Chicago.</a></h5>
+                <p>chi@hugeinc.com</p>
+            </li>
+            <li>
+                <h5><a>DC.</a></h5>
+                <p>dc@hugeinc.com</p>
+            </li>
+            <li>
+                <h5><a>Detroit.</a></h5>
+                <p>det@hugeinc.com</p>
+            </li>
+            <li>
+                <h5><a>London.</a></h5>
+                <p>ldn@hugeinc.com</p>
+            </li>
+            <li>
+                <h5><a>Los Angeles.</a></h5>
+                <p>la@hugeinc.com</p>
+            </li>
+            <li>
+                <h5><a>Medellín.</a></h5>
+                <p>mde@hugeinc.com</p>
+            </li>
+            <li>
+                <h5><a>Oakland.</a></h5>
+                <p>oak@hugeinc.com</p>
+            </li>
+            <li>
+                <h5><a>Singapore.</a></h5>
+                <p>sgp@hugeinc.com</p>
+            </li>
+            <li>
+                <h5><a>Tokyo.</a></h5>
+                <p>tyo@hugeinc.com</p>
+            </li><li>
+                <h5><a>Toronto.</a></h5>
+                <p>to@hugeinc.com</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+</main>
+
+
+
+
+
+<!-- footer 시작-->
+<footer class="home_footer bg_color_black color_white">
+
+<ul>
+    <li class="footer_content_left">
+        <a title="https://hugeinc.com">HUGE</a>
+        <p>Make something you love.</p>
+    </li>
+
+
+    <li class="footer_content_right">
+        
+        <div> 
+            <a href="hello.html">Hello</a> 
+            <a href="Work.html">Work</a> 
+            <a href="About.html">About</a> 
+            <a href="careers.html">Careers</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <p class="footer_aside color_c8c8c8">©2020 Huge LLC. Legal.<br>
+            CCPA Privacy<br>
+            Modern Slaavery Act Statement
+        </p>
+
+    </li>
+</ul>
+
+</footer>
+<!-- footer 끝-->
+</body>
+
+</html>

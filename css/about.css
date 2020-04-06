@@ -6,7 +6,7 @@
 .about_us {width: 100vw; background-color: white; padding: 140px 0; box-sizing: border-box;}
 .about_us_container {width: 74.68354%;margin: 0 auto; display: flex;}
     .section_subtitle {width: 32.20339%; padding-top: 14px; box-sizing: border-box;}
-    .section_subtitle_nopadding {width: 32.20339%; margin-bottom: 50px;}
+    .section_subtitle_nopadding {width: 32.20339%; margin-bottom: 60px;}
     .section_subtitle_rule_black {width: 47.36842%; border-top: 1px solid black; margin-bottom: 20px;}
     .section_subtitle_rule_white {width: 47.36842%; border-top: 1px solid white; margin-bottom: 20px;}
 .about_us_section_content {width: 66.10169%; margin-left: 1.69492%;}
@@ -53,13 +53,24 @@
 .our_office_list li a:hover {color: #ea178c; cursor: pointer;}
 .our_office_list li p {color: white; opacity: 0.5;}
 
+/*our leadership*/
+.our_leadership {width: 100vw;}
+.our_leadership_container {width: 74.68354%; margin: 0 auto; padding: 140px 0;}
+.our_leadership_list {width: 100%; display: flex; flex-wrap: wrap; padding-top: 10px;}
+.our_leadership_list li {padding-top: 40px; margin-bottom: 40px; width: 30%; right: 15px; margin-left: 1.69492%;}
+.our_leadership_list li:nth-child(3n+1) {margin-left: 0;}
+.our_leadership_list li:nth-child(n+4) {border-top: 1px solid rgba(0, 0, 0, 0.2); right: 3.38983%;}
+
+.our_leadership_list li a:hover {color: #ea178c; transition: all 0.3s;}
+
+
 
 /* work 05 */
-.work_05 {width: 100vw; background-image: url(../img/work/9.jpg); background-size: cover; position: relative;}
+.work_05 {width: 100vw; background-image: url(../img/about/collecting_img.png); background-size: cover; position: relative;}
 .work_05 > div:first-child {background-color: rgba(0, 0, 0, 0.7); width: 100vw; padding: 200px 0;}
 
 .work_05_wrap {width:100vw; display: flex; justify-content: center;}
     .work_05_left {width: 18.98734%; padding-bottom: 18.98734%; padding-left: 300px; margin-right: 1.25%; background-image: url(../img/work/magenta-hero.gif); background-size: cover;}
     .work_05_right {width: 43.03797%; margin-right: 1.26582%; margin-left: 5.06329%; display: flex; flex-direction: column; justify-content: center}
         .work_05_right h2 {font-size: 80px; color: white;}
-        .work_05_right p {font-family: 'galaxie-Book'; font-size: 18px; color: white; line-height: 24px;}
+        .work_05_right p {font-family: 'galaxie-Book'; font-size: 18px; color: white; line-height: 24px; line-height: 1.88889;}

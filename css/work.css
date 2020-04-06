@@ -38,7 +38,7 @@
 
 
 /*work_04*/
-.work_04 {background-color: #111111; width: 100%; padding: 140px 0; box-sizing: border-box;}
+.work_04 {background-color: #111111; width: 100vw; padding: 140px 0; box-sizing: border-box;}
 
 .work_04_wrap {width: 74.68354%; display: flex; box-sizing: border-box; margin: 0 auto;}
 
@@ -60,4 +60,4 @@
     .work_05_left {width: 18.98734%; padding-bottom: 18.98734%; padding-left: 300px; margin-right: 1.25%; background-image: url(../img/work/magenta-hero.gif); background-size: cover;}
     .work_05_right {width: 43.03797%; margin-right: 1.26582%; margin-left: 5.06329%; display: flex; flex-direction: column; justify-content: center}
         .work_05_right h2 {font-size: 80px; color: white;}
-        .work_05_right p {font-family: 'galaxie-Book'; font-size: 18px; color: white; line-height: 24px;}
+        .work_05_right p {font-family: 'galaxie-Book'; font-size: 18px; color: white; line-height: 24px; line-height: 1.88889;}

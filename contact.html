@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    
+    <title>Contact</title>
+    <meta charset="utf-8">
+    
+    <!-- 사이트 메타 태그 -->
+    <meta name="description" content="Huge Inc website">
+    <meta name="keywords" content="Design, Agency, Web, UI, UX">
+    <meta name="author" content="park seung joo">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    
+    <!-- 브라우저 css 링크 -->
+    <link rel="stylesheet" type="text/css" href="css/destyle.css"> <!-- 초기화 링크 -->
+    <link rel="stylesheet" type="text/css" href="css/common.css"> <!-- base css -->
+    <link rel="stylesheet" type="text/css" href="css/contact.css"> <!-- work css -->
+    <link rel="stylesheet" type="text/css" href="css/font.css"> <!-- 폰트 링크 -->
+    
+    <!-- 파비콘 링크 -->
+    <link rel="shorcut icon" href="img/main//favicon.ico">
+    <link rel="icon" href="img/main/favicon.ico">
+
+<script>
+
+/* 변수 선언 */
+var header_state = 0; /* 헤더 보이기 상태 */
+
+function logoClick() {
+    
+    if (header_state == 0) {document.getElementById("home_header").style = "visibility:visible;"; header_state = 1;} /* 헤더 visible 상태로 기억 */
+    
+    else {document.getElementById("home_header").style = "visibility:hidden;"; header_state = 0;} /* 헤더 hidden 상태로 기억 */
+   
+}
+</script>
+
+</head>
+
+
+<body>
+<!-- logo -->
+<div id="hugeinc_logo" onclick="logoClick()">
+    <div>H</div>
+</div>
+
+<!--header open-->
+<header id="home_header">
+    <nav class="gnb_wrap"> 
+        <ul class="menu_wrap"> <!-- 메뉴 ul 시작-->
+            <li>
+                <a href="index.html">Hello.</a>
+                <p>Today at huge.</p>
+                <div></div>
+            </li>
+
+            <li>
+                <a href="work.html">Work.</a>
+                <p>What we've made.</p>
+                <div></div>
+            </li>
+
+            <li>
+                <a href="about.html">About.</a>
+                <p>Who we are.</p>
+                <div></div>
+            </li>
+
+            <li>
+                <a href="careers.html">Careers.</a>
+                <p>Join the team.</p>
+                <div></div>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact.</a>
+                <p>Get in touch</p>
+                <div></div>
+            </li>
+        </ul> <!-- 메뉴 ul 끝-->
+
+        <div class="gnb_aside">
+            <p>Explore our thought leadership at</p>
+            <a>MAGENTA<span>.</span></a>
+        </div>
+
+    </nav>
+
+</header>
+<!--header close-->
+
+<!--main section 시작-->
+<main>
+
+<section class="hero hero_about">
+    <h1 class="hero_title color_white">Hola.</h1>   
+</section>
+
+
+<section class="contact_info"> <!--contact info 시작-->
+
+    <div class="contact_info_container color_white">
+
+        <div class="section_subtitle">
+            <hr class="section_subtitle_rule_white">
+            <h6>Hello.</h6>
+        </div>
+
+        <div class="contact_info_section_content">
+            <h2 class="contact_info_title h3_serif">We're here for you. Say hi.</h2>
+            
+            <ul class="contact_info_item_title">
+                <li class="contact_item">
+                    <p>Become a Client.</p>
+                    <p>+1 718 618 4724</p>
+                    <p><a>business@hugeinc.com</a></p>
+                </li>
+
+                <li class="contact_item">
+                    <p>Media Inquiries.</p>
+                    <p>+1 718 880 3724</p>
+                    <p><a>press@hugeinc.com</a></p>
+                </li>
+
+                <li class="contact_item">
+                    <p>Join Huge.</p>
+                    <p>+1 718 625 4843</p>
+                    <p><a>work@hugeinc.com</a></p>
+                </li>
+
+                <li class="contact_item">
+                    <p>Everything Else.</p>
+                    <p>+1 718 625 4843</p>
+                    <p><a>hello@hugeinc.com</a></p>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</section> <!--contact info 끝-->
+
+
+<section class="offices"> <!--offices 시작-->
+
+    <div class="offices_container">
+        <a class="offices_card" title="ATL.">  
+            <h4>Atlanta.</h4>
+            <h5>Ayee.</h5>
+            <p>7:09 AM</p>
+            <p>+1 404 461 9025</p>
+            <p>atl@hugeinc.com</p>
+            <img src="img/contact/morning.png">
+        </a>
+        <a class="offices_card" title="BOG.">
+            <h4>Bogotá.</h4>
+            <h5>Hola.</h5>
+            <p>6:48 AM</p>
+            <p>+572 3810606</p>
+            <p>bog@hugeinc.com</p>
+            <img src="img/contact/morning.png">
+         </a>
+         <a class="offices_card" title="BKLN.">
+            <h4>Brooklyn.</h4>
+            <h5>Yo.</h5>
+            <p>7:48 AM</p>
+            <p>+1 718 625 4843</p>
+            <p>bk@hugeinc.com</p>
+            <img src="img/contact/morning.png">
+         </a>
+         <a class="offices_card" title="CHI.">
+            <h4>Chicago.</h4>
+            <h5>Hey.</h5>
+            <p>6.48 AM</p>
+            <p>+1 312 637 3150</p>
+            <p>chi@hugeinc.com</p>
+            <img src="img/contact/morning.png">
+         </a>
+         <a class="offices_card" title="DC.">
+            <h4>DC.</h4>
+            <h5>Hi.</h5>
+            <p>7:48 AM</p>
+            <p>+1 202 350 4600</p>
+            <p>dc@hugeinc.com</p>
+            <img src="img/contact/morning.png">
+         </a>
+         <a class="offices_card" title="DET.">
+            <h4>Detroit.</h4>
+            <h5>Whad'up.</h5>
+            <p>7:48 AM</p>
+            <p>+1 404 461 9025</p>
+            <p>det@hugeinc.com</p>
+            <img src="img/contact/morning.png">
+         </a>
+         <a class="offices_card" title="LDN.">
+            <h4>London.</h4>
+            <h5>'Ello.</h5>
+            <p>12:48 PM</p>
+            <p>+ 44 (0)203 356 1900</p>
+            <p>ldn@hugeinc.com</p>
+            <img src="img/contact/morning.png">
+         </a>
+         <a class="offices_card" title="La.">
+            <h4>Los Angeles.</h4>
+            <h5>E'yo..</h5>
+            <p>4:48 AM</p>
+            <p>+1 310 499 7700</p>
+            <p>la@hugeinc.com</p>
+            <img src="img/contact/morning.png">
+         </a>
+         <a class="offices_card" title="MDE.">
+            <h4>Medellín.</h4>
+            <h5>ABuenas.</h5>
+            <p>6:48 AM</p>
+            <p>+57 4 604 5535</p>
+            <p>mde@hugeinc.com</p>
+            <img src="img/contact/morning.png">
+         </a>
+         <a class="offices_card" title="OAK.">
+            <h4>Oakland.</h4>
+            <h5>Sup.</h5>
+            <p>4:48 AM</p>
+            <p>+1 510 735 0700</p>
+            <p>oak@hugeinc.com</p>
+            <img src="img/contact/morning.png">
+         </a>
+         <a class="offices_card" title="SGP.">
+            <h4>Singapore.</h4>
+            <h5>你好</h5>
+            <p>7:48 PM</p>
+            <p>+65 6303 0592</p>
+            <p>sgp@hugeinc.com</p>
+            <img src="img/contact/morning.png">
+         </a>
+         <a class="offices_card" title="TO.">
+            <h4>Toronto.</h4>
+            <h5>Eh?</h5>
+            <p>7:48 AM</p>
+            <p>+1 416 800 0477</p>
+            <p>to@hugeinc.com</p>
+            <img src="img/contact/morning.png">
+         </a>
+         <a class="offices_card" title="TYO.">
+            <h4>Tokyo.</h4>
+            <h5>こんにちは</h5>
+            <p>8:48 PM</p>
+            <p>+81 3 4577 7930</p>
+            <p>tyo@hugeinc.com</p>
+            <img src="img/contact/morning.png">
+         </a>
+    </div>
+
+
+
+
+
+</section>
+
+<!--about latest news 시작-->
+<section>
+    <div class="about_latest_news">
+        <div>
+            <div class="about_latest_news_wrap">
+    
+                <a href="https://magenta.as/" target="blank" class="about_latest_news_left"></a>
+    
+                <a class="about_latest_news_right">
+                    <h2>The Dawn of Voice Search.</h2>
+                    <p>More than half of all searches will be voice-based by 2020. Here’s how every brand should prepare for the upcoming SEO revolution.</p>
+                </a>
+    
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+</main>
+
+
+
+
+
+<!-- footer 시작-->
+<footer class="home_footer bg_color_black color_white">
+
+<ul>
+    <li class="footer_content_left">
+        <a title="https://hugeinc.com">HUGE</a>
+        <p>Make something you love.</p>
+    </li>
+
+
+    <li class="footer_content_right">
+        
+        <div> 
+            <a href="hello.html">Hello</a> 
+            <a href="Work.html">Work</a> 
+            <a href="About.html">About</a> 
+            <a href="careers.html">Careers</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <p class="footer_aside color_c8c8c8">©2020 Huge LLC. Legal.<br>
+            CCPA Privacy<br>
+            Modern Slaavery Act Statement
+        </p>
+
+    </li>
+</ul>
+
+</footer>
+<!-- footer 끝-->
+</body>
+
+</html>

@@ -3,11 +3,12 @@
 .hero_video {width: 100vw; height: 80vh; position: relative; display: flex; align-items: center;}
 .hero_video video {min-width: 100%; min-height: 80%; border: none; right: 0; bottom: 0; position: absolute; background-size: cover; background-position: center;}
 .hero_video div {position: absolute; width: 100px; height: 100px; top: 50%; left: calc(50% - 50px);display: flex; justify-content: center; align-items: center;}
-.hero_video h2 {width:74px; height: 74px; background-color: rgba(234, 23, 140, 0.6); color: white; z-index: 100; position: absolute; display: flex; justify-content: center;align-items: center;}
+.hero_video img {width:74px; height: 74px; background-color: rgba(234, 23, 140, 0.6); color: white; z-index: 100; position: absolute; display: flex; justify-content: center;align-items: center;}
+.hero_video img:hover {cursor: pointer;}
 
 /*call to action*/
 
-.call_to_action { width: 100vw; padding: 150px 12.71186%;}
+.call_to_action {width: 100vw; padding: 150px 12.71186%;}
 .call_to_action_container {margin: 0 auto;}
 .call_to_action_container h2 {margin-bottom: 20px;}
 .call_to_action_container p {margin-bottom: 60px;}

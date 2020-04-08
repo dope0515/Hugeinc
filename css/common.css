@@ -1,22 +1,19 @@
 /* 타이포 그래피 */
-body {margin: 0; padding: 0; margin: 0;  width: 1920px; height: 1080px;}
+body {width: 100%;}
 
 h1, h2, h3, h4, h5, h6 {font-family: 'HugeGothic-Bold'; font-weight: 400; -webkit-font-smoothing: antialiased;}
 p{font-family: 'galaxie-Book'; font-weight: 400; -webkit-font-smoothing: antialiased;}
 
-h2 {font-family: 'HugeGothic-Bold'; font-size: 30px; font-weight: 600; line-height: 100px;}
-h3 {font-family: 'HugeGothic-Bold'; font-size: 44px; color: white; line-height: 22px;}
+h1 {font-size: 170px; line-height: 170px;}
+h2 {font-size: 80px; line-height: 84px; letter-spacing: -2px;}
+h3 {font-size: 56px; line-height: 70px; letter-spacing: -4px;}
 h4 {font-size: 44px; line-height: 44px;}
 h5 {font-size: 24px; line-height: 30px;}
 h6 {font-size: 22px; line-height: 26px;}
 
-
-
-h1 {font-size: 170px; line-height: 170px;}
-h2 {font-size: 80px; line-height: 84px; letter-spacing: -2px;}
-h3 {font-size: 56px; line-height: 70px; letter-spacing: -4px;}
 p{ font-size: 18px; line-height: 34px; letter-spacing: -0.27504px;}
 .h3_serif {font-family: 'galaxie-Book'; font-size: 56px; line-height: 70px; letter-spacing: -4px;}
+.h3_sans {font-family: 'HugeGothic-Bold'; font-size: 36px; line-height: 32px;}
 .h4_sans {font-family: 'HugeGothic-Bold'; font-size: 44px; line-height: 44px;}
 .h5_sans {font-size: 24px; line-height: 30px;}
 .h6_sans {font-size: 22px; line-height: 26px;}
@@ -49,15 +46,14 @@ p{ font-size: 18px; line-height: 34px; letter-spacing: -0.27504px;}
 
 /* header gnb 클래스 */
 
-#home_header {width: 100vw; height: 440px; background-color: #f7f7f7; visibility: hidden; position: fixed; top:0; left:0; z-index: 200;}
+#home_header {width: 100vw; height: 0px; background-color: #f7f7f7; display: block; position: fixed; overflow: hidden; z-index: 100;}
 
 .gnb_wrap { width: 100vw; height: 440px; display: flex; justify-content: center; align-items: center; position: relative; box-sizing: border-box;}
 
 .menu_wrap { width: 1050px; height: 90px; display: flex; justify-content: space-between; align-items: center; margin: 0 auto;}
     .menu_wrap li {width: 190px; height: 90px; display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 0 10px;}
         .menu_wrap li a:hover {color: #ea178c; cursor: pointer; transition: all 0.2s;}
-        .menu_wrap a {font-family: 'HugeGothic-Bold'; font-size: 36px;line-height: 32px;}
-        .menu_wrap p {font-family: 'galaxie-Book'; font-size: 14px; margin-top: 8px; letter-spacing: -1px;}
+        .menu_wrap li p {padding-top: 4px;}
         .menu_wrap div {border-bottom: 1px solid black; width: 48px; height: 90px;}
 
 .gnb_aside { position: absolute; top: 360px; bottom: auto; display: flex; width: 300px; left: calc(50% - 150px); line-height: 16px; align-items: center;}
@@ -86,3 +82,14 @@ p{ font-size: 18px; line-height: 34px; letter-spacing: -0.27504px;}
 .footer_aside { font-family: 'galaxie-Book'; font-size: 12px; line-height: 20px; text-align: right;}
 
 .hero {width: 100vw; height: 80vh; background-size: cover; background-position: center; padding: 140px 0 60px;}
+
+
+/*header animation*/
+@keyframes home_header_on {
+    from{ height: 0px;}
+    to { height: 440px;} 
+}
+@keyframes home_header_off {
+    from{ height: 440px;}
+    to { height: 0px;} 
+}

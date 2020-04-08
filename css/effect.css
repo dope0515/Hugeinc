@@ -1,0 +1,31 @@
+
+/*img_grid_tile*/
+.work_03 { width: 100vw; padding-bottom: 95px;}
+.work_03_ul { width: 90vw; margin: 0 auto; display: flex; flex-wrap: wrap; }
+    
+.work_03_ul li {display: flex; flex-direction: column; justify-content: flex-end; position: relative; font-family: 'HugeGothic-Bold'; font-size: 44px; color: white; padding: 0 0 28px 40px; box-sizing: border-box; width: 30vw; height:30vw; background-size: cover; background-repeat: no-repeat;}
+
+
+    
+
+/* img_grid*/
+.work_03_ul li:nth-child(1) {background-image: url(../img/work/img_grid/scott_sports.jpg);}
+.work_03_ul li:nth-child(2){background-image: url(../img/work/img_grid/android.jpg);}
+.work_03_ul li:nth-child(3) {background-image: url(../img/work/img_grid/amc_theatres.jpg);}
+.work_03_ul li:nth-child(4) {background-image: url(../img/work/img_grid/canada_goose.jpg);}
+.work_03_ul li:nth-child(5) {background-image: url(../img/work/img_grid/google.jpg); }
+.work_03_ul li:nth-child(6) {background-image: url(../img/work/img_grid/gucci.jpg);}
+.work_03_ul li:nth-child(7) {background-image: url(../img/work/img_grid/hulu.jpg);}
+.work_03_ul li:nth-child(8) {background-image: url(../img/work/img_grid/kohl.jpg);}
+.work_03_ul li:nth-child(9) {background-image: url(../img/work/img_grid/lg.jpg);}
+.work_03_ul li:nth-child(10) {background-image: url(../img/work/img_grid/lenovo.jpg);}
+.work_03_ul li:nth-child(11) {background-image: url(../img/work/img_grid/nbc_unicersal.jpg);}
+.work_03_ul li:nth-child(12) {background-image: url(../img/work/img_grid/nike.jpg);}
+.work_03_ul li:nth-child(13) {background-image: url(../img/work/img_grid/pfizer.jpg);}
+.work_03_ul li:nth-child(14) {background-image: url(../img/work/img_grid/SK-II.jpg);}
+.work_03_ul li:nth-child(15) {background-image: url(../img/work/img_grid/randstad.png);}
+.work_03_ul li:nth-child(16) {background-image: url(../img/work/img_grid/telus.jpg);}
+.work_03_ul li:nth-child(17) {background-image: url(../img/work/img_grid/zelle.jpg);}
+
+
+

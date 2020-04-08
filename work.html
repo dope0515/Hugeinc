@@ -3,7 +3,7 @@
 
 <head>
     
-    <title>Huge Inc</title>
+    <title>Work</title>
     <meta charset="utf-8">
     
     <!-- 사이트 메타 태그 -->
@@ -14,8 +14,8 @@
     
     <!-- 브라우저 css 링크 -->
     <link rel="stylesheet" type="text/css" href="css/destyle.css"> <!-- 초기화 링크 -->
-    <link rel="stylesheet" type="text/css" href="css/work.css"> <!-- work css -->
     <link rel="stylesheet" type="text/css" href="css/common.css"> <!-- base css -->
+    <link rel="stylesheet" type="text/css" href="css/work.css"> <!-- work css -->
     <link rel="stylesheet" type="text/css" href="css/font.css"> <!-- 폰트 링크 -->
     
     <!-- 파비콘 링크 -->
@@ -29,9 +29,9 @@ var header_state = 0; /* 헤더 보이기 상태 */
 
 function logoClick() {
     
-    if (header_state == 0) {document.getElementById("home_header").style = "visibility:visible;"; header_state = 1;} /* 헤더 visible 상태로 기억 */
+    if (header_state == 0) {document.getElementById("home_header").style = "animation-name: home_header_on; animation-duration: 0.7s; animation-fill-mode: forwards;"; header_state = 1;} /* 헤더 visible 상태로 기억 */
     
-    else {document.getElementById("home_header").style = "visibility:hidden;"; header_state = 0;} /* 헤더 hidden 상태로 기억 */
+    else {document.getElementById("home_header").style = "animation-name: home_header_off; animation-duration:0.7s; animation-fill-mode: forwards;"; header_state = 0;} /* 헤더 hidden 상태로 기억 */
    
 }
 </script>
@@ -45,37 +45,37 @@ function logoClick() {
     <div>H</div>
 </div>
 
-<!--header open-->
+<!--header 시작-->
 <header id="home_header">
     <nav class="gnb_wrap"> 
         <ul class="menu_wrap"> <!-- 메뉴 ul 시작-->
             <li>
-                <a href="index.html">Hello.</a>
-                <p>Today at huge.</p>
+                <a href="index.html" class="h3_sans">Hello.</a>
+                <p class="p_small_sans">Today at huge.</p>
                 <div></div>
             </li>
 
             <li>
-                <a href="work.html">Work.</a>
-                <p>What we've made.</p>
+                <a href="work.html" class="h3_sans">Work.</a>
+                <p class="p_small_sans">What we've made.</p>
                 <div></div>
             </li>
 
             <li>
-                <a href="about.html">About.</a>
-                <p>Who we are.</p>
+                <a href="about.html" class="h3_sans">About.</a>
+                <p class="p_small_sans">Who we are.</p>
                 <div></div>
             </li>
 
             <li>
-                <a href="careers.html">Careers.</a>
-                <p>Join the team.</p>
+                <a href="careers.html" class="h3_sans">Careers.</a>
+                <p class="p_small_sans">Join the team.</p>
                 <div></div>
             </li>
 
             <li>
-                <a href="contact.html">Contact.</a>
-                <p>Get in touch</p>
+                <a href="contact.html" class="h3_sans">Contact.</a>
+                <p class="p_small_sans">Get in touch</p>
                 <div></div>
             </li>
         </ul> <!-- 메뉴 ul 끝-->
@@ -88,54 +88,153 @@ function logoClick() {
     </nav>
 
 </header>
-<!--header close-->
+<!--header 끝-->
 
-<section class="work_01">
+<main>
+<!--work video 시작-->
+<section class="work_video">
     <video autoplay muted loop style="min-width: 100%; min-height: 100%;">
         <source src="video/huge_work.mp4" type="video/mp4">
         당신의 브라우저는 이 비디오 형식을 지원하지 않습니다!
     </video>
 
-    <div >
-        <h2>></h2>
+    <div>
+        <img src="img/work/play_icon.png" class="play_icon" alt="play_icon">
     </div>
 </section>
+<!--work video 끝-->
+
+<!--grid header 시작-->
 <section>
-    <div class="work_02">
+    <div class="grid_header color_white">
         Make something you love.
     </div>
 </section>
+<!--grid header 끝-->
 
-<div class="work_03">
-    <ul class="work_03_ul">
-        <li>Scott sports.</li>
-        <li>Android.</li>
-        <li>AMC Thearters.</li>
-        <li>Canada goose.</li>
-        <li> Google.</li>
-        <li> Gucci.</li>
-        <li> Hulu.</li>
-        <li> Kohl.</li>
-        <li>LG.</li>
-        <li>Lenovo.</li>
-        <li>NBC Universal.</li>
-        <li> Nike.</li>
-        <li>Pfizer.</li>
-        <li>Proter & Gamble.</li>
-        <li>Randstad.</li>
-        <li> Telus.</li>
-        <li>Zelle.</li>
-        <li></li>
+<!--img grid 시작-->
+<section class="img_grid">
+    <ul class="img_grid_container">
+        <li>
+            <a>
+                <h4>Vermont Castings.</h4>
+                <img src="img/work/white_arrow.png" class="work_03_arrow" alt="arrow">
+            </a>
+        </li>
+        <li>
+            <a>
+                <h4>Scott sports.</h4>
+                <img src="img/work/white_arrow.png" class="work_03_arrow" alt="arrow">
+            </a>
+        </li>
+        <li>
+            <a>
+                <h4>Android.</h4>
+                <img src="img/work/white_arrow.png" class="work_03_arrow" alt="arrow">
+            </a>
+        </li>
+        <li>
+            <a>
+                <h4>AMC Thearters.</h4>
+                <img src="img/work/white_arrow.png" class="work_03_arrow" alt="arrow">
+            </a>
+        </li>
+        <li>
+            <a>
+                <h4>Canada goose.</h4>
+                <img src="img/work/white_arrow.png" class="work_03_arrow" alt="arrow">
+            </a>
+        </li>
+        <li>
+            <a>
+                <h4>Google.</h4>
+                <img src="img/work/white_arrow.png" class="work_03_arrow" alt="arrow">
+            </a>
+        </li>
+        <li>
+            <a>
+                <h4>Gucci</h4>
+                <img src="img/work/white_arrow.png" class="work_03_arrow" alt="arrow">
+            </a>
+        </li>
+        <li>
+            <a>
+                <h4>Hulu.</h4>
+                <img src="img/work/white_arrow.png" class="work_03_arrow" alt="arrow">
+            </a>
+        </li>
+        <li>
+            <a>
+                <h4>Kohl.</h4>
+                <img src="img/work/white_arrow.png" class="work_03_arrow" alt="arrow">
+            </a>
+        </li>
+        <li>
+            <a>
+                <h4>LG.</h4>
+                <img src="img/work/white_arrow.png" class="work_03_arrow" alt="arrow">
+            </a>
+        </li>
+        <li>
+            <a>
+                <h4>Lenovo.</h4>
+                <img src="img/work/white_arrow.png" class="work_03_arrow" alt="arrow">
+            </a>
+        </li>
+        <li>
+            <a>
+                <h4>NBC Universal.</h4>
+                <img src="img/work/white_arrow.png" class="work_03_arrow" alt="arrow">
+            </a>
+        </li>
+        <li>
+            <a>
+                <h4>Nike.</h4>
+                <img src="img/work/white_arrow.png" class="work_03_arrow" alt="arrow">
+            </a>
+        </li>
+        <li>
+            <a>
+                <h4>Pfizer.</h4>
+                <img src="img/work/white_arrow.png" class="work_03_arrow" alt="arrow">
+            </a>
+        </li>
+        <li>
+            <a>
+                <h4>Proter & Gamble.</h4>
+                <img src="img/work/white_arrow.png" class="work_03_arrow" alt="arrow">
+            </a>
+        </li>
+        <li>
+            <a>
+                <h4>Randstad.</h4>
+                <img src="img/work/white_arrow.png" class="work_03_arrow" alt="arrow">
+            </a>
+        </li>
+        <li>
+            <a>
+                <h4>Telus.</h4>
+                <img src="img/work/white_arrow.png" class="work_03_arrow" alt="arrow">
+            </a>
+        </li>
+        <li>
+            <a>
+                <h4>Zelle.</h4>
+                <img src="img/work/white_arrow.png" class="work_03_arrow" alt="arrow">
+            </a>
+        </li>
     </ul>
-</div>
+</section>
+<!-- img grid 끝 -->
 
-<div class="work_04">
-    <div class="work_04_wrap">
-        <div class="work_04_wrap_left">
+<!-- select clients 시작-->
+<section class="select_clients">
+    <div class="select_clients_container">
+        <div class="select_clients_container_left">
             <hr>
             <h4>Select clients</h4>
         </div>
-            <ul class="work_04_wrap_right">
+            <ul class="select_clients_container_right">
                 <li> <img src="img/work/clients_logo/amex.png" alt="amex logo"></li>
                 <li> <img src="img/work/clients_logo/CHRYSLER.png" alt="CHRYSLER logo"></li>
                 <li> <img src="img/work/clients_logo/enel.png" alt="enel logo"></li>
@@ -154,52 +253,54 @@ function logoClick() {
                 <li> <img src="img/work/clients_logo/UnitedTechnologies.png" alt="ut logo"></li>
             </ul>
     </div>
-</div>
+</section>
 
-
-<div class="work_05">
+<!-- about_latest_news 시작-->
+<section class="about_latest_news">
     <div>
-        <div class="work_05_wrap">
+        <div class="about_latest_news_container">
 
-            <a class="work_05_left"></a>
+            <a class="about_latest_news_left"></a>
 
-            <a class="work_05_right">
+            <a class="about_latest_news_right">
                 <h2>Don't Copy Star Trek.</h2>
                 <p>Why fictional futures limit our ability to innovate — and how to find better inspiration for tomorrow’s technology.</p>
             </a>
 
         </div>
     </div>
-</div>
+</section>
+<!-- about_latest_news 끝-->
 
+</main>
 
 <!-- footer 시작-->
 <footer class="home_footer bg_color_black color_white">
 
-<ul>
-    <li class="footer_content_left">
-        <a title="https://hugeinc.com">HUGE</a>
-        <p>Make something you love.</p>
-    </li>
+    <ul>
+        <li class="footer_content_left">
+            <a title="https://hugeinc.com">HUGE</a>
+            <p>Make something you love.</p>
+        </li>
 
 
-    <li class="footer_content_right">
-        
-        <div> 
-            <a href="hello.html">Hello</a> 
-            <a href="Work.html">Work</a> 
-            <a href="About.html">About</a> 
-            <a href="careers.html">Careers</a>
-            <a href="contact.html">Contact</a>
-        </div>
+        <li class="footer_content_right">
+            
+            <div> 
+                <a href="hello.html">Hello</a> 
+                <a href="Work.html">Work</a> 
+                <a href="About.html">About</a> 
+                <a href="careers.html">Careers</a>
+                <a href="contact.html">Contact</a>
+            </div>
 
-        <p class="footer_aside color_c8c8c8">©2020 Huge LLC. Legal.<br>
-            CCPA Privacy<br>
-            Modern Slaavery Act Statement
-        </p>
+            <p class="footer_aside color_c8c8c8">©2020 Huge LLC. Legal.<br>
+                CCPA Privacy<br>
+                Modern Slaavery Act Statement
+            </p>
 
-    </li>
-</ul>
+        </li>
+    </ul>
 
 </footer>
 <!-- footer 끝-->

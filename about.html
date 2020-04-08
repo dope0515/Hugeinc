@@ -3,7 +3,7 @@
 
 <head>
     
-    <title>Huge Inc</title>
+    <title>About</title>
     <meta charset="utf-8">
     
     <!-- 사이트 메타 태그 -->
@@ -29,11 +29,12 @@ var header_state = 0; /* 헤더 보이기 상태 */
 
 function logoClick() {
     
-    if (header_state == 0) {document.getElementById("home_header").style = "visibility:visible;"; header_state = 1;} /* 헤더 visible 상태로 기억 */
+    if (header_state == 0) {document.getElementById("home_header").style = "animation-name: home_header_on; animation-duration: 0.7s; animation-fill-mode: forwards;"; header_state = 1;} /* 헤더 visible 상태로 기억 */
     
-    else {document.getElementById("home_header").style = "visibility:hidden;"; header_state = 0;} /* 헤더 hidden 상태로 기억 */
+    else {document.getElementById("home_header").style = "animation-name: home_header_off; animation-duration: 0.7s; animation-fill-mode: forwards;"; header_state = 0;} /* 헤더 hidden 상태로 기억 */
    
 }
+
 </script>
 
 </head>
@@ -45,37 +46,37 @@ function logoClick() {
     <div>H</div>
 </div>
 
-<!--header open-->
+<!--header 시작-->
 <header id="home_header">
     <nav class="gnb_wrap"> 
         <ul class="menu_wrap"> <!-- 메뉴 ul 시작-->
             <li>
-                <a href="index.html">Hello.</a>
-                <p>Today at huge.</p>
+                <a href="index.html" class="h3_sans">Hello.</a>
+                <p class="p_small_sans">Today at huge.</p>
                 <div></div>
             </li>
 
             <li>
-                <a href="work.html">Work.</a>
-                <p>What we've made.</p>
+                <a href="work.html" class="h3_sans">Work.</a>
+                <p class="p_small_sans">What we've made.</p>
                 <div></div>
             </li>
 
             <li>
-                <a href="about.html">About.</a>
-                <p>Who we are.</p>
+                <a href="about.html" class="h3_sans">About.</a>
+                <p class="p_small_sans">Who we are.</p>
                 <div></div>
             </li>
 
             <li>
-                <a href="careers.html">Careers.</a>
-                <p>Join the team.</p>
+                <a href="careers.html" class="h3_sans">Careers.</a>
+                <p class="p_small_sans">Join the team.</p>
                 <div></div>
             </li>
 
             <li>
-                <a href="contact.html">Contact.</a>
-                <p>Get in touch</p>
+                <a href="contact.html" class="h3_sans">Contact.</a>
+                <p class="p_small_sans">Get in touch</p>
                 <div></div>
             </li>
         </ul> <!-- 메뉴 ul 끝-->
@@ -88,7 +89,7 @@ function logoClick() {
     </nav>
 
 </header>
-<!--header close-->
+<!--header 끝-->
 
 <!--main section 시작-->
 <main>

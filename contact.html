@@ -29,9 +29,9 @@ var header_state = 0; /* 헤더 보이기 상태 */
 
 function logoClick() {
     
-    if (header_state == 0) {document.getElementById("home_header").style = "visibility:visible;"; header_state = 1;} /* 헤더 visible 상태로 기억 */
+    if (header_state == 0) {document.getElementById("home_header").style = "animation-name: home_header_on; animation-duration: 0.7s; animation-fill-mode: forwards;"; header_state = 1;} /* 헤더 visible 상태로 기억 */
     
-    else {document.getElementById("home_header").style = "visibility:hidden;"; header_state = 0;} /* 헤더 hidden 상태로 기억 */
+    else {document.getElementById("home_header").style = "animation-name: home_header_off; animation-duration:0.7s; animation-fill-mode: forwards;"; header_state = 0;} /* 헤더 hidden 상태로 기억 */
    
 }
 </script>
@@ -45,37 +45,37 @@ function logoClick() {
     <div>H</div>
 </div>
 
-<!--header open-->
+<!--header 시작-->
 <header id="home_header">
     <nav class="gnb_wrap"> 
         <ul class="menu_wrap"> <!-- 메뉴 ul 시작-->
             <li>
-                <a href="index.html">Hello.</a>
-                <p>Today at huge.</p>
+                <a href="index.html" class="h3_sans">Hello.</a>
+                <p class="p_small_sans">Today at huge.</p>
                 <div></div>
             </li>
 
             <li>
-                <a href="work.html">Work.</a>
-                <p>What we've made.</p>
+                <a href="work.html" class="h3_sans">Work.</a>
+                <p class="p_small_sans">What we've made.</p>
                 <div></div>
             </li>
 
             <li>
-                <a href="about.html">About.</a>
-                <p>Who we are.</p>
+                <a href="about.html" class="h3_sans">About.</a>
+                <p class="p_small_sans">Who we are.</p>
                 <div></div>
             </li>
 
             <li>
-                <a href="careers.html">Careers.</a>
-                <p>Join the team.</p>
+                <a href="careers.html" class="h3_sans">Careers.</a>
+                <p class="p_small_sans">Join the team.</p>
                 <div></div>
             </li>
 
             <li>
-                <a href="contact.html">Contact.</a>
-                <p>Get in touch</p>
+                <a href="contact.html" class="h3_sans">Contact.</a>
+                <p class="p_small_sans">Get in touch</p>
                 <div></div>
             </li>
         </ul> <!-- 메뉴 ul 끝-->
@@ -88,7 +88,7 @@ function logoClick() {
     </nav>
 
 </header>
-<!--header close-->
+<!--header 끝-->
 
 <!--main section 시작-->
 <main>
@@ -144,7 +144,7 @@ function logoClick() {
 <section class="offices"> <!--offices 시작-->
 
     <div class="offices_container">
-        <a class="offices_card" title="ATL.">  
+        <a class="offices_card" title="ATL." href="atl.html">  
             <h4>Atlanta.</h4>
             <h5>Ayee.</h5>
             <p>7:09 AM</p>
@@ -152,7 +152,7 @@ function logoClick() {
             <p>atl@hugeinc.com</p>
             <img src="img/contact/morning.png">
         </a>
-        <a class="offices_card" title="BOG.">
+        <a class="offices_card" title="BOG." href="https://www.hugeinc.com/contact/bogota">
             <h4>Bogotá.</h4>
             <h5>Hola.</h5>
             <p>6:48 AM</p>
@@ -160,7 +160,7 @@ function logoClick() {
             <p>bog@hugeinc.com</p>
             <img src="img/contact/morning.png">
          </a>
-         <a class="offices_card" title="BKLN.">
+         <a class="offices_card" title="BKLN." href="https://www.hugeinc.com/contact/brooklyn">
             <h4>Brooklyn.</h4>
             <h5>Yo.</h5>
             <p>7:48 AM</p>
@@ -168,7 +168,7 @@ function logoClick() {
             <p>bk@hugeinc.com</p>
             <img src="img/contact/morning.png">
          </a>
-         <a class="offices_card" title="CHI.">
+         <a class="offices_card" title="CHI." href="https://www.hugeinc.com/contact/chicago">
             <h4>Chicago.</h4>
             <h5>Hey.</h5>
             <p>6.48 AM</p>
@@ -176,7 +176,7 @@ function logoClick() {
             <p>chi@hugeinc.com</p>
             <img src="img/contact/morning.png">
          </a>
-         <a class="offices_card" title="DC.">
+         <a class="offices_card" title="DC." href="https://www.hugeinc.com/contact/dc">
             <h4>DC.</h4>
             <h5>Hi.</h5>
             <p>7:48 AM</p>
@@ -184,7 +184,7 @@ function logoClick() {
             <p>dc@hugeinc.com</p>
             <img src="img/contact/morning.png">
          </a>
-         <a class="offices_card" title="DET.">
+         <a class="offices_card" title="DET." href="https://www.hugeinc.com/contact/detroit">
             <h4>Detroit.</h4>
             <h5>Whad'up.</h5>
             <p>7:48 AM</p>
@@ -192,7 +192,7 @@ function logoClick() {
             <p>det@hugeinc.com</p>
             <img src="img/contact/morning.png">
          </a>
-         <a class="offices_card" title="LDN.">
+         <a class="offices_card" title="LDN." href="https://www.hugeinc.com/contact/london">
             <h4>London.</h4>
             <h5>'Ello.</h5>
             <p>12:48 PM</p>
@@ -200,7 +200,7 @@ function logoClick() {
             <p>ldn@hugeinc.com</p>
             <img src="img/contact/morning.png">
          </a>
-         <a class="offices_card" title="La.">
+         <a class="offices_card" title="La." href="https://www.hugeinc.com/contact/los-angeles">
             <h4>Los Angeles.</h4>
             <h5>E'yo..</h5>
             <p>4:48 AM</p>
@@ -208,7 +208,7 @@ function logoClick() {
             <p>la@hugeinc.com</p>
             <img src="img/contact/morning.png">
          </a>
-         <a class="offices_card" title="MDE.">
+         <a class="offices_card" title="MDE." href="https://www.hugeinc.com/contact/medellin">
             <h4>Medellín.</h4>
             <h5>ABuenas.</h5>
             <p>6:48 AM</p>
@@ -216,7 +216,7 @@ function logoClick() {
             <p>mde@hugeinc.com</p>
             <img src="img/contact/morning.png">
          </a>
-         <a class="offices_card" title="OAK.">
+         <a class="offices_card" title="OAK." href="https://www.hugeinc.com/contact/oakland">
             <h4>Oakland.</h4>
             <h5>Sup.</h5>
             <p>4:48 AM</p>
@@ -224,7 +224,7 @@ function logoClick() {
             <p>oak@hugeinc.com</p>
             <img src="img/contact/morning.png">
          </a>
-         <a class="offices_card" title="SGP.">
+         <a class="offices_card" title="SGP." href="https://www.hugeinc.com/contact/singapore">
             <h4>Singapore.</h4>
             <h5>你好</h5>
             <p>7:48 PM</p>
@@ -232,7 +232,7 @@ function logoClick() {
             <p>sgp@hugeinc.com</p>
             <img src="img/contact/morning.png">
          </a>
-         <a class="offices_card" title="TO.">
+         <a class="offices_card" title="TO." href="https://www.hugeinc.com/contact/toronto">
             <h4>Toronto.</h4>
             <h5>Eh?</h5>
             <p>7:48 AM</p>
@@ -240,7 +240,7 @@ function logoClick() {
             <p>to@hugeinc.com</p>
             <img src="img/contact/morning.png">
          </a>
-         <a class="offices_card" title="TYO.">
+         <a class="offices_card" title="TYO." href="https://www.hugeinc.com/contact/tokyo">
             <h4>Tokyo.</h4>
             <h5>こんにちは</h5>
             <p>8:48 PM</p>

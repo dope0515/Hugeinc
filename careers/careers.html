@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    
+    <title>careers</title>
+    <meta charset="utf-8">
+    
+    <!-- 사이트 메타 태그 -->
+    <meta name="description" content="Huge Inc website">
+    <meta name="keywords" content="Design, Agency, Web, UI, UX">
+    <meta name="author" content="park seung joo">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    
+    <!-- 브라우저 css 링크 -->
+    <link rel="stylesheet" type="text/css" href="../css/destyle.css"> <!-- 초기화 링크 -->
+    <link rel="stylesheet" type="text/css" href="../css/common.css"> <!-- base css -->
+    <link rel="stylesheet" type="text/css" href="../css/careers.css"> <!-- careers css -->
+    <link rel="stylesheet" type="text/css" href="../css/font.css"> <!-- 폰트 링크 -->
+    
+    <!-- 파비콘 링크 -->
+    <link rel="shorcut icon" href="../img/main//favicon.ico">
+    <link rel="icon" href="../img/main/favicon.ico">
+
+<script>
+
+/* 변수 선언 */
+var header_state = 0; /* 헤더 보이기 상태 */
+
+function logoClick() {
+    
+    if (header_state == 0) {document.getElementById("home_header").style = "animation-name: home_header_on; animation-duration: 0.7s; animation-fill-mode: forwards;"; header_state = 1;} /* 헤더 visible 상태로 기억 */
+    
+    else {document.getElementById("home_header").style = "animation-name: home_header_off; animation-duration:0.7s; animation-fill-mode: forwards;"; header_state = 0;} /* 헤더 hidden 상태로 기억 */
+   
+}
+</script>
+
+</head>
+
+<body>
+<!-- logo -->
+<div id="hugeinc_logo" onclick="logoClick()">
+    <div>H</div>
+</div>
+
+<!--header 시작-->
+<header id="home_header">
+    <nav class="gnb_wrap"> 
+        <ul class="menu_wrap"> <!-- 메뉴 ul 시작-->
+            <li>
+                <a href="../index.html" class="h3_sans">Hello.</a>
+                <p class="p_small_sans">Today at huge.</p>
+                <div></div>
+            </li>
+
+            <li>
+                <a href="../work/work.html" class="h3_sans">Work.</a>
+                <p class="p_small_sans">What we've made.</p>
+                <div></div>
+            </li>
+
+            <li>
+                <a href="../about/about.html" class="h3_sans">About.</a>
+                <p class="p_small_sans">Who we are.</p>
+                <div></div>
+            </li>
+
+            <li>
+                <a href="../careers/careers.html" class="h3_sans">Careers.</a>
+                <p class="p_small_sans">Join the team.</p>
+                <div></div>
+            </li>
+
+            <li>
+                <a href="../contact/contact.html" class="h3_sans">Contact.</a>
+                <p class="p_small_sans">Get in touch</p>
+                <div></div>
+            </li>
+        </ul> <!-- 메뉴 ul 끝-->
+
+        <div class="gnb_aside">
+            <p>Explore our thought leadership at</p>
+            <a>MAGENTA<span>.</span></a>
+        </div>
+
+    </nav>
+
+</header>
+<!--header 끝-->
+
+<main>
+<section class="hero_video">
+    <video autoplay muted loop poster="img/careers/HugeInc_Recruting.png">
+        <source src="../video/huge_careers.mp4" type="video/mp4">
+        당신의 브라우저는 이 비디오 형식을 지원하지 않습니다!
+    </video>
+
+    <div >
+        <img src="../img/work/play_icon.png" class="play_icon" alt="play_icon">
+    </div>
+</section>
+
+<!--call to action-->
+<section>
+    <div class="call_to_action">
+        <div class="call_to_action_container">
+            <h2 class="h3_serif">Our commitment to diversity, equity and inclusion has shaped our values.</h2>
+            <p>Huge believes that belonging and community are fostered when we give a shit about equality, inclusion, and accessibility. We're at our best when everyone is engaged and contributing to a more diverse and inclusive workplace.
+            </p>  
+            <a><h5 class="color_white">View open positions</h5></a>
+            
+        </div>
+    </div>
+</section>
+
+<!--why huge-->
+<section class="why_huge">
+
+    <div class="why_huge_container">
+
+        <div class="section_subtitle">
+            <hr class="section_subtitle_rule_black">
+            <h6>Why Huge?</h6>
+        </div>
+
+        <div class="why_huge_section_content">
+            <h2 class="why_huge_title h3_serif">What would the world be like if companies put user needs first?</h2>
+            <p class="why_huge_text">Huge was founded in an attempt to answer this question. Two decades later we've demonstrated that industries change and lives are improved when design, technology, and communications come together to solve problems for people. To do this, we've built a company of experts with diverse backgrounds who believe technology should be used to deliver better services and experiences for people. We give them the freedom to make things that matter, working alongside colleagues they respect.</p>
+            <p>We're a company that prizes entrepreneurialism and embraces constant change. Over the years, five perspectives have come to define the way we work:</p>
+        </div>
+    </div>
+</section>
+
+<!--5 ways-->
+<section class="mantras color_white">
+    <div class="mantras_container">
+        <div class="section_subtitle">
+            <hr class="section_subtitle_rule_white">
+            <h6>5 ways.</h6>
+        </div>
+
+        <ul class="mantras_list">
+            <li class="mantra_item">
+                <div class="mantra_item_content">
+                    <h2>Be honest.</h2>
+                    <p>Don’t be afraid to say what you think. Strong teams are built on different perspectives.
+                    </p>
+                </div>
+                 <p>I</p>
+            </li>
+            <li class="mantra_item">
+                <div class="mantra_item_content">
+                    <h2>Embrace the unknown.</h2>
+                    <p>The future is uncertain, but you can be ready for it.
+                    </p>
+                </div>
+                 <p>II</p>
+            </li>
+            <li class="mantra_item">
+                <div class="mantra_item_content">
+                    <h2>Take chances.</h2>
+                    <p>You can’t be right until you know what’s wrong.
+                    </p>
+                </div>
+                 <p>III</p>
+            </li>
+            <li class="mantra_item">
+                <div class="mantra_item_content">
+                    <h2>Ideas over egos.</h2>
+                    <p>Listen to others and save your energy for what matters.
+                    </p>
+                </div>
+                 <p>IV</p>
+            </li>
+            <li class="mantra_item">
+                <div class="mantra_item_content">
+                    <h2>Give a shit.</h2>
+                    <p>If you don’t care, why should anyone else?
+                    </p>
+                </div>
+                 <p>V</p>
+            </li>
+        </ul>
+
+    </div>
+</section>
+
+<!--about latest news 시작-->
+<section>
+    <div class="about_latest_news">
+        <div>
+            <div class="about_latest_news_wrap">
+    
+                <a href="https://magenta.as/" target="blank" class="about_latest_news_left"></a>
+    
+                <a class="about_latest_news_right">
+                    <h2>The Dawn of Voice Search.</h2>
+                    <p>More than half of all searches will be voice-based by 2020. Here’s how every brand should prepare for the upcoming SEO revolution.</p>
+                </a>
+    
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- footer 시작-->
+<footer class="home_footer bg_color_black color_white">
+
+    <ul>
+        <li class="footer_content_left">
+            <a title="https://hugeinc.com">HUGE</a>
+            <p>Make something you love.</p>
+        </li>
+    
+    
+        <li class="footer_content_right">
+            
+            <div> 
+                <a href="hello.html">Hello</a> 
+                <a href="Work.html">Work</a> 
+                <a href="About.html">About</a> 
+                <a href="careers.html">Careers</a>
+                <a href="contact.html">Contact</a>
+            </div>
+    
+            <p class="footer_aside color_c8c8c8">©2020 Huge LLC. Legal.<br>
+                CCPA Privacy<br>
+                Modern Slaavery Act Statement
+            </p>
+    
+        </li>
+    </ul>
+    
+    </footer>
+    <!-- footer 끝-->
+    </body>
+    
+    </html>

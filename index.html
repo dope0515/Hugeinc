@@ -29,9 +29,15 @@ var header_state = 0; /* 헤더 보이기 상태 */
 
 function logoClick() {
     
-    if (header_state == 0) {document.getElementById("home_header").style = "animation-name: home_header_on; animation-duration: 0.7s; animation-fill-mode: forwards;"; header_state = 1;} /* 헤더 visible 상태로 기억 */
+    if (header_state == 0) {document.getElementById("home_header").style = "animation-name: home_header_on; animation-duration: 0.5s; animation-fill-mode: forwards;";
+    document.getElementById("main").style = "padding-top:440px"
+    header_state = 1;
+    } /* 헤더 visible 상태로 기억 */
     
-    else {document.getElementById("home_header").style = "animation-name: home_header_off; animation-duration:0.7s; animation-fill-mode: forwards;"; header_state = 0;} /* 헤더 hidden 상태로 기억 */
+    else {document.getElementById("home_header").style = "animation-name: home_header_off; animation-duration:0.5s; animation-fill-mode: forwards;";
+    document.getElementById("main").style = "padding-top:0px"
+    header_state = 0;
+    } /* 헤더 hidden 상태로 기억 */
    
 }
 </script>
@@ -56,25 +62,25 @@ function logoClick() {
             </li>
 
             <li>
-                <a href="work.html" class="h3_sans">Work.</a>
+                <a href="work/work.html" class="h3_sans">Work.</a>
                 <p class="p_small_sans">What we've made.</p>
                 <div></div>
             </li>
 
             <li>
-                <a href="about.html" class="h3_sans">About.</a>
+                <a href="about/about.html" class="h3_sans">About.</a>
                 <p class="p_small_sans">Who we are.</p>
                 <div></div>
             </li>
 
             <li>
-                <a href="careers.html" class="h3_sans">Careers.</a>
+                <a href="careers/careers.html" class="h3_sans">Careers.</a>
                 <p class="p_small_sans">Join the team.</p>
                 <div></div>
             </li>
 
             <li>
-                <a href="contact.html" class="h3_sans">Contact.</a>
+                <a href="contact/contact.html" class="h3_sans">Contact.</a>
                 <p class="p_small_sans">Get in touch</p>
                 <div></div>
             </li>
@@ -90,11 +96,12 @@ function logoClick() {
 </header>
 <!--header 끝-->
 
-
+<main id="main">
 <section > <!-- Home section 시작 -->
-    <div class="main_home_wrap">
+    <div class="main_home_wrap" id="hello_wrap">
         <div class="main_home_title">
             <h1>Hello.</h1>
+            <h1>Hi.</h1>
         </div>
         <div class="main_home_content_wrap">
             <div>Today at Huge.</div>
@@ -112,12 +119,13 @@ function logoClick() {
             <div class="home_section_index_wrap">
                 <p class="color_white">01.</p>
                 <div class="border_line_white"></div>
+                <p class="color_white home_section_index_m">Win.</p>
             </div>
         </li> <!--home_section_index 끝-->
 
         <li class="home_section_contents"> <!-- home_section_contents_시작 -->
             <div class="home_section_contents_wrap">
-                <div class="color_white">Win.</div>
+                <div class="color_white content_title">Win.</div>
 
                 <div class="home_section_contents_subwrap">
                     <h2 class="color_white">Huge Thanks.</h2>
@@ -141,13 +149,14 @@ function logoClick() {
         <li class="home_section_index"> <!--home_section_index 시작-->
             <div class="home_section_index_wrap">
                 <p class="color_white ">02.</p>
-                <div class="border_line_white "></div>
+                <div class="border_line_white"></div>
+                <p class="color_white home_section_index_m">work.</p>
             </div>
         </li> <!--home_section_index 끝-->
         
         <li class="home_section_contents"> <!-- home_section_contents_시작 -->
             <div class="home_section_contents_wrap">
-                <div class="color_white">work.</div>
+                <div class="color_white content_title">work.</div>
                     <div class="home_section_contents_subwrap ">
                         <h2 class="color_white">#FreeThePeriod</h2>
                         <div class="border_line_white "></div>
@@ -170,12 +179,13 @@ function logoClick() {
             <div class="home_section_index_wrap">
                 <p class="color_black">03.</p>
                 <div class="border_line_black"></div>
+                <p class="color_black home_section_index_m">Leadership.</p>
             </div>
         </li> <!--home_section_index 끝-->
 
         <li class="home_section_contents"> <!-- home_section_contents_시작 -->
             <div class="home_section_contents_wrap">
-                <div class="color_black">Leadership.</div>
+                <div class="color_black content_title">Leadership.</div>
                 <div class="home_section_contents_subwrap">
                     <h2 class="color_black">Huge Appointment.</h2>
                     <div class="border_line_black"></div>
@@ -201,12 +211,13 @@ function logoClick() {
             <div class="home_section_index_wrap">
                 <p class="color_white">04.</p>
                 <div class="border_line_white "></div>
+                <p class="color_white home_section_index_m">Work.</p>
             </div>
         </li> <!--home_section_index 끝-->
 
         <li class="home_section_contents"> <!-- home_section_contents_시작 -->
             <div class="home_section_contents_wrap">
-                <div class="color_white">Work.</div>
+                <div class="color_white content_title">Work.</div>
                 <div class="home_section_contents_subwrap">
                     <h2 class="color_white">It's in the bag.</h2>
                     <div class="border_line_white "></div>
@@ -230,14 +241,15 @@ function logoClick() {
         
         <li class="home_section_index"> <!--home_section_index 시작-->
             <div class="home_section_index_wrap">
-                <p class="color_black">05.</p>
+                <p class="color_black ">05.</p>
                 <div class="border_line_black "></div>
+                <p class="color_black home_section_index_m">Leadership.</p>
             </div>
         </li> <!--home_section_index 끝-->
 
         <li class="home_section_contents"> <!-- home_section_contents_시작 -->
             <div class="home_section_contents_wrap">
-                <div class="color_black">Leadership.</div>
+                <div class="color_black content_title">Leadership.</div>
                 <div class="home_section_contents_subwrap">
                     <h2 class="color_black">Hello Fura.</h2>
                     <div class="border_line_black "></div>
@@ -264,12 +276,13 @@ function logoClick() {
             <div class="home_section_index_wrap">
                 <p class="color_white ">06.</p>
                 <div class="border_line_white"></div>
+                <p class="color_white home_section_index_m">Work.</p>
             </div>
         </li> <!--home_section_index 끝-->
 
         <li class="home_section_contents"> <!-- home_section_contents_시작 -->
             <div class="home_section_contents_wrap">
-                <div class="color_white ">Work.</div>
+                <div class="color_white content_title">Work.</div>
                 <div class="home_section_contents_subwrap">
                     <h2 class="color_white ">#ColorCommentary.</h2>
                     <div class="border_line_white"></div>
@@ -295,12 +308,13 @@ function logoClick() {
             <div class="home_section_index_wrap">
                 <p class="color_black">07.</p>
                 <div class="border_line_black"></div>
+                <p class="color_black home_section_index_m">Culture.</p>
             </div>
         </li> <!--home_section_index 끝-->
 
         <li class="home_section_contents"> <!-- home_section_contents_시작 -->
             <div class="home_section_contents_wrap">
-                <div class="color_black">Culture.
+                <div class="color_black content_title">Culture.
                 </div>
                 <div class="home_section_contents_subwrap">
                     <h2 class="color_black">Black History Month.</h2>
@@ -348,6 +362,7 @@ function logoClick() {
 
 </footer>
 <!-- footer 끝-->
+</main>
 </body>
 
 </html>

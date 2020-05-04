@@ -1,5 +1,5 @@
 /* 타이포 그래피 */
-body {width: 100%;}
+body {width: 100%; word-break: keep-all;}
 
 h1, h2, h3, h4, h5, h6 {font-family: 'HugeGothic-Bold'; font-weight: 400; -webkit-font-smoothing: antialiased;}
 p{font-family: 'galaxie-Book'; font-weight: 400; -webkit-font-smoothing: antialiased;}
@@ -40,15 +40,15 @@ p{ font-size: 18px; line-height: 34px; letter-spacing: -0.27504px;}
 
 /* logo css */
         
-#hugeinc_logo {width: 74px; height: 74px; background-color: white ;position: fixed; left:calc(50vw - 37px); top: 50px; display: flex; justify-content: center; align-items: center; font-size: 36px; font-family: 'HugeGothic-Bold'; font-weight: 600; z-index: 10000;}
+#hugeinc_logo {width: 74px; height: 74px; background-color: white ;position: fixed; left:calc(50% - 37px); top: 50px; display: flex; justify-content: center; align-items: center; font-size: 36px; font-family: 'HugeGothic-Bold'; font-weight: 600; z-index: 10000;box-sizing: border-box; padding-top: 4px; background: linear-gradient(315deg,  #ea178c, #ffffff, #ffffff, #ea178c, #ffffff, #ffffff);
+    background-size: 800% 800%; animation-name: logo_animation; animation-duration: 0.8s; animation-iteration-count: 1;}
     #hugeinc_logo:hover {cursor: pointer;}
     #hugeinc_logo div {width: 48px; height: 48px; color: #ea178c; text-align: center; line-height: 48px;}
 
 /* header gnb 클래스 */
+#home_header {width: 100%; height: 0px; background-color: #f4f4f4; display: block; position: fixed; overflow: hidden; z-index: 100;}
 
-#home_header {width: 100vw; height: 0px; background-color: #f7f7f7; display: block; position: fixed; overflow: hidden; z-index: 100;}
-
-.gnb_wrap { width: 100vw; height: 440px; display: flex; justify-content: center; align-items: center; position: relative; box-sizing: border-box;}
+.gnb_wrap { width: 100%; height: 440px; display: flex; justify-content: center; align-items: center; position: relative; box-sizing: border-box;}
 
 .menu_wrap { width: 1050px; height: 90px; display: flex; justify-content: space-between; align-items: center; margin: 0 auto;}
     .menu_wrap li {width: 190px; height: 90px; display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 0 10px;}
@@ -64,8 +64,8 @@ p{ font-size: 18px; line-height: 34px; letter-spacing: -0.27504px;}
 
 /* footer section */
 
-.home_footer { width: 100vw; height: 240px; padding: 70px 0 80px; box-sizing: border-box;}
-.home_footer ul {width: 100vw; height: 90px; padding: 0 calc(12.5vw + 15px); display: flex; justify-content: space-between; min-width: 1000px; box-sizing: border-box;}
+.home_footer { width: 100%; height: 240px; padding: 70px 0 80px; box-sizing: border-box;}
+.home_footer ul {width: 100%; height: 90px; padding: 0 calc(12.5vw + 15px); display: flex; justify-content: space-between; box-sizing: border-box;}
 
 
 .footer_content_left {display: flex; flex-direction: row; align-items: center;}
@@ -81,7 +81,7 @@ p{ font-size: 18px; line-height: 34px; letter-spacing: -0.27504px;}
 
 .footer_aside { font-family: 'galaxie-Book'; font-size: 12px; line-height: 20px; text-align: right;}
 
-.hero {width: 100vw; height: 80vh; background-size: cover; background-position: center; padding: 140px 0 60px;}
+.hero {width: 100%; height: 80vh; background-size: cover; background-position: center; padding: 140px 0 60px;}
 
 
 /*header animation*/
@@ -92,4 +92,20 @@ p{ font-size: 18px; line-height: 34px; letter-spacing: -0.27504px;}
 @keyframes home_header_off {
     from{ height: 440px;}
     to { height: 0px;} 
+}
+@keyframes logo_animation {
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
+
+
+/*Media Query*/
+@media screen and (max-width:768px) {
+    .home_footer {padding: 35px 0 120px;}
+    .home_footer ul {width: 80%; padding: 0; margin: 0 auto; flex-direction: column;}
+    .footer_content_left a {font-size: 30px; line-height: 36px; padding-right: 18px; margin-right: 18px;}
+    .footer_content_left p { font-size: 14px; line-height: 14px;}
+    .footer_content_right {margin-top: 10px;}
+    .footer_aside {text-align: start; line-height: 30px ;}
 }

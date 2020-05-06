@@ -29,16 +29,39 @@ var header_state = 0; /* 헤더 보이기 상태 */
 
 function logoClick() {
     
-    if (header_state == 0) {document.getElementById("home_header").style = "animation-name: home_header_on; animation-duration: 0.5s; animation-fill-mode: forwards;";
-    document.getElementById("main").style = "padding-top:440px"
-    header_state = 1;
-    } /* 헤더 visible 상태로 기억 */
+if (document.body.clientWidth > 767){
+
+        if (header_state == 0) {document.getElementById("home_header").style.height = "440px";
+        document.getElementById("main").style = "padding-top:440px";
+        document.getElementById("hugeinc_logo").style.display = "none";
+        document.getElementById("hugeinc_logo_m").style.display = "flex";
+
+        header_state = 1;
+        } /* 헤더 visible 상태로 기억 */
+        
+        else {document.getElementById("home_header").style.height = "0px";
+        document.getElementById("main").style = "padding-top:0px";
+        document.getElementById("hugeinc_logo").style.display = "flex";
+        document.getElementById("hugeinc_logo_m").style.display = "none";
+        header_state = 0;
+        } /* 헤더 hidden 상태로 기억 */
+    }
     
-    else {document.getElementById("home_header").style = "animation-name: home_header_off; animation-duration:0.5s; animation-fill-mode: forwards;";
-    document.getElementById("main").style = "padding-top:0px"
-    header_state = 0;
-    } /* 헤더 hidden 상태로 기억 */
-   
+    else { if (header_state == 0) {document.getElementById("home_header").style.height = "80vh";
+        document.getElementById("main").style = "padding-top:440px";
+        document.getElementById("hugeinc_logo").style.display = "none";
+        document.getElementById("hugeinc_logo_m").style.display = "flex";
+        header_state = 1;
+        } /* 헤더 visible 상태로 기억 */
+        
+        else {document.getElementById("home_header").style.height = "0px";
+        document.getElementById("main").style = "padding-top:0px";
+        document.getElementById("hugeinc_logo").style.display = "flex";
+        document.getElementById("hugeinc_logo_m").style.display = "none";
+        header_state = 0;
+        }
+
+    }
 }
 </script>
 
@@ -48,7 +71,10 @@ function logoClick() {
 <body>
 <!-- logo -->
 <div id="hugeinc_logo" onclick="logoClick()">
-    <div>H</div>
+    <div id="logo_text">H</div>
+</div>
+<div id="hugeinc_logo_m" onclick="logoClick()">
+    <div id="logo_text">HUGE</div>
 </div>
 
 <!--header 시작-->
@@ -57,32 +83,37 @@ function logoClick() {
         <ul class="menu_wrap"> <!-- 메뉴 ul 시작-->
             <li>
                 <a href="index.html" class="h3_sans">Hello.</a>
+                <div class="hr_m"></div>
                 <p class="p_small_sans">Today at huge.</p>
-                <div></div>
+                <div class="hr_origin"></div>
             </li>
 
             <li>
                 <a href="work/work.html" class="h3_sans">Work.</a>
+                <div class="hr_m"></div>
                 <p class="p_small_sans">What we've made.</p>
-                <div></div>
+                <div class="hr_origin"></div>
             </li>
 
             <li>
                 <a href="about/about.html" class="h3_sans">About.</a>
+                <div class="hr_m"></div>
                 <p class="p_small_sans">Who we are.</p>
-                <div></div>
+                <div class="hr_origin"></div>
             </li>
 
             <li>
                 <a href="careers/careers.html" class="h3_sans">Careers.</a>
+                <div class="hr_m"></div>
                 <p class="p_small_sans">Join the team.</p>
-                <div></div>
+                <div class="hr_origin"></div>
             </li>
 
             <li>
                 <a href="contact/contact.html" class="h3_sans">Contact.</a>
+                <div class="hr_m"></div>
                 <p class="p_small_sans">Get in touch</p>
-                <div></div>
+                <div class="hr_origin"></div>
             </li>
         </ul> <!-- 메뉴 ul 끝-->
 
@@ -128,7 +159,9 @@ function logoClick() {
                 <div class="color_white content_title">Win.</div>
 
                 <div class="home_section_contents_subwrap">
-                    <h2 class="color_white">Huge Thanks.</h2>
+                    <h2 class="color_white">
+                        <a href="https://www.campaignlive.com/article/digital-innovation-agency-2019-huge/1672213" target="_blank">Huge Thanks.</a>
+                    </h2>
                     <div class="border_line_white"></div>
                     <p class="color_white">Campaign US named Huge its 2019 Innovation Agency of the year.</p>
                 </div>
@@ -141,7 +174,7 @@ function logoClick() {
     
 </section><!-- page 1 끝 -->
 
-<!-- page 2 -->
+
 <section id="home_2"> <!-- page 2 시작 -->
     
     <ul class="home_section_wrap home_img_02"> <!-- home_section_wrap -->
@@ -158,7 +191,9 @@ function logoClick() {
             <div class="home_section_contents_wrap">
                 <div class="color_white content_title">work.</div>
                     <div class="home_section_contents_subwrap ">
-                        <h2 class="color_white">#FreeThePeriod</h2>
+                        <h2 class="color_white">
+                            <a href="https://www.adweek.com/creativity/how-do-you-highlight-the-frustration-of-tampon-dispensers-make-men-pay-for-toilet-paper/" target="_blank">#FreeThePeriod</a>
+                        </h2>
                         <div class="border_line_white "></div>
                         <p class="color_white">To highlight pertiod inequality, Huge partnered with PERIOD. to build a coin-operated toilet paper dispenser and installed it in men's restrooms.</p>
                     </div>
@@ -170,7 +205,7 @@ function logoClick() {
     </ul> <!-- home_section_wrap_끝 -->
 </section> <!-- page 2 끝 -->
 
-<!-- page 3 -->
+
 <section id="home_3"> <!-- page 3 시작 -->
     
     <ul class="home_section_wrap home_img_03"> <!-- home_section_wrap -->
@@ -187,7 +222,9 @@ function logoClick() {
             <div class="home_section_contents_wrap">
                 <div class="color_black content_title">Leadership.</div>
                 <div class="home_section_contents_subwrap">
-                    <h2 class="color_black">Huge Appointment.</h2>
+                    <h2 class="color_black">
+                        <a href="https://www.campaignlive.com/article/huge-elevates-matt-weiss-brooklyn-president/1674393" target="_blank">Huge Appointment.</a>
+                    </h2>
                     <div class="border_line_black"></div>
                     <p class="color_black">After three years leading global strategic growth for Huge, Matt Weiss has been appointed President, Huge BK.</p>
                 </div>
@@ -200,9 +237,9 @@ function logoClick() {
     </ul>
 
 
-</section><!-- page 3 끝 -->
+</section> <!-- page 3 끝 -->
 
-<!-- page 4 -->
+
 <section id="home_4"> <!-- page 4 시작 -->
     
     <ul class="home_section_wrap home_img_04"> <!-- home_section_wrap -->
@@ -219,7 +256,9 @@ function logoClick() {
             <div class="home_section_contents_wrap">
                 <div class="color_white content_title">Work.</div>
                 <div class="home_section_contents_subwrap">
-                    <h2 class="color_white">It's in the bag.</h2>
+                    <h2 class="color_white">
+                        <a href="https://adage.com/article/cmo-strategy/shipt-targets-delivery-answer-amazon-getting-new-look/2234561" target="_blank">It's in the bag.</a> 
+                    </h2>
                     <div class="border_line_white "></div>
                     <p class="color_white">Huge rebrands grocery delivery service Shipt.</p>
                 </div>
@@ -232,7 +271,7 @@ function logoClick() {
     </ul>
 
 
-</section><!-- page 4 끝 -->
+</section> <!-- page 4 끝 -->
 
 <!-- page 5 -->
 <section id="home_5"> <!-- page 5 시작 -->
@@ -251,8 +290,10 @@ function logoClick() {
             <div class="home_section_contents_wrap">
                 <div class="color_black content_title">Leadership.</div>
                 <div class="home_section_contents_subwrap">
-                    <h2 class="color_black">Hello Fura.</h2>
-                    <div class="border_line_black "></div>
+                    <h2 class="color_black">
+                        <a href="https://www.adweek.com/agencyspy/huge-hires-r-ga-vet-to-fill-chief-design-officer-role/161097/" target="_blank">Hello Fura.</a> 
+                    </h2>
+                    <div class="border_line_black"></div>
                     <p class="color_black">Huge welcomes Fura Johannesdottir as Chief Design Officer.</p>
                 </div>
             </div>
@@ -264,9 +305,9 @@ function logoClick() {
     </ul>
 
 
-</section><!-- page 5 끝 -->
+</section> <!-- page 5 끝 -->
 
-<!-- page 6 -->
+
 <section id="home_6"> <!-- page 6 시작 -->
     
     <ul class="home_section_wrap home_img_06"> <!-- home_section_wrap -->
@@ -297,9 +338,9 @@ function logoClick() {
     </ul>
 
 
-</section><!-- page 6 끝 -->
+</section> <!-- page 6 끝 -->
 
-<!-- page 7 -->
+
 <section id="home_7"> <!-- page 7 시작 -->
     
     <ul class="home_section_wrap home_img_07"> <!-- home_section_wrap -->
@@ -330,7 +371,7 @@ function logoClick() {
     </ulv>
 
 
-</section><!-- page 7 끝 -->
+</section> <!-- page 7 끝 -->
 
 <!-- footer 시작-->
 <footer class="home_footer bg_color_black color_white">
@@ -345,11 +386,11 @@ function logoClick() {
         <li class="footer_content_right">
             
             <div> 
-                <a href="hello.html">Hello</a> 
-                <a href="Work.html">Work</a> 
-                <a href="About.html">About</a> 
-                <a href="careers.html">Careers</a>
-                <a href="contact.html">Contact</a>
+                <a href="index.html">Hello</a> 
+                <a href="work/Work.html">Work</a> 
+                <a href="about/about.html">About</a> 
+                <a href="careers/careers.html.html">Careers</a>
+                <a href="contact/contact.html">Contact</a>
             </div>
 
             <p class="footer_aside color_c8c8c8">©2020 Huge LLC. Legal.<br>

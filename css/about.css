@@ -3,8 +3,8 @@
 .hero_title {width: 74.68354%; height: calc(80vh - 200px); display: flex; flex-direction: column; justify-content: flex-end; margin: 0 auto; box-sizing: border-box; letter-spacing: normal;}
 
 /* about_hero */
-.about_us {width: 100vw; background-color: white; padding: 140px 0; box-sizing: border-box;}
-.about_us_container {width: 74.68354%;margin: 0 auto; display: flex;}
+.about_us {width: 100%; background-color: white; padding: 140px 0; box-sizing: border-box;}
+.about_us_container {width: 74.68354%; margin: 0 auto; display: flex;}
     .section_subtitle {width: 32.20339%; padding-top: 14px; box-sizing: border-box;}
     .section_subtitle_nopadding {width: 32.20339%; margin-bottom: 60px;}
     .section_subtitle_rule_black {width: 47.36842%; border-top: 1px solid black; margin-bottom: 20px;}
@@ -14,7 +14,7 @@
     .about_us_text {padding-bottom: 25px; box-sizing: border-box;}
 
 /* our_service*/
-.our_service {width: 100vw; background-color: black; padding: 140px 0; box-sizing: border-box;}
+.our_service {width: 100%; background-color: black; padding: 140px 0; box-sizing: border-box;}
 .our_service_container {width: 74.68354%; margin: 0 auto;}
 .our_service_content_container {width: 100%; display: flex;}
 .our_service_content {width: 57.62712%;}
@@ -31,7 +31,7 @@
 .our_service_list a:hover {color: #ea178c; transition: all 0.4s; cursor: pointer;}
 
 /* Made with love*/
-.our_culture {width: 100vw; background-color: #cecdcf; padding: 140px 0; box-sizing: border-box; position: relative;}
+.our_culture {width: 100%; background-color: #cecdcf; padding: 140px 0; box-sizing: border-box; position: relative;}
 .our_culture_container {width: 74.68354%; margin: 0 auto;}
 .our_culture_title {margin-top: 120px; padding-bottom: 100px;}
 .our_culture_list {width: 100%; display: flex; flex-wrap: wrap; position: relative; z-index: 2;}
@@ -54,7 +54,7 @@
 .our_office_list li p {color: white; opacity: 0.5;}
 
 /*our leadership*/
-.our_leadership {width: 100vw;}
+.our_leadership {width: 100%;}
 .our_leadership_container {width: 74.68354%; margin: 0 auto; padding: 140px 0;}
 .our_leadership_list {width: 100%; display: flex; flex-wrap: wrap; padding-top: 10px;}
 .our_leadership_list li {padding-top: 40px; margin-bottom: 40px; width: 30%; right: 15px; margin-left: 1.69492%;}
@@ -66,10 +66,10 @@
 
 
 /* work 05 */
-.work_05 {width: 100vw; background-image: url(../img/about/collecting_img.png); background-size: cover; position: relative;}
-.work_05 > div:first-child {background-color: rgba(0, 0, 0, 0.7); width: 100vw; padding: 200px 0;}
+.work_05 {width: 100%; background-image: url(../img/about/collecting_img.png); background-size: cover; position: relative;}
+.work_05 > div:first-child {background-color: rgba(0, 0, 0, 0.7); width: 100%; padding: 200px 0;}
 
-.work_05_wrap {width:100vw; display: flex; justify-content: center;}
+.work_05_wrap {width:100%; display: flex; justify-content: center;}
     .work_05_left {width: 18.98734%; padding-bottom: 18.98734%; padding-left: 300px; margin-right: 1.25%; background-image: url(../img/work/magenta-hero.gif); background-size: cover;}
     .work_05_right {width: 43.03797%; margin-right: 1.26582%; margin-left: 5.06329%; display: flex; flex-direction: column; justify-content: center}
         .work_05_right h2 {font-size: 80px; color: white;}

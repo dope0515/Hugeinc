@@ -29,10 +29,39 @@ var header_state = 0; /* 헤더 보이기 상태 */
 
 function logoClick() {
     
-    if (header_state == 0) {document.getElementById("home_header").style = "animation-name: home_header_on; animation-duration: 0.7s; animation-fill-mode: forwards;"; header_state = 1;} /* 헤더 visible 상태로 기억 */
-    
-    else {document.getElementById("home_header").style = "animation-name: home_header_off; animation-duration:0.7s; animation-fill-mode: forwards;"; header_state = 0;} /* 헤더 hidden 상태로 기억 */
-   
+    if (document.body.clientWidth > 767){
+
+if (header_state == 0) {document.getElementById("home_header").style.height = "440px";
+document.getElementById("main").style = "padding-top:440px";
+document.getElementById("hugeinc_logo").style.display = "none";
+document.getElementById("hugeinc_logo_m").style.display = "flex";
+
+header_state = 1;
+} /* 헤더 visible 상태로 기억 */
+
+else {document.getElementById("home_header").style.height = "0px";
+document.getElementById("main").style = "padding-top:0px";
+document.getElementById("hugeinc_logo").style.display = "flex";
+document.getElementById("hugeinc_logo_m").style.display = "none";
+header_state = 0;
+} /* 헤더 hidden 상태로 기억 */
+}
+
+else { if (header_state == 0) {document.getElementById("home_header").style.height = "80vh";
+document.getElementById("main").style = "padding-top:440px";
+document.getElementById("hugeinc_logo").style.display = "none";
+document.getElementById("hugeinc_logo_m").style.display = "flex";
+header_state = 1;
+} /* 헤더 visible 상태로 기억 */
+
+else {document.getElementById("home_header").style.height = "0px";
+document.getElementById("main").style = "padding-top:0px";
+document.getElementById("hugeinc_logo").style.display = "flex";
+document.getElementById("hugeinc_logo_m").style.display = "none";
+header_state = 0;
+}
+
+}
 }
 </script>
 
@@ -44,6 +73,9 @@ function logoClick() {
 <div id="hugeinc_logo" onclick="logoClick()">
     <div>H</div>
 </div>
+<div id="hugeinc_logo_m" onclick="logoClick()">
+    <div id="logo_text">HUGE</div>
+</div>
 
 <!--header 시작-->
 <header id="home_header">
@@ -51,32 +83,37 @@ function logoClick() {
         <ul class="menu_wrap"> <!-- 메뉴 ul 시작-->
             <li>
                 <a href="../index.html" class="h3_sans">Hello.</a>
+                <div class="hr_m"></div>
                 <p class="p_small_sans">Today at huge.</p>
-                <div></div>
+                <div class="hr_origin"></div>
             </li>
 
             <li>
-                <a href="work.html" class="h3_sans">Work.</a>
+                <a href="../work/work.html" class="h3_sans">Work.</a>
+                <div class="hr_m"></div>
                 <p class="p_small_sans">What we've made.</p>
-                <div></div>
+                <div class="hr_origin"></div>
             </li>
 
             <li>
                 <a href="../about/about.html" class="h3_sans">About.</a>
+                <div class="hr_m"></div>
                 <p class="p_small_sans">Who we are.</p>
-                <div></div>
+                <div class="hr_origin"></div>
             </li>
 
             <li>
                 <a href="../careers/careers.html" class="h3_sans">Careers.</a>
+                <div class="hr_m"></div>
                 <p class="p_small_sans">Join the team.</p>
-                <div></div>
+                <div class="hr_origin"></div>
             </li>
 
             <li>
                 <a href="../contact/contact.html" class="h3_sans">Contact.</a>
+                <div class="hr_m"></div>
                 <p class="p_small_sans">Get in touch</p>
-                <div></div>
+                <div class="hr_origin"></div>
             </li>
         </ul> <!-- 메뉴 ul 끝-->
 
@@ -90,11 +127,11 @@ function logoClick() {
 </header>
 <!--header 끝-->
 
-<main>
+<main id="main">
 <!--work video 시작-->
 <section class="work_video">
     <video autoplay muted loop style="min-width: 100%; min-height: 100%;">
-        <source src="../video/huge_careers.mp4" type="video/mp4">
+        <source src="../video/huge_work.mp4" type="video/mp4">
         당신의 브라우저는 이 비디오 형식을 지원하지 않습니다!
     </video>
 

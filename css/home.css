@@ -7,7 +7,7 @@
 
 .main_home_content_wrap {width: 100%; height: 90px; font-family: 'galaxie-Book'; position: absolute; bottom: 0; display: flex; flex-direction: column; justify-content: center; align-items: center;}
     .main_home_content_wrap:first-child {text-align: center; height: 60px;}
-    .main_home_content_wrap :nth-child(2) {width: 1px; height: 30px; border-left: 1px solid black; margin-top: 30px; }
+    .main_home_content_wrap :nth-child(2) {width: 1px; height: 30px; border-left: 1px solid black; margin-top: 30px; position: absolute;}
 
 /* home 클래스 */
 
@@ -28,51 +28,30 @@
     .home_section_contents_subwrap div {width: 5vw; margin: 30px 0;}
     .home_section_contents_subwrap p {font-family: 'galaxie-Book'; font-size: 18px; line-height: 36px; width: 85%; font-weight: 100; text-rendering:optimizelegibility; -webkit-font-smoothing: antialiased;}
 
-/* footer section */
 
-.home_footer { width: 100%; height: 240px; padding: 70px 0 80px; box-sizing: border-box;}
-.home_footer ul {width: 100%;}
-    .home_footer > div {width: 100%; height: 90px; padding: 0 calc(12.5% + 15px); display: flex; justify-content: space-between; }
-
-
-.footer_content_left {display: flex; flex-direction: row; align-items: center;}
-    .footer_content_left div { font-family: 'HugeGothic-Bold'; font-size: 36px; line-height: 36px; border-right: 1px solid #888888; padding-right: 32px; margin-right: 32px; letter-spacing: 4px;}
-    .footer_content_left p { font-family: 'HugeGothic-Bold'; font-size: 18px; line-height: 36px; letter-spacing: 1px;}  
-
-.footer_content_right { display: flex; justify-content: flex-end; flex-direction: column;}
-
-    .footer_content_right div { font-family: 'HugeGothic-Bold'; font-size: 14px; line-height: 24px; letter-spacing: 1px; color: #c8c8c8; margin-bottom: 10px;}
-    .footer_content_right a {margin-right: 16px;}
-    .footer_content_right a:last-child {margin-right: 0;}  
-
-    .footer_aside { font-family: 'galaxie-Book'; font-size: 12px; line-height: 20px; text-align: right;}
 
 /* home img */
-.home_img_01 { background-image: url(../img/main/hugeinc.png); background-size: cover; width: 100%; height: 100%; background-position: center;}
-.home_img_02 { background-image: url(../img/main/hugeinc16.png); background-size: cover; width: 100%; height: 100%; background-position: center;}
-.home_img_03 {background-image: url(../img/main/hugeinc10.png); background-size: cover; width: 100%; height: 100%; background-position: center;}
-.home_img_04 {background-image: url(../img/main/hugeinc12.png); background-size: cover; width: 100%; height: 100%; background-position: center;}
-.home_img_05 {background-image: url(../img/main/hugeinc2.jpg); background-size: cover; width: 100%; height: 100%; background-position: center;}
-.home_img_06 {background-image: url(../img/main/hugeinc3.jpg); background-size: cover; width: 100%; height: 100%; background-position: center;}
-.home_img_07 {background-image: url(../img/main/hugeinc1.jpg); background-size: cover; width: 100%; height: 100%; background-position: center;}
+.home_img_01 { background-image: url(../img/main/hugeinc.png); background-size: cover; width: 100%; height: 100vh; background-position: center;}
+.home_img_02 { background-image: url(../img/main/hugeinc16.png); background-size: cover; width: 100%; height: 100vh; background-position: center;}
+.home_img_03 {background-image: url(../img/main/hugeinc10.png); background-size: cover; width: 100%; height: 100vh; background-position: center;}
+.home_img_04 {background-image: url(../img/main/hugeinc12.png); background-size: cover; width: 100%; height: 100vh; background-position: center;}
+.home_img_05 {background-image: url(../img/main/hugeinc2.jpg); background-size: cover; width: 100%; height: 100vh; background-position: center;}
+.home_img_06 {background-image: url(../img/main/hugeinc3.jpg); background-size: cover; width: 100%; height: 100vh; background-position: center;}
+.home_img_07 {background-image: url(../img/main/hugeinc1.jpg); background-size: cover; width: 100%; height: 100vh; background-position: center;}
 
 /* home section id*/
-#home_1 {width: 100%; height: 100%;}
-#home_2 {width: 100%; height: 100%;}
-#home_3 {width: 100%; height: 100%;}
-#home_4 {width: 100%; height: 100%;}
-#home_5 {width: 100%; height: 100%;}
-#home_6 {width: 100%; height: 100%;}
-#home_7 {width: 100%; height: 100%;}
+#home_1 {width: 100%; height: 100vh;}
+#home_2 {width: 100%; height: 100vh;}
+#home_3 {width: 100%; height: 100vh;}
+#home_4 {width: 100%; height: 100vh;}
+#home_5 {width: 100%; height: 100vh;}
+#home_6 {width: 100%; height: 100vh;}
+#home_7 {width: 100%; height: 100vh;}
 
-/*Media Query*/
-@media screen and (max-width:1205px) {
-    .home_section_contents_subwrap {height: auto;}
-}
-
-
+/*media query*/
 @media screen and (max-width:999px) {
 .home_section_contents_subwrap h2 {font-size: 72px;}
+.home_section_contents_wrap {width: 80%;}
 }
 
 
@@ -93,12 +72,12 @@
     .home_section_contents_subwrap h2 {width: 80%; font-size: 40px; line-height: 40px; margin-top: 10px; letter-spacing: normal;}
     .home_section_index_wrap div {width: 10%; margin:0 -10px;}
     .home_section_contents_subwrap div {width: 20%; margin: 15px 0;}
-    .home_img_01 { background-image: url(../img/main/hugeinc4.jpg);  padding-bottom: 20%;}
-    .home_img_02 { background-image: url(../img/main/hugeinc19.png); padding-bottom: 20%;}
-    .home_img_03 {background-image: url(../img/main/hugeinc18.jpg); padding-bottom: 20%;}
-    .home_img_04 {background-image: url(../img/main/hugeinc12.png); padding-bottom: 20%;}
-    .home_img_05 {background-image: url(../img/main/hugeinc7.jpg); padding-bottom: 20%;}
-    .home_img_06 {background-image: url(../img/main/hugeinc8.jpg); padding-bottom: 20%;}
-    .home_img_07 {background-image: url(../img/main/hugeinc5.jpg); padding-bottom: 20%;}
+    .home_img_01 { background-image: url(../img/main/hugeinc4.jpg);}
+    .home_img_02 { background-image: url(../img/main/hugeinc19.png);}
+    .home_img_03 {background-image: url(../img/main/hugeinc18.jpg);}
+    .home_img_04 {background-image: url(../img/main/hugeinc12.png);}
+    .home_img_05 {background-image: url(../img/main/hugeinc7.jpg);}
+    .home_img_06 {background-image: url(../img/main/hugeinc8.jpg);}
+    .home_img_07 {background-image: url(../img/main/hugeinc5.jpg);}
 
 }

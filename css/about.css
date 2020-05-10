@@ -19,8 +19,8 @@
 .our_service_content_container {width: 100%; display: flex;}
 .our_service_content {width: 57.62712%;}
 .our_service_content_title {margin-bottom: 50px;}
-.our_service_infographic { width: 32.20339%; margin-left: 5%; padding-bottom: 25px;}
-.our_service_infographic_img {width: 100%; padding: 2% 0 0 5%;}
+.our_service_infographic { width: 32.20339%; min-width: 400px; margin-left: 5%; padding-bottom: 25px;}
+.our_service_infographic_img {max-width: 100%; padding: 2% 0 0 5%;}
 .our_service_content_text {column-count: 2;}
 
 .our_service_list_container {width: 74.68354%; margin: 0 auto; display: flex; flex-wrap: wrap; padding-top: 60px;}
@@ -66,23 +66,57 @@
 
 
 /* work 05 */
-.work_05 {width: 100%; background-image: url(../img/about/collecting_img.png); background-size: cover; position: relative;}
-.work_05 > div:first-child {background-color: rgba(0, 0, 0, 0.7); width: 100%; padding: 200px 0;}
-
-.work_05_wrap {width:100%; display: flex; justify-content: center;}
-    .work_05_left {width: 18.98734%; padding-bottom: 18.98734%; padding-left: 300px; margin-right: 1.25%; background-image: url(../img/work/magenta-hero.gif); background-size: cover;}
-    .work_05_right {width: 43.03797%; margin-right: 1.26582%; margin-left: 5.06329%; display: flex; flex-direction: column; justify-content: center}
-        .work_05_right h2 {font-size: 80px; color: white;}
-        .work_05_right p {font-family: 'galaxie-Book'; font-size: 18px; color: white; line-height: 24px; line-height: 1.88889;}
-
+.about_latest_news {background-image: url(../img/about/collecting_img.png);}
 
 
 @media screen and (max-width:999px) {
-    
     .hero_title {font-size: 104px; width: 83.05085%; line-height: 106px;}
+    .about_us_container {flex-direction: column; width: 83.05085%;}
+    .about_us_section_content {width: 100%; margin-left: 0;}
+    .about_us_section_content h2 {font-size: 42px; margin-bottom: 50px; letter-spacing: -1px; line-height: 53.9998px;}
+    .section_subtitle {margin-bottom: 50px; width: 48.97959%;}
+    .section_subtitle_rule_black {width: 37.5%;}
+    .section_subtitle h6 {font-size: 16px;}
+    .section_subtitle_nopadding {width: 48.97959%; margin-bottom: 50px;}
+    .section_subtitle_nopadding h6 {font-size: 16px; }
+    .our_service_content_container {flex-direction: column;}
+    .our_service_content {width: 100%;}
+    .our_service_content_text {width: 100%; column-count: auto; padding: 25px 0;}
+    .our_service_list_container  {flex-direction: column;}
+    .our_service_list { width: 66.10169%;}
+    .our_service_list :nth-child(6) {margin: 0 15% 20px 0;}
+    .our_culture_container {width: 83.05085%;}
+    .our_culture_title {margin: 0;}
+    .our_culture_title h2 {font-size: 72px;}
+    .our_culture_list li {width: 48.97959%; margin-left: 0; min-height: 0;}
+    .our_culture_list li:nth-child(2n) {margin-left: 2.04082%;}
+    .our_office_container {width: 83.05085%}
+    .our_office_list li {width: 48.97959%; margin-left: 0;}
+    .our_office_list li:nth-child(2n) {margin-left: 2.04082%}
+    .our_leadership_list li h5 {font-size: 21px;}
 }
 
 @media screen and (max-width:768px) {
-    
     .hero_title {font-size: 60px; width: 83.05085%; line-height: 60px; width: 74.35897%;}
+    .about_us {padding-top: 60px;}
+    .about_us_container {width: 74.35897%;}
+    .about_us_section_content h2 {font-size: 30px; line-height: 42px;}
+    .section_subtitle h6 {font-size: 14px;}
+    .our_service_infographic {margin: 0 auto; max-width: 480px; min-width: 0; width:100%;}
+    .our_culture {padding: 60px 0 20px;}
+    .section_subtitle_nopadding {width: 82.75862%;}
+    .our_culture_container {width: 74.68354%;}
+    .our_culture_title {padding-bottom: 40px;}
+    .our_culture_title h2 {font-size: 40px; line-height: 40px;}
+    .our_culture_list li {width: 100%;}
+    .our_culture_list li:nth-child(2n) {margin-left: 0;}
+    .our_culture_list li:nth-child(8), .our_culture_list li:nth-child(10),.our_culture_list li:nth-child(11), .our_culture_list li:nth-child(12) {display: none;}
+    .our_culture_background {display: none;}
+    .our_office_container {padding: 60px 0;}
+    .our_office_list li {width: 100%;}
+    .our_office_list li:nth-child(2n) {margin-left: 0}
+    .our_office_list li h5 {font-size: 19px;}
+    .our_leadership_list li {width: 100%; border-top: 1px solid rgba(0, 0, 0, 0.2); right: 0%; margin-left: 0;}
+    .our_leadership_list li h5 {font-size: 19px;}
+    .our_leadership_container {padding: 60px 0;}
 }

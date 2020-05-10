@@ -1,6 +1,7 @@
 body { background-color: black; ;}
 /* about_us */
-.hero_about{background-image: url(../img/contact/RoyalPalms-16__2__crop__1___1___2_.jpg);}
+.hero_about {background-image: url(../img/contact/RoyalPalms-16__2__crop__1___1___2_.jpg); position: relative;}
+.hero_about h1 {position: absolute; bottom: 5%; left: 12.4%;}
 .hero_title {width: 74.68354%; height: calc(80vh - 200px); display: flex; flex-direction: column; justify-content: flex-end; margin: 0 auto; box-sizing: border-box; letter-spacing: normal;}
 
 /* contact info*/
@@ -30,11 +31,36 @@ body { background-color: black; ;}
 .offices_container a:hover {background-color: #7f7f7f; transition: all 0.4s; cursor: pointer;}
 
  /*about latest news*/
-.about_latest_news {width: 100%; background-image: url(../img/contact/Predictions_for_the_Year_Ahead.jpg); background-size: cover; position: relative;}
-.about_latest_news > div:first-child {background-color: rgba(0, 0, 0, 0.7); width: 100%; padding: 200px 0;}
+.about_latest_news {background-image: url(../img/contact/Predictions_for_the_Year_Ahead.jpg);}
 
-.about_latest_news_wrap {width:100%; display: flex; justify-content: center;}
-    .about_latest_news_left {width: 18.98734%; padding-bottom: 18.98734%; padding-left: 300px; margin-right: 1.25%; background-image: url(../img/work/magenta-hero.gif); background-size: cover;}
-    .about_latest_news_right {width: 43.03797%; margin-right: 1.26582%; margin-left: 5.06329%; display: flex; flex-direction: column; justify-content: center}
-        .about_latest_news_right h2 {font-size: 80px; color: white;}
-        .about_latest_news_right p {font-family: 'galaxie-Book'; font-size: 18px; color: white; line-height: 24px; line-height: 1.88889;}
+
+
+/*media qurey*/
+
+@media screen and (max-width:999px) {
+    .section_subtitle {width: 48.97959%}
+    .contact_info_title {font-size: 42px; letter-spacing: normal;}
+    .contact_item {width: 100%; margin-top: 60px;}
+    .contact_item :first-child {margin-bottom: 20px;}
+    .offices_container {width: 83.05085%}
+    .offices_card {width: 50%; padding: 80px 50px 10px}
+    .offices_card h4 {margin-bottom: 30px;}
+    .offices_card h5 {margin-bottom: 15px;}
+    .offices_card :last-child {width: 24px; height: 24px;}
+}
+
+@media screen and (max-width:768px) {
+    .contact_info {padding: 60px 0 0;}
+    .contact_info_container {margin-bottom: 110px;}
+    .section_subtitle {padding: 0; margin-bottom: 50px;}
+    .section_subtitle h6 {font-size: 14px;}
+    .contact_info_container {flex-direction: column;}
+    .contact_info_section_content {margin-left: 0; width: 100%;}
+    .contact_info_title {font-size: 30px;}
+    .offices {padding-bottom: 0;}
+    .offices_container {width: 100%;padding: 0 25px 80px;}
+    .offices_card {width: 100%; max-height: 57vh; padding: 40px 25px;}
+    .offices_card h4 {font-size: 32px;}
+    .offices_card h5 {font-size: 19px;}
+    .offices_card :nth-child(5) {min-height: 0; margin-bottom: 30px;}
+}

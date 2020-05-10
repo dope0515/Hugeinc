@@ -1,7 +1,7 @@
 body {background-color: black;}
 
 /*work video*/
-.work_video {width: 100vw; position: relative; display:block;  height: 100vh;}
+.work_video {width: 100%; position: relative; display:block;  height: 100%;}
 
 .work_video div {position: absolute; width: 100px; height: 100px; top: 50%; left: calc(50% - 50px); display: flex; justify-content: center; align-items: center;}
 .play_icon {width:74px; height: 74px; background-color: rgba(234, 23, 140, 0.6); color: white; z-index: 100; position: absolute; display: flex; justify-content: center;align-items: center;}
@@ -55,14 +55,7 @@ body {background-color: black;}
 
 
 /* about latest news */
-.about_latest_news {width: 100%; background-image: url(../img/work/9.jpg); background-size: cover; position: relative; background-position: center center;}
-.about_latest_news > div:first-child {background-color: rgba(0, 0, 0, 0.7); width: 100%; padding: 200px 0;}
-
-.about_latest_news_container {width:100%; display: flex; justify-content: center; box-sizing: border-box;}
-    .about_latest_news_left {width: 18.98734%; padding-bottom: 18.98734%; padding-left: 12.65823%; margin-right: 1.25%; background-image: url(../img/work/magenta-hero.gif); background-size: cover; background-position: center; background-repeat: no-repeat; display: block;}
-    .about_latest_news_right {width: 43.03797%; margin-right: 1.26582%; margin-left: 5.06329%; display: flex; flex-direction: column; justify-content: center}
-        .about_latest_news_right h2 {font-size: 80px; color: white;}
-        .about_latest_news_right p {font-family: 'galaxie-Book'; font-size: 18px; color: white; line-height: 24px; line-height: 1.88889;}
+.about_latest_news {background-image: url(../img/work/9.jpg); }
 
 
 @media screen and (max-width:999px) {
@@ -83,4 +76,6 @@ body {background-color: black;}
     .img_grid_container li a {width: 89.6vw; height: 89.6vw; padding-top: calc(89.6vw - 64px);}
     .img_grid_container li a:hover {padding-top: calc(89.6vw - 124px)}
     .work_03_arrow {margin-left: 1%;}
+    
+    .play_icon {width: 60px; height: 60px;}
 }

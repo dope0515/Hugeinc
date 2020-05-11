@@ -1,0 +1,168 @@
+/* 타이포 그래피 */
+body {width: 100%; word-break: keep-all;}
+
+h1, h2, h3, h4, h5, h6 {font-family: 'HugeGothic-Bold'; font-weight: 400; -webkit-font-smoothing: antialiased;}
+p{font-family: 'galaxie-Book'; font-weight: 400; -webkit-font-smoothing: antialiased;}
+
+h1 {font-size: 170px; line-height: 170px;}
+h2 {font-size: 80px; line-height: 84px; letter-spacing: -2px;}
+h3 {font-size: 56px; line-height: 70px; letter-spacing: -4px;}
+h4 {font-size: 44px; line-height: 44px;}
+h5 {font-size: 24px; line-height: 30px;}
+h6 {font-size: 22px; line-height: 26px;}
+
+p{ font-size: 18px; line-height: 34px; letter-spacing: -0.27504px;}
+.h3_serif {font-family: 'galaxie-Book'; font-size: 56px; line-height: 70px; letter-spacing: -4px;}
+.h3_sans {font-family: 'HugeGothic-Bold'; font-size: 36px; line-height: 32px;}
+.h4_sans {font-family: 'HugeGothic-Bold'; font-size: 44px; line-height: 44px;}
+.h5_sans {font-size: 24px; line-height: 30px;}
+.h6_sans {font-size: 22px; line-height: 26px;}
+
+.p_small_1 {font-size: 16px; letter-spacing: -1px;}
+.p_small_2 {font-size: 12px; line-height: 22.6667px;letter-spacing: -0.27504px;}
+.p_small_sans {font-size: 14px; line-height: 20px;}
+
+
+/* text color*/
+.color_white {color: white;}
+.color_black {color: black;}
+.color_c8c8c8 {color: #c8c8c8;}
+.color_black_opacity {color: black; opacity: .5;}
+
+/* border line color */
+.border_line_white {border-bottom: 1px solid white;}
+.border_line_black {border-bottom: 1px solid black;}
+.border_white {border-color: white;}
+
+/* background color */
+.bg_color_black {background-color: black;}
+.bg_color_white {background-color: white;}
+
+/* logo css */
+#main {transition: all 0.2s;}    
+#hugeinc_logo {width: 74px; height: 74px; background-color: white ;position: fixed; left:calc(50% - 37px); top: 50px; display: flex; justify-content: center; align-items: center; font-size: 36px; font-family: 'HugeGothic-Bold'; font-weight: 600; z-index: 10000;box-sizing: border-box;  background: linear-gradient(315deg,  #ea178c, #ffffff, #ffffff, #ea178c, #ffffff, #ffffff);
+    background-size: 800% 800%; animation-name: logo_animation; animation-duration: 0.8s; animation-iteration-count: 1; }
+    #hugeinc_logo_m {width: 120px; height: 60px; position: fixed; left:calc(50% - 60px); top: 50px; display: flex; justify-content: center; align-items: center; font-size: 36px; font-family: 'HugeGothic-Bold'; font-weight: 600; z-index: 10000;box-sizing: border-box; display: none; color: #ea178c; padding-top: 4px;}
+    #hugeinc_logo div:hover {cursor: pointer; transition: all 0.2s;}
+    #hugeinc_logo div {width: 74px; height: 74px; color: #ea178c; text-align: center; line-height: 74px;}
+    
+
+/* header gnb 클래스 */
+#home_header {width: 100%; height: 0px; background-color: #f4f4f4; display: block; position: fixed; overflow: hidden; z-index: 100; transition: height 0.2s;}
+
+.gnb_wrap { width: 100%; height: 440px; display: flex; justify-content: center; align-items: center; position: relative; box-sizing: border-box;}
+
+.menu_wrap { width: 1050px; height: 90px; display: flex; justify-content: space-between; align-items: center; margin: 0 auto;}
+    .menu_wrap li {width: 190px; height: 90px; display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 0 10px;}
+        .menu_wrap li a:hover {color: #ea178c; cursor: pointer; transition: all 0.2s;}
+        .hr_m {height: 1px; width: 68%; border-top: 1px solid black; margin: 0 8px; display: none;}
+        .menu_wrap li p {padding-top: 4px;}
+        .hr_origin {border-bottom: 1px solid black; width: 48px; height: 90px;}
+
+.gnb_aside { position: absolute; top: 360px; bottom: auto; display: flex; width: 300px; left: calc(50% - 150px); line-height: 16px; align-items: center;}
+    .gnb_aside a:hover {color: #ea178c; cursor: pointer;}
+    .gnb_aside p {font-family: 'galaxie-Book'; font-size: 12px;}
+    .gnb_aside a {font-family: 'HugeGothic-Bold'; font-size: 16px; margin-left: 4.8px;}
+    .gnb_aside span {color: #ea178c;}
+
+/* footer section */
+
+.home_footer { width: 100%; height: 240px; padding: 70px 0 80px; box-sizing: border-box;}
+.home_footer ul {width: 100%; height: 90px; padding: 0 calc(12.5vw + 15px); display: flex; justify-content: space-between; box-sizing: border-box;}
+
+
+.footer_content_left {display: flex; flex-direction: row; align-items: center;}
+.footer_content_left a { font-family: 'HugeGothic-Bold'; font-size: 36px; line-height: 36px; border-right: 1px solid #888888; padding-right: 32px; margin-right: 32px; letter-spacing: 4px;}
+.footer_content_left a:hover {cursor: pointer;}
+.footer_content_left p { font-family: 'HugeGothic-Bold'; font-size: 18px; line-height: 36px; letter-spacing: 1px;}  
+
+.footer_content_right { display: flex; justify-content: flex-end; flex-direction: column;}
+.footer_content_right div { font-family: 'HugeGothic-Bold'; font-size: 14px; line-height: 24px; letter-spacing: 1px; color: #888888; margin-bottom: 10px;}
+.footer_content_right a {margin-right: 16px; letter-spacing: 0px;}
+.footer_content_right a:last-child {margin-right: 0;}
+.footer_content_right a:hover {color: #c8c8c8;}
+
+.footer_aside { font-family: 'galaxie-Book'; font-size: 12px; line-height: 20px; text-align: right;}
+
+.hero {width: 100%; height: 80vh; background-size: cover; background-position: center; padding: 140px 0 60px;}
+
+/* about latest news */
+.about_latest_news {width: 100%; background-size: cover; position: relative; background-position: center center;}
+.about_latest_news > div:first-child {background-color: rgba(0, 0, 0, 0.7); width: 100%; padding: 200px 0;}
+
+.about_latest_news_container {width:100%; display: flex; justify-content: space-between; box-sizing: border-box; align-items: center;}
+    .about_latest_news_left {width: 18.98734vw; padding-bottom: 18.98734%; padding-left: 12.65823%; margin-right: 1.25%; background-image: url(../img/work/magenta-hero.gif); background-size: cover; background-position: center; background-repeat: no-repeat; display: block; height: 18.98734vw; margin-left: 13.1%;}
+    .about_latest_news_right {width: 43.03797%; margin-right: 16%; margin-left: 5.06329%; display: flex; flex-direction: column; justify-content: center}
+        .about_latest_news_right h2 {font-size: 80px; color: white;}
+        .about_latest_news_right p {font-family: 'galaxie-Book'; font-size: 18px; color: white; line-height: 24px; line-height: 1.88889;}
+
+
+
+
+
+
+/*header animation*/
+@keyframes home_header_on {
+    from{ height: 0px;}
+    to { height: 440px;} 
+}
+@keyframes home_header_off {
+    from{ height: 440px;}
+    to { height: 0px;} 
+}
+@keyframes home_header_m_on {
+    from{ height: 0px;}
+    to { height: 80vh;} 
+}
+@keyframes home_header_m_off {
+    from{ height: 80vh;}
+    to { height: 0px;} 
+}
+
+@keyframes logo_animation {
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
+
+
+@media screen and (max-width:999px) {
+.menu_wrap {width: 100%;}
+.home_footer {padding: 35px 0 120px;}
+.home_footer ul {width: 80%; padding: 0; margin: 0 auto; flex-direction: column;}
+.home_section_index_wrap p {font-size: 16px;}
+.home_section_index_m {font-size: 16px;}
+.content_title {font-size: 16px;}
+.about_latest_news_right h2 {font-size: 72px; line-height: 75.0002px;}
+.footer_content_left {width: 100%;}
+.footer_content_left a {font-size: 30px; line-height: 36px; padding-right: 18px; margin-right: 18px;}
+.footer_content_left p {font-size: 14px; line-height: 14px;width: 58vw;}
+.footer_content_right {margin-top: 10px;}
+.footer_content_right div {width: 100%;}
+.footer_content_right div a {margin-right: 11px;}
+.footer_aside {text-align: start; line-height: 30px ;}
+}
+
+
+/*Media Query*/
+@media screen and (max-width:768px) {
+    #hugeinc_logo {width: 60px; height: 60px; left:calc(50% - 30px); top: 25px;}
+    #hugeinc_logo_m {font-size: 30px;}
+    #hugeinc_logo div {font-size: 28px;}
+    
+    .gnb_wrap {align-items: flex-start; padding: 90px 50px 0 ; height: 100%; flex-direction: column;}
+    .menu_wrap {flex-direction: column; width: 100%; height: 80%; justify-content: flex-start;}
+    .menu_wrap li a {font-size: 20px;}
+    .menu_wrap li p {white-space: nowrap; padding: 0; line-height: 20px; font-size: 17px;} /*white-space: no-wrap 줄바꿈을 없앰*/
+    .menu_wrap li {width: 100%; flex-direction: row; height: auto; justify-content: space-between; margin: 2vh 0;}
+    .hr_origin {display: none;}
+    .hr_m {display: block;}
+    .gnb_aside {position: static; margin: 0 auto;}
+    .home_footer {padding: 120px 0 180px; height: auto;}
+    .hero {padding: 80px 0 80px; height: 70vh;}
+    .about_latest_news_container {flex-direction: column; align-items: flex-start;}
+    .about_latest_news_left {width: 35.89744vw; height: 35.89744vw; margin-right: 2.5641%; margin-left: 12.82051%;}
+    .about_latest_news_right {width: 74.35897%; margin-right: 2.5641%; margin-left: 12.82051%; margin-top: 50px;}
+    .about_latest_news_right h2 {font-size: 40px; line-height: 44px; letter-spacing: -1px;}
+    .about_latest_news > div:first-child {padding: 80px 0;}
+}

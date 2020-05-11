@@ -102,10 +102,16 @@
 
 @media screen and (max-width:768px) {
     .hero_title {font-size: 60px; width: 83.05085%; line-height: 60px; width: 74.35897%;}
-    .about_us {padding-top: 60px;}
+    .about_us {padding: 60px 0;}
     .about_us_container {width: 74.35897%;}
     .about_us_section_content h2 {font-size: 30px; line-height: 42px;}
+    .section_subtitle {padding-top: 0;}
     .section_subtitle h6 {font-size: 14px;}
+    .our_service {padding: 60px 0;}
+    .our_service_list {width: 100%;}
+    .our_service_list h6 {margin-bottom: 20px; font-size: 19px;}
+    .our_service_list li {margin: 0 15% 10px 0; padding: 0 0 10px 0;}
+    .our_service_list li:last-child {margin-bottom: 40px;}
     .our_service_infographic {margin: 0 auto; max-width: 480px; min-width: 0; width:100%;}
     .our_culture {padding: 60px 0 20px;}
     .section_subtitle_nopadding {width: 82.75862%;}

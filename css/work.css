@@ -3,8 +3,8 @@ body {background-color: black;}
 /*work video*/
 .work_video {width: 100%; position: relative; display:block;  height: 100%;}
 
-.work_video div {position: absolute; width: 100px; height: 100px; top: 50%; left: calc(50% - 50px); display: flex; justify-content: center; align-items: center;}
-.play_icon {width:74px; height: 74px; background-color: rgba(234, 23, 140, 0.6); color: white; z-index: 100; position: absolute; display: flex; justify-content: center;align-items: center;}
+.work_video div {position: absolute; width: 100px; height: 100px; top: 50%; transform: translate(-50%, -50%); left: 50%;}
+.play_icon {width:74px; height: 74px; background-color: rgba(234, 23, 140, 0.6); color: white; z-index: 100; position: absolute;transform: translate(-50%, -50%);left: 50%; top:50%;}
 
 /*grid header*/
 .grid_header {width: 100%; height: 210px; box-sizing: border-box; display: flex; justify-content: center; align-items: center;  font-size: 56px; font-family: 'galaxie-Book'; margin: 0 auto;}
@@ -63,9 +63,9 @@ body {background-color: black;}
     .img_grid_container li {width: 45vw; height: 45vw;}
     .img_grid_container li a {width: 45vw; height: 45vw; padding-top: calc(45vw - 64px);}
     .img_grid_container li a:hover {padding-top: calc(45vw - 124px)}
-    .about_latest_news_right h2 {font-size: 72px; color: white;}
     .select_clients_container {flex-direction: column;}
-    .select_clients_container_left h4 {font-size: 14px; white-space: nowrap;}
+    .select_clients_container_left {width: 60%;}
+    .select_clients_container_left h4 {font-size: 14px; white-space: nowrap; }
     .select_clients_container_right {width: 100%;}
     .select_clients_container_right li {width: 33.3333%; margin-right: 0; margin-bottom: 50px;}
 }
@@ -76,6 +76,5 @@ body {background-color: black;}
     .img_grid_container li a {width: 89.6vw; height: 89.6vw; padding-top: calc(89.6vw - 64px);}
     .img_grid_container li a:hover {padding-top: calc(89.6vw - 124px)}
     .work_03_arrow {margin-left: 1%;}
-    
     .play_icon {width: 60px; height: 60px;}
 }

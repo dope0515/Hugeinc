@@ -133,9 +133,10 @@ p{ font-size: 18px; line-height: 34px; letter-spacing: -0.27504px;}
 .home_section_index_wrap p {font-size: 16px;}
 .home_section_index_m {font-size: 16px;}
 .content_title {font-size: 16px;}
+.about_latest_news_right h2 {font-size: 72px; color: white;}
 .footer_content_left {width: 100%;}
 .footer_content_left a {font-size: 30px; line-height: 36px; padding-right: 18px; margin-right: 18px;}
-.footer_content_left p {font-size: 14px; line-height: 14px;width: 58vw;}
+.footer_content_left p {font-size: 14px; line-height: 14px; width: 58vw;}
 .footer_content_right {margin-top: 10px;}
 .footer_content_right div {width: 100%;}
 .footer_content_right div a {margin-right: 11px;}
@@ -161,6 +162,7 @@ p{ font-size: 18px; line-height: 34px; letter-spacing: -0.27504px;}
     .hero {padding: 80px 0 80px; height: 100%;}
     .about_latest_news_container {flex-direction: column;}
     .about_latest_news_left {width: 35.89744vw; height: 35.89744vw; margin-right: 2.5641%; margin-left: 12.82051%;}
-    .about_latest_news_right {width: 74.35897%; margin-right: 2.5641%;    margin-left: 12.82051%;}
+    .about_latest_news_right {width: 74.35897%; margin-right: 2.5641%; margin-left: 12.82051%; margin-top: 50px;}
+    .about_latest_news_right h2 {font-size: 40px; line-height: 44px; letter-spacing: -1px;}
     .about_latest_news > div:first-child {padding: 80px 0;}
 }

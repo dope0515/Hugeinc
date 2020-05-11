@@ -93,7 +93,11 @@
     .our_office_container {width: 83.05085%}
     .our_office_list li {width: 48.97959%; margin-left: 0;}
     .our_office_list li:nth-child(2n) {margin-left: 2.04082%}
+    .our_leadership_container { width: 83.05085%;}
     .our_leadership_list li h5 {font-size: 21px;}
+    .our_leadership_list :first-child {border-top: 0;}
+    .our_leadership_list li {margin-bottom: 25px; padding-top: 20px; margin-left: 0; width: 32%;}
+    .our_leadership_list { justify-content: space-between;}
 }
 
 @media screen and (max-width:768px) {

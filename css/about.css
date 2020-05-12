@@ -85,6 +85,7 @@
     .our_service_content_container {flex-direction: column;}
     .our_service_content {width: 100%; margin-bottom: 70px;}
     .our_service_content_text {width: 100%; column-count: auto; padding: 25px 0;}
+    .our_service_infographic_img {max-width: 480px;}
     .our_service_list_container  {flex-direction: column;}
     .our_service_list { width: 66.10169%;}
     .our_service_list :nth-child(6) {margin-bottom: 40px;}
@@ -123,7 +124,7 @@
     .our_service_list li {margin: 0 15% 10px 0; padding: 0 0 10px 0;}
     .our_service_list li p {line-height: 28.0001px;}
     .our_service_infographic {margin: 0 auto 30px auto; max-width: 480px; min-width: 0; width:100%; padding: 0;}
-    .our_service_infographic_img {padding: 0;}
+    .our_service_infographic_img {padding: 0; max-width: 100%;}
     .our_culture {padding: 60px 0 20px;}
     .section_subtitle_nopadding {width: 82.75862%;}
     .our_culture_container {width: 74.68354%;}

@@ -61,15 +61,15 @@
     .main_home_title :last-child {display: block; font-size: 200px; letter-spacing: normal;}
     .home_section_wrap {flex-direction: column; height: 100%; width: 100%; }
     .home_section_index_wrap p {font-size: 14px;}
-    .home_section_index_wrap {justify-content: flex-start;}
+    .home_section_index_wrap {justify-content: flex-start; width: 87.34177%;}
     .home_section_index_m {display: block;}
-    .home_section_index {width: 100%; height: 12.5%; padding-left: 5%; padding-right: 5%;}
-    .home_section_contents {width: 100%; height: auto; padding: 5%;}
+    .home_section_index {width: 100%; height: 12.5%; padding-left: 10%; padding-right: 5%;}
+    .home_section_contents {width: 87.34177%; height: auto; padding: 6% 0 0 10%;}
     .home_section_contents_wrap {margin: 0; width: 100%;}
     .content_title {display: none;}
     .home_section_contents_subwrap {width: 100%; height: auto;}
-    .home_section_contents_subwrap p {line-height: 30px;}
-    .home_section_contents_subwrap h2 {width: 80%; font-size: 40px; line-height: 40px; margin-top: 10px; letter-spacing: normal;}
+    .home_section_contents_subwrap p {width: 90%; line-height: 30px;}
+    .home_section_contents_subwrap h2 {width: 100%; font-size: 40px; line-height: 40px; margin-top: 10px; letter-spacing: normal;}
     .home_section_index_wrap div {width: 10%; margin:0 -10px;}
     .home_section_contents_subwrap h2{margin-top: 4vh;}
     .home_section_contents_subwrap div {width: 20%; margin: 15px 0;}

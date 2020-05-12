@@ -1,12 +1,14 @@
 body {background-color: black;}
 
 /*work video*/
-.work_video {width: 100%; position: relative; display:block;  height: 100%;}
+.work_video {width: 100%; position: relative; display:block;  height: 80vh;  overflow: hidden; padding: 140px 0 60px;}
+.video_container {position: absolute; min-width: 100%; min-height: 100%; width: auto; height: auto; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 .play_icon_container {width:74px; height: 74px; background-color: rgba(234, 23, 140, 0.6); z-index: 100; position: absolute; transform: translate(-50%, -50%); left: 50%; top: 50%; display: flex; justify-content: center; align-items: center;}
+.play_icon_container:hover {cursor: pointer;}
 .icon_size {width: 20%; height: 20%;}
 
 /*grid header*/
-.grid_header {width: 100%; height: 210px; box-sizing: border-box; display: flex; justify-content: center; align-items: center;  font-size: 56px; font-family: 'galaxie-Book'; margin: 0 auto;}
+.grid_header {width: 100%; height: 210px; box-sizing: border-box; display: flex; justify-content: center; align-items: center;  font-size: 56px; font-family: 'galaxie-Book'; margin: 0 auto; letter-spacing: -4px;}
 
 /*img_grid_tile*/
 .img_grid {background-color: black; width: 100%; padding-bottom: 95px;}
@@ -14,6 +16,7 @@ body {background-color: black;}
 .img_grid_container li {width: 30vw; height:30vw; background-size: cover; background-repeat: no-repeat; background-position: center;}
 .img_grid_container li a {display:block; color: white; padding-left: 40px; box-sizing: border-box; width: 30vw; height:30vw; overflow: hidden; padding-top: calc(30vw - 64px); transition: all 0.3s;}
 .img_grid_container li a:hover {background-color: rgba(0, 0, 0, 0.7); padding-top: calc(30vw - 124px); cursor: pointer;}
+.grid_title {}
 .work_03_arrow {margin-left: 1%; margin-top: 20px;}
 
 /* img_grid*/
@@ -70,7 +73,8 @@ body {background-color: black;}
 }
 @media screen and (max-width:768px) {
     h4 {font-size: 36px;}
-    .grid_header {font-size: 30px; text-align: center;}
+    .work_video {height: 70vh;}
+    .grid_header {font-size: 30px; text-align: center; width: 86.9vw; margin: 0 auto; letter-spacing: -1px;}
     .img_grid_container li {width: 89.6vw; height: 89.6vw;}
     .img_grid_container li a {width: 89.6vw; height: 89.6vw; padding-top: calc(89.6vw - 64px);}
     .img_grid_container li a:hover {padding-top: calc(89.6vw - 124px)}

@@ -31,39 +31,52 @@ function logoClick() {
     
     if (document.body.clientWidth > 767){
 
-if (header_state == 0) {document.getElementById("home_header").style.height = "440px";
-document.getElementById("main").style = "padding-top:440px";
-document.getElementById("hugeinc_logo").style.display = "none";
-document.getElementById("hugeinc_logo_m").style.display = "flex";
+    if (header_state == 0) {document.getElementById("home_header").style.height = "440px";
+    document.getElementById("main").style = "padding-top:440px";
+    document.getElementById("hugeinc_logo").style.display = "none";
+    document.getElementById("hugeinc_logo_m").style.display = "flex";
+    document.getElementById("play_icon").style = "z-index:0";
 
-header_state = 1;
-} /* 헤더 visible 상태로 기억 */
+    header_state = 1;} /* 헤더 visible 상태로 기억 */
 
-else {document.getElementById("home_header").style.height = "0px";
-document.getElementById("main").style = "padding-top:0px";
-document.getElementById("hugeinc_logo").style.display = "flex";
-document.getElementById("hugeinc_logo_m").style.display = "none";
-header_state = 0;
-} /* 헤더 hidden 상태로 기억 */
+    else {document.getElementById("home_header").style.height = "0px";
+    document.getElementById("main").style = "padding-top:0px";
+    document.getElementById("hugeinc_logo").style.display = "flex";
+    document.getElementById("hugeinc_logo_m").style.display = "none";
+    document.getElementById("play_icon").style = "z-index:100";
+    header_state = 0;} /* 헤더 hidden 상태로 기억 */
+    }
+
+    else { if (header_state == 0) {document.getElementById("home_header").style.height = "80vh";
+    document.getElementById("main").style = "padding-top:440px";
+    document.getElementById("hugeinc_logo").style.display = "none";
+    document.getElementById("hugeinc_logo_m").style.display = "flex";
+    document.getElementById("play_icon").style = "z-index:0";
+    header_state = 1;} /* 헤더 visible 상태로 기억 */
+
+    else {document.getElementById("home_header").style.height = "0px";
+    document.getElementById("main").style = "padding-top:0px";
+    document.getElementById("hugeinc_logo").style.display = "flex";
+    document.getElementById("hugeinc_logo_m").style.display = "none";
+    document.getElementById("play_icon").style = "z-index:100";
+    header_state = 0;}
+    }
 }
+//
+var preYscroll = window.pageYOffset; // 기본은 항상 0이다.
 
-else { if (header_state == 0) {document.getElementById("home_header").style.height = "80vh";
-document.getElementById("main").style = "padding-top:440px";
-document.getElementById("hugeinc_logo").style.display = "none";
-document.getElementById("hugeinc_logo_m").style.display = "flex";
-header_state = 1;
-} /* 헤더 visible 상태로 기억 */
+    window.onscroll = function() {
+        var presentYscroll = window.pageYOffset;
+        if (presentYscroll > preYscroll ){
+            document.getElementById("hugeinc_logo").style = "top:-100px; opacity:0;"
+        }
+        else {document.getElementById("hugeinc_logo").style = "top:50px; opacity:1;"}
+        preYscroll = presentYscroll;
+    }
 
-else {document.getElementById("home_header").style.height = "0px";
-document.getElementById("main").style = "padding-top:0px";
-document.getElementById("hugeinc_logo").style.display = "flex";
-document.getElementById("hugeinc_logo_m").style.display = "none";
-header_state = 0;
-}
-
-}
-}
 </script>
+
+
 
 </head>
 
@@ -135,7 +148,7 @@ header_state = 0;
         당신의 브라우저는 이 비디오 형식을 지원하지 않습니다!
     </video>
 
-    <div class="play_icon_container">
+    <div class="play_icon_container" id="play_icon">
         <img src="../img/main/playicon.png"  alt="play_icon" class="icon_size">
     </div>
 </section>
@@ -154,11 +167,9 @@ header_state = 0;
     <ul class="img_grid_container">
         <li>
             <a href="https://www.hugeinc.com/work/vermont-castings" class="grid_img_container">
-                    <h4 class="grid_title">Vermont Castings.</h4>
-                    <div class="arrow_icon_container">
-                        <img src="../img/work/white_arrow.png" class="arrow_icon" alt="arrow">
-                    </div>
             </a>
+            <h4 class="grid_title">Vermont Castings.</h4>
+            <img src="../img/work/white_arrow.png" class="arrow_icon" alt="arrow">
         </li>
         <li>
             <a href="https://www.hugeinc.com/work/scott-sports" class="grid_img_container">

@@ -56,6 +56,7 @@
 }
 
 @media screen and (max-width:768px) {
+    .hero_video {height: 70vh;}
     .call_to_action {padding: 80px 0; width: 74.35897%; margin: 0 auto;}
     .call_to_action_container h2 {font-size: 30px; line-height: 42px;}
     .call_to_action_container h5 {font-size: 19px;}

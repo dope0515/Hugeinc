@@ -25,18 +25,39 @@
 <script>
 
 /* 변수 선언 */
-var header_state = 0; /* 헤더 보이기 상태 */
+var header_state = 0; /* 헤더 보이는 상태 */
+var border_state = 0; /* 보더 보이는 상태*/
+
+function borderShow(){
+    if (border_state == 0 ){
+        document.getElementById("border_s").style = "border-top:90px solid #f4f4f4; border-left:50px solid #f4f4f4; border-right:50px solid #f4f4f4; border-bottom:50px solid #f4f4f4;"
+        border_state = 1;
+    }
+    
+}
+function borderHide(){
+    if (border_state == 1 && header_state == 0){
+        document.getElementById("border_s").style = "border-top:0px solid #f4f4f4; border-left:0px solid #f4f4f4; border-right:0px solid #f4f4f4; border-bottom:0px solid #f4f4f4;"
+        border_state = 0;
+    }
+}
+
 
 function logoClick() {
     
 if (document.body.clientWidth > 767){
 
-        if (header_state == 0) {document.getElementById("home_header").style.height = "440px";
+        if (header_state == 0) {  
+        
+        document.getElementById("home_header").style.height = "440px";
         document.getElementById("main").style = "padding-top:440px";
         document.getElementById("hugeinc_logo").style.display = "none";
         document.getElementById("hugeinc_logo_m").style.display = "flex";
 
         header_state = 1;
+
+        document.getElementById("border_s").style = "border-top:90px solid #f4f4f4; border-left:50px solid #f4f4f4; border-right:50px solid #f4f4f4; border-bottom:0px solid #f4f4f4;"
+
         } /* 헤더 visible 상태로 기억 */
         
         else {document.getElementById("home_header").style.height = "0px";
@@ -44,7 +65,10 @@ if (document.body.clientWidth > 767){
         document.getElementById("hugeinc_logo").style.display = "flex";
         document.getElementById("hugeinc_logo_m").style.display = "none";
         header_state = 0;
+
+        document.getElementById("border_s").style = "border-top:90px solid #f4f4f4; border-left:50px solid #f4f4f4; border-right:50px solid #f4f4f4; border-bottom:50px solid #f4f4f4;"
         } /* 헤더 hidden 상태로 기억 */
+
     }
     
     else { if (header_state == 0) {document.getElementById("home_header").style.height = "80vh";
@@ -59,6 +83,7 @@ if (document.body.clientWidth > 767){
         document.getElementById("hugeinc_logo").style.display = "flex";
         document.getElementById("hugeinc_logo_m").style.display = "none";
         header_state = 0;
+ 
         }
 
     }
@@ -70,12 +95,14 @@ if (document.body.clientWidth > 767){
 
 <body>
 <!-- logo -->
-<div id="hugeinc_logo" onclick="logoClick()">
+<div id="hugeinc_logo" onclick="logoClick()" onmouseover="borderShow()" onmouseout="borderHide()">
     <div id="logo_text">H</div>
 </div>
 <div id="hugeinc_logo_m" onclick="logoClick()">
     <div id="logo_text">HUGE</div>
 </div>
+
+<a id="border_s"></a>
 
 <!--header 시작-->
 <header id="home_header">

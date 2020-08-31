@@ -29,19 +29,18 @@ var header_state = 0; /* 헤더 보이는 상태 */
 var border_state = 0; /* 보더 보이는 상태*/
         
 function borderShow(){
-    if (border_state == 0 ){
-            document.getElementById("border_s").style = "border-top:90px solid #f4f4f4; border-left:50px solid #f4f4f4; border-right:50px solid #f4f4f4; border-bottom:50px solid #f4f4f4;"
-            border_state = 1;
-        }
-            
+    if (border_state == 0 && document.body.clientWidth > 767){
+        document.getElementById("border_s").style = "border-top:90px solid #f4f4f4; border-left:50px solid #f4f4f4; border-right:50px solid #f4f4f4; border-bottom:50px solid #f4f4f4;"
+        border_state = 1;
     }
+    
+}
 function borderHide(){
-    if (border_state == 1 && header_state == 0){
-            document.getElementById("border_s").style = "border-top:0px solid #f4f4f4; border-left:0px solid #f4f4f4; border-right:0px solid #f4f4f4; border-bottom:0px solid #f4f4f4;"
-             border_state = 0;
-        }
+    if (border_state == 1 && header_state == 0 && document.body.clientWidth > 767){
+        document.getElementById("border_s").style = "border-top:0px solid #f4f4f4; border-left:0px solid #f4f4f4; border-right:0px solid #f4f4f4; border-bottom:0px solid #f4f4f4;"
+        border_state = 0;
     }
-        
+}     
         
 function logoClick() {
             

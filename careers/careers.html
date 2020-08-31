@@ -24,57 +24,84 @@
 
 <script>
 
-/* 변수 선언 */
-var header_state = 0; /* 헤더 보이기 상태 */
-
-function logoClick() {
-    
-    if (document.body.clientWidth > 767){
-
-if (header_state == 0) {document.getElementById("home_header").style.height = "440px";
-document.getElementById("main").style = "padding-top:440px";
-document.getElementById("hugeinc_logo").style.display = "none";
-document.getElementById("hugeinc_logo_m").style.display = "flex";
-
-header_state = 1;
-} /* 헤더 visible 상태로 기억 */
-
-else {document.getElementById("home_header").style.height = "0px";
-document.getElementById("main").style = "padding-top:0px";
-document.getElementById("hugeinc_logo").style.display = "flex";
-document.getElementById("hugeinc_logo_m").style.display = "none";
-header_state = 0;
-} /* 헤더 hidden 상태로 기억 */
-}
-
-else { if (header_state == 0) {document.getElementById("home_header").style.height = "80vh";
-document.getElementById("main").style = "padding-top:440px";
-document.getElementById("hugeinc_logo").style.display = "none";
-document.getElementById("hugeinc_logo_m").style.display = "flex";
-header_state = 1;
-} /* 헤더 visible 상태로 기억 */
-
-else {document.getElementById("home_header").style.height = "0px";
-document.getElementById("main").style = "padding-top:0px";
-document.getElementById("hugeinc_logo").style.display = "flex";
-document.getElementById("hugeinc_logo_m").style.display = "none";
-header_state = 0;
-}
-
-}
-}
+        /* 변수 선언 */
+        var header_state = 0; /* 헤더 보이는 상태 */
+        var border_state = 0; /* 보더 보이는 상태*/
+        
+        function borderShow(){
+            if (border_state == 0 ){
+                document.getElementById("border_s").style = "border-top:90px solid #f4f4f4; border-left:50px solid #f4f4f4; border-right:50px solid #f4f4f4; border-bottom:50px solid #f4f4f4;"
+                border_state = 1;
+            }
+            
+        }
+        function borderHide(){
+            if (border_state == 1 && header_state == 0){
+                document.getElementById("border_s").style = "border-top:0px solid #f4f4f4; border-left:0px solid #f4f4f4; border-right:0px solid #f4f4f4; border-bottom:0px solid #f4f4f4;"
+                border_state = 0;
+            }
+        }
+        
+        
+        function logoClick() {
+            
+        if (document.body.clientWidth > 767){
+        
+                if (header_state == 0) {  
+                
+                document.getElementById("home_header").style.height = "440px";
+                document.getElementById("main").style = "padding-top:440px";
+                document.getElementById("hugeinc_logo").style.display = "none";
+                document.getElementById("hugeinc_logo_m").style.display = "flex";
+        
+                header_state = 1;
+        
+                document.getElementById("border_s").style = "border-top:90px solid #f4f4f4; border-left:50px solid #f4f4f4; border-right:50px solid #f4f4f4; border-bottom:0px solid #f4f4f4;"
+        
+                } /* 헤더 visible 상태로 기억 */
+                
+                else {document.getElementById("home_header").style.height = "0px";
+                document.getElementById("main").style = "padding-top:0px";
+                document.getElementById("hugeinc_logo").style.display = "flex";
+                document.getElementById("hugeinc_logo_m").style.display = "none";
+                header_state = 0;
+        
+                document.getElementById("border_s").style = "border-top:90px solid #f4f4f4; border-left:50px solid #f4f4f4; border-right:50px solid #f4f4f4; border-bottom:50px solid #f4f4f4;"
+                } /* 헤더 hidden 상태로 기억 */
+        
+            }
+            
+            else { if (header_state == 0) {document.getElementById("home_header").style.height = "80vh";
+                document.getElementById("main").style = "padding-top:440px";
+                document.getElementById("hugeinc_logo").style.display = "none";
+                document.getElementById("hugeinc_logo_m").style.display = "flex";
+                header_state = 1;
+                } /* 헤더 visible 상태로 기억 */
+                
+                else {document.getElementById("home_header").style.height = "0px";
+                document.getElementById("main").style = "padding-top:0px";
+                document.getElementById("hugeinc_logo").style.display = "flex";
+                document.getElementById("hugeinc_logo_m").style.display = "none";
+                header_state = 0;
+         
+                }
+        
+            }
+        }
 </script>
 
 </head>
 
 <body>
 <!-- logo -->
-<div id="hugeinc_logo" onclick="logoClick()">
-    <div>H</div>
+<div id="hugeinc_logo" onclick="logoClick()" onmouseover="borderShow()" onmouseout="borderHide()">
+    <div id="logo_text">H</div>
 </div>
 <div id="hugeinc_logo_m" onclick="logoClick()">
     <div id="logo_text">HUGE</div>
 </div>
+
+<a id="border_s"></a>
 
 <!--header 시작-->
 <header id="home_header">
@@ -128,7 +155,7 @@ header_state = 0;
 
 <main id="main">
 <section class="hero_video">
-    <video autoplay muted loop poster="img/careers/HugeInc_Recruting.png">
+    <video autoplay muted loop poster="../img/careers/HugeInc_Recruting.png">
         <source src="../video/huge_work.mp4" type="video/mp4">
         당신의 브라우저는 이 비디오 형식을 지원하지 않습니다!
     </video>
@@ -231,7 +258,7 @@ header_state = 0;
     
                 <a href="https://magenta.as/" target="blank" class="about_latest_news_left"></a>
     
-                <a class="about_latest_news_right">
+                <a class="about_latest_news_right" href="https://magenta.as/what-you-need-to-know-about-voice-search-c42ba81f5ebf" target="_blank">
                     <h2>The Dawn of Voice Search.</h2>
                     <p>More than half of all searches will be voice-based by 2020. Here’s how every brand should prepare for the upcoming SEO revolution.</p>
                 </a>
@@ -252,7 +279,6 @@ header_state = 0;
             <p>Make something you love.</p>
         </li>
     
-    
         <li class="footer_content_right">
             
             <div> 
@@ -267,12 +293,10 @@ header_state = 0;
                 CCPA Privacy<br>
                 Modern Slaavery Act Statement
             </p>
-    
         </li>
-    </ul>
-    
-    </footer>
+    </ul> 
+</footer>
     <!-- footer 끝-->
-    </body>
+</body>
     
-    </html>
+</html>

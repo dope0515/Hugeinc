@@ -25,45 +25,67 @@
 <script>
 
 /* 변수 선언 */
-var header_state = 0; /* 헤더 보이기 상태 */
-
+var header_state = 0; /* 헤더 보이는 상태 */
+var border_state = 0; /* 보더 보이는 상태*/
+        
+function borderShow(){
+    if (border_state == 0 ){
+            document.getElementById("border_s").style = "border-top:90px solid #f4f4f4; border-left:50px solid #f4f4f4; border-right:50px solid #f4f4f4; border-bottom:50px solid #f4f4f4;"
+            border_state = 1;
+        }
+            
+    }
+function borderHide(){
+    if (border_state == 1 && header_state == 0){
+            document.getElementById("border_s").style = "border-top:0px solid #f4f4f4; border-left:0px solid #f4f4f4; border-right:0px solid #f4f4f4; border-bottom:0px solid #f4f4f4;"
+             border_state = 0;
+        }
+    }
+        
+        
 function logoClick() {
-    
+            
     if (document.body.clientWidth > 767){
-
-if (header_state == 0) {document.getElementById("home_header").style.height = "440px";
-document.getElementById("main").style = "padding-top:440px";
-document.getElementById("hugeinc_logo").style.display = "none";
-document.getElementById("hugeinc_logo_m").style.display = "flex";
-
-header_state = 1;
-} /* 헤더 visible 상태로 기억 */
-
-else {document.getElementById("home_header").style.height = "0px";
-document.getElementById("main").style = "padding-top:0px";
-document.getElementById("hugeinc_logo").style.display = "flex";
-document.getElementById("hugeinc_logo_m").style.display = "none";
-header_state = 0;
-} /* 헤더 hidden 상태로 기억 */
+        
+        if (header_state == 0) {  
+                
+        document.getElementById("home_header").style.height = "440px";
+        document.getElementById("main").style = "padding-top:440px";
+        document.getElementById("hugeinc_logo").style.display = "none";
+        document.getElementById("hugeinc_logo_m").style.display = "flex";
+        
+        header_state = 1;
+        
+        document.getElementById("border_s").style = "border-top:90px solid #f4f4f4; border-left:50px solid #f4f4f4; border-right:50px solid #f4f4f4; border-bottom:0px solid #f4f4f4;"
+        
+        } /* 헤더 visible 상태로 기억 */
+                
+        else {document.getElementById("home_header").style.height = "0px";
+        document.getElementById("main").style = "padding-top:0px";
+        document.getElementById("hugeinc_logo").style.display = "flex";
+        document.getElementById("hugeinc_logo_m").style.display = "none";
+        header_state = 0;
+        
+        document.getElementById("border_s").style = "border-top:90px solid #f4f4f4; border-left:50px solid #f4f4f4; border-right:50px solid #f4f4f4; border-bottom:50px solid #f4f4f4;"
+        } /* 헤더 hidden 상태로 기억 */
+        
+    }
+            
+    else { if (header_state == 0) {document.getElementById("home_header").style.height = "80vh";
+        document.getElementById("main").style = "padding-top:440px";
+        document.getElementById("hugeinc_logo").style.display = "none";
+        document.getElementById("hugeinc_logo_m").style.display = "flex";
+        header_state = 1;
+        } /* 헤더 visible 상태로 기억 */
+                
+        else {document.getElementById("home_header").style.height = "0px";
+        document.getElementById("main").style = "padding-top:0px";
+        document.getElementById("hugeinc_logo").style.display = "flex";
+        document.getElementById("hugeinc_logo_m").style.display = "none";
+        header_state = 0;
+        }
+    }
 }
-
-else { if (header_state == 0) {document.getElementById("home_header").style.height = "80vh";
-document.getElementById("main").style = "padding-top:440px";
-document.getElementById("hugeinc_logo").style.display = "none";
-document.getElementById("hugeinc_logo_m").style.display = "flex";
-header_state = 1;
-} /* 헤더 visible 상태로 기억 */
-
-else {document.getElementById("home_header").style.height = "0px";
-document.getElementById("main").style = "padding-top:0px";
-document.getElementById("hugeinc_logo").style.display = "flex";
-document.getElementById("hugeinc_logo_m").style.display = "none";
-header_state = 0;
-}
-
-}
-}
-
 </script>
 
 </head>
@@ -71,12 +93,14 @@ header_state = 0;
 
 <body>
 <!-- logo -->
-<div id="hugeinc_logo" onclick="logoClick()">
-    <div>H</div>
+<div id="hugeinc_logo" onclick="logoClick()" onmouseover="borderShow()" onmouseout="borderHide()">
+    <div id="logo_text">H</div>
 </div>
 <div id="hugeinc_logo_m" onclick="logoClick()">
     <div id="logo_text">HUGE</div>
 </div>
+
+<a id="border_s"></a>
 
 <!--header 시작-->
 <header id="home_header">
@@ -132,17 +156,7 @@ header_state = 0;
 <main id="main">
 
 <section class="hero hero_about">
-    <h1 class="color_white" id="greetings">Hello</h1>
-    <script>
-        setInterval(greetings,3000)
-
-        function greetings() {
-
-        document.getElementById('greetings').innerHTML = "hi";
-        document.getElementById('greetings').innerHTML = "ola";
-        
-        }
-    </script>   
+    <h1 class="color_white" id="greeting">Aye.</h1> 
 </section>
 
 
@@ -161,26 +175,42 @@ header_state = 0;
             <ul class="contact_info_item_title">
                 <li class="contact_item">
                     <p>Become a Client.</p>
-                    <p>+1 718 618 4724</p>
-                    <p><a>business@hugeinc.com</a></p>
+                    <p>
+                        <a href="tel:17186184724">+1 718 618 4724</a>
+                    </p>
+                    <p>
+                        <a title="business@hugeinc.com">business@hugeinc.com</a>
+                    </p>
                 </li>
 
                 <li class="contact_item">
                     <p>Media Inquiries.</p>
-                    <p>+1 718 880 3724</p>
-                    <p><a>press@hugeinc.com</a></p>
+                    <p>
+                        <a href="tel:17188803724">+1 718 880 3724</a>
+                    </p>
+                    <p>
+                        <a title="press@hugeinc.com">press@hugeinc.com</a>
+                    </p>
                 </li>
 
                 <li class="contact_item">
                     <p>Join Huge.</p>
-                    <p>+1 718 625 4843</p>
-                    <p><a>work@hugeinc.com</a></p>
+                    <p>
+                        <a href="tel:17186254843">+1 718 625 4843</a>
+                    </p>
+                    <p>
+                        <a title="work@hugeinc.com">work@hugeinc.com</a>
+                    </p>
                 </li>
 
                 <li class="contact_item">
                     <p>Everything Else.</p>
-                    <p>+1 718 625 4843</p>
-                    <p><a>hello@hugeinc.com</a></p>
+                    <p>
+                        <a href="tel:17186254843">+1 718 625 4843</a>
+                    </p>
+                    <p>
+                        <a title="hello@hugeinc.com">hello@hugeinc.com</a>
+                    </p>
                 </li>
             </ul>
         </div>
@@ -192,109 +222,109 @@ header_state = 0;
 <section class="offices"> <!--offices 시작-->
 
     <div class="offices_container">
-        <a class="offices_card" title="ATL." href="../atl/atl.html">  
+        <a class="offices_card" title="ATL." href="../atl/atl.html" id="office_card" id="atl_office_card">  
             <h4>Atlanta.</h4>
             <h5>Ayee.</h5>
-            <p>7:09 AM</p>
+            <p id="atl_time">7:09 AM</p>
             <p>+1 404 461 9025</p>
             <p>atl@hugeinc.com</p>
-            <img src="../img/contact/morning.png">
+            <img src="../img/contact/morning.png" class="offices_open_state" id="atl_day">
         </a>
-        <a class="offices_card" title="BOG." href="https://www.hugeinc.com/contact/bogota">
+        <a class="offices_card" title="BOG." href="https://www.hugeinc.com/contact/bogota" id="bog_office_card">
             <h4>Bogotá.</h4>
             <h5>Hola.</h5>
-            <p>6:48 AM</p>
+            <p id="bog_time">6:48 AM</p>
             <p>+572 3810606</p>
             <p>bog@hugeinc.com</p>
-            <img src="../img/contact/morning.png">
+            <img src="../img/contact/morning.png"class="offices_open_state" id="bog_day">
          </a>
-         <a class="offices_card" title="BKLN." href="https://www.hugeinc.com/contact/brooklyn">
+         <a class="offices_card" title="BKLN." href="https://www.hugeinc.com/contact/brooklyn" id="bk_office_card">
             <h4>Brooklyn.</h4>
             <h5>Yo.</h5>
-            <p>7:48 AM</p>
+            <p id="bk_time">7:48 AM</p>
             <p>+1 718 625 4843</p>
             <p>bk@hugeinc.com</p>
-            <img src="../img/contact/morning.png">
+            <img src="../img/contact/morning.png"class="offices_open_state" id="bk_day">
          </a>
-         <a class="offices_card" title="CHI." href="https://www.hugeinc.com/contact/chicago">
+         <a class="offices_card" title="CHI." href="https://www.hugeinc.com/contact/chicago" id="chi_office_card">
             <h4>Chicago.</h4>
             <h5>Hey.</h5>
-            <p>6.48 AM</p>
+            <p id="chi_time">6.48 AM</p>
             <p>+1 312 637 3150</p>
             <p>chi@hugeinc.com</p>
-            <img src="../img/contact/morning.png">
+            <img src="../img/contact/morning.png"class="offices_open_state" id="chi_day">
          </a>
-         <a class="offices_card" title="DC." href="https://www.hugeinc.com/contact/dc">
+         <a class="offices_card" title="DC." href="https://www.hugeinc.com/contact/dc" id="dc_office_card">
             <h4>DC.</h4>
             <h5>Hi.</h5>
-            <p>7:48 AM</p>
+            <p id="dc_time">7:48 AM</p>
             <p>+1 202 350 4600</p>
             <p>dc@hugeinc.com</p>
-            <img src="../img/contact/morning.png">
+            <img src="../img/contact/morning.png"class="offices_open_state" id="dc_day">
          </a>
-         <a class="offices_card" title="DET." href="https://www.hugeinc.com/contact/detroit">
+         <a class="offices_card" title="DET." href="https://www.hugeinc.com/contact/detroit" id="dt_office_card">
             <h4>Detroit.</h4>
             <h5>Whad'up.</h5>
-            <p>7:48 AM</p>
+            <p id="dt_time">7:48 AM</p>
             <p>+1 404 461 9025</p>
             <p>det@hugeinc.com</p>
-            <img src="../img/contact/morning.png">
+            <img src="../img/contact/morning.png"class="offices_open_state" id="dt_day">
          </a>
-         <a class="offices_card" title="LDN." href="https://www.hugeinc.com/contact/london">
+         <a class="offices_card" title="LDN." href="https://www.hugeinc.com/contact/london" id="ldn_office_card">
             <h4>London.</h4>
             <h5>'Ello.</h5>
-            <p>12:48 PM</p>
+            <p id="eg_time">12:48 PM</p>
             <p>+ 44 (0)203 356 1900</p>
             <p>ldn@hugeinc.com</p>
-            <img src="../img/contact/morning.png">
+            <img src="../img/contact/morning.png"class="offices_open_state" id="ldn_day">
          </a>
-         <a class="offices_card" title="La." href="https://www.hugeinc.com/contact/los-angeles">
+         <a class="offices_card" title="La." href="https://www.hugeinc.com/contact/los-angeles" id="la_office_card">
             <h4>Los Angeles.</h4>
-            <h5>E'yo..</h5>
-            <p>4:48 AM</p>
+            <h5>E'yo.</h5>
+            <p id="la_time">4:48 AM</p>
             <p>+1 310 499 7700</p>
             <p>la@hugeinc.com</p>
-            <img src="../img/contact/morning.png">
+            <img src="../img/contact/morning.png"class="offices_open_state" id="la_day">
          </a>
-         <a class="offices_card" title="MDE." href="https://www.hugeinc.com/contact/medellin">
+         <a class="offices_card" title="MDE." href="https://www.hugeinc.com/contact/medellin" id="med_office_card">
             <h4>Medellín.</h4>
             <h5>ABuenas.</h5>
-            <p>6:48 AM</p>
+            <p id="med_time">6:48 AM</p>
             <p>+57 4 604 5535</p>
             <p>mde@hugeinc.com</p>
-            <img src="../img/contact/morning.png">
+            <img src="../img/contact/morning.png"class="offices_open_state" id="med_day">
          </a>
-         <a class="offices_card" title="OAK." href="https://www.hugeinc.com/contact/oakland">
+         <a class="offices_card" title="OAK." href="https://www.hugeinc.com/contact/oakland" id="oak_office_card">
             <h4>Oakland.</h4>
             <h5>Sup.</h5>
-            <p>4:48 AM</p>
+            <p id="oak_time">4:48 AM</p>
             <p>+1 510 735 0700</p>
             <p>oak@hugeinc.com</p>
-            <img src="../img/contact/morning.png">
+            <img src="../img/contact/morning.png"class="offices_open_state" id="oak_day">
          </a>
-         <a class="offices_card" title="SGP." href="https://www.hugeinc.com/contact/singapore">
+         <a class="offices_card" title="SGP." href="https://www.hugeinc.com/contact/singapore" id="sg_office_card">
             <h4>Singapore.</h4>
             <h5>你好</h5>
-            <p>7:48 PM</p>
+            <p id="sg_time">7:48 PM</p>
             <p>+65 6303 0592</p>
             <p>sgp@hugeinc.com</p>
-            <img src="../img/contact/morning.png">
+            <img src="../img/contact/morning.png"class="offices_open_state" id="sg_day">
          </a>
-         <a class="offices_card" title="TO." href="https://www.hugeinc.com/contact/toronto">
+         <a class="offices_card" title="TO." href="https://www.hugeinc.com/contact/toronto" id="tor_office_card">
             <h4>Toronto.</h4>
             <h5>Eh?</h5>
-            <p>7:48 AM</p>
+            <p id="tor_time">7:48 AM</p>
             <p>+1 416 800 0477</p>
             <p>to@hugeinc.com</p>
-            <img src="../img/contact/morning.png">
+            <img src="../img/contact/morning.png"class="offices_open_state" id="tor_day">
          </a>
-         <a class="offices_card" title="TYO." href="https://www.hugeinc.com/contact/tokyo">
+         <a class="offices_card" title="TYO." href="https://www.hugeinc.com/contact/tokyo" id="tyo_office_card">
             <h4>Tokyo.</h4>
             <h5>こんにちは</h5>
-            <p>8:48 PM</p>
+            <p id="tyo_time">8:48 PM</p>
             <p>+81 3 4577 7930</p>
             <p>tyo@hugeinc.com</p>
-            <img src="../img/contact/morning.png">
+            <img src="../img/contact/morning.png"class="offices_open_state" id="tyo_day">
          </a>
     </div>
 
@@ -312,7 +342,7 @@ header_state = 0;
     
                 <a href="https://magenta.as/" target="blank" class="about_latest_news_left"></a>
     
-                <a class="about_latest_news_right">
+                <a class="about_latest_news_right" href="https://magenta.as/predictions-for-the-year-ahead-8ca6a3752a82" target="_blank">
                     <h2>The Dawn of Voice Search.</h2>
                     <p>More than half of all searches will be voice-based by 2020. Here’s how every brand should prepare for the upcoming SEO revolution.</p>
                 </a>
@@ -322,21 +352,14 @@ header_state = 0;
     </div>
 </section>
 
-
-
-
 </main>
-
-
-
-
 
 <!-- footer 시작-->
 <footer class="home_footer bg_color_black color_white">
 
 <ul>
     <li class="footer_content_left">
-        <a title="https://hugeinc.com">HUGE</a>
+        <a title="https://hugeinc.com" href="../index.html">HUGE</a>
         <p>Make something you love.</p>
     </li>
 
@@ -361,6 +384,161 @@ header_state = 0;
 
 </footer>
 <!-- footer 끝-->
+
+<script>
+
+    // Greeting code
+
+    var greetingGlobal = ["Hello.","Hola","Buenas.","Ola.","Ei.","E'yo.","你好", "Ello","Aye." ]
+    var greetingIndex = 0;
+
+    setInterval (outputGreeting,1000);
+    function outputGreeting() {  
+    document.getElementById("greeting").innerHTML=greetingGlobal[greetingIndex];
+    //greetingIndex = greetingIndex + 1;
+    greetingIndex+=1;
+    if (greetingIndex > 8) {greetingIndex = 0;}
+    }
+
+    // Office Hour
+
+    var dateYourCity = new Date();
+    var dateYourCityHour = dateYourCity.getHours();
+    var dateYourCityMin = dateYourCity.getMinutes();
+    var timeOffsetMin = dateYourCity.getTimezoneOffset(); // 브라우저 시간과 UTC 시간과의 차이(분으로 표시된다.)
+    var timeOffsetHour = timeOffsetMin / 60; //분으로 표시된걸 시간으로 변환
+    var utcHour = dateYourCityHour + timeOffsetHour;
+
+
+    if (dateYourCityMin < 10) {
+        dateYourCityMin = "0" + dateYourCityMin
+    }
+
+    var atlHour = timeExchange(-4);
+    var atlAmPm = amPm(atlHour);
+    var atlHour12 = timeExchange12(atlHour)
+    document.getElementById("atl_time").innerHTML = atlHour12 + ":" + dateYourCityMin + " " + atlAmPm;
+    if(bkHour >= 18 || bkHour < 7) {
+        document.getElementById("atl_office_card").style="background-color:#161616; color:#fff";
+        document.getElementById("atl_day").src="../img/contact/moon-01.svg"
+    }
+    
+    var bkHour = timeExchange(-4);
+    var bkAmPm = amPm(bkHour);
+    document.getElementById("bk_time").innerHTML = bkHour + ":" + dateYourCityMin + " " + bkAmPm;
+    if(bkHour >= 18 || bkHour < 7) {
+        document.getElementById("bk_office_card").style="background-color:#161616; color:#fff";
+        document.getElementById("bk_day").src="../img/contact/moon-01.svg"
+    }
+
+    var dcHour = timeExchange(-4);
+    var dcAmPm = amPm(dcHour);
+    document.getElementById("dc_time").innerHTML = dcHour + ":" + dateYourCityMin + " " + dcAmPm;
+    if(dcHour >= 18 || dcHour < 7) {
+        document.getElementById("dc_office_card").style="background-color:#161616; color:#fff";
+        document.getElementById("dc_day").src="../img/contact/moon-01.svg"
+    }
+
+    var dtHour = timeExchange(-4);
+    var dtAmPm = amPm(dtHour);
+    document.getElementById("dt_time").innerHTML = dtHour + ":" + dateYourCityMin + " " + dtAmPm;
+    if(dtHour >= 18 || dtHour < 7) {
+        document.getElementById("dt_office_card").style="background-color:#161616; color:#fff";
+        document.getElementById("dt_day").src="../img/contact/moon-01.svg"
+    }
+
+    var torHour = timeExchange(-4);
+    var torAmPm = amPm(torHour);
+    document.getElementById("tor_time").innerHTML = torHour + ":" + dateYourCityMin + " " + torAmPm;
+    if(torHour >= 18 || torHour < 7) {
+        document.getElementById("tor_office_card").style="background-color:#161616; color:#fff";
+        document.getElementById("tor_day").src="../img/contact/moon-01.svg"
+    }
+
+    var bogHour = timeExchange(-5);
+    var bogAmPm = amPm(bogHour);
+    document.getElementById("bog_time").innerHTML = bogHour + ":" + dateYourCityMin + " " + bogAmPm;
+    if(bogHour >= 18 || bogHour < 7) {
+        document.getElementById("bog_office_card").style="background-color:#161616; color:#fff";
+        document.getElementById("bog_day").src="../img/contact/moon-01.svg"
+    }
+
+    var chiHour = timeExchange(-5);
+    var chiAmPm = amPm(chiHour);
+    document.getElementById("chi_time").innerHTML = chiHour + ":" + dateYourCityMin + " " + chiAmPm;
+    if(chiHour >= 18 || chiHour < 7) {
+        document.getElementById("chi_office_card").style="background-color:#161616; color:#fff";
+        document.getElementById("chi_day").src="../img/contact/moon-01.svg"
+    }
+
+    var medHour = timeExchange(-5);
+    var medAmPm = amPm(medHour);
+    document.getElementById("med_time").innerHTML = medHour + ":" + dateYourCityMin + " " + medAmPm;
+    if(medHour >= 18 || medHour < 7) {
+        document.getElementById("med_office_card").style="background-color:#161616; color:#fff";
+        document.getElementById("med_day").src="../img/contact/moon-01.svg"
+    }
+
+    var laHour = timeExchange(-7);
+    var laAmPm = amPm(laHour);
+    document.getElementById("la_time").innerHTML = laHour + ":" + dateYourCityMin + " " + laAmPm;
+    if(laHour >= 18 || laHour < 7) {
+        document.getElementById("la_office_card").style="background-color:#161616; color:#fff";
+        document.getElementById("la_day").src="../img/contact/moon-01.svg"
+    }
+
+    var oakHour = timeExchange(-7);
+    var oakAmPm = amPm(oakHour);
+    document.getElementById("oak_time").innerHTML = oakHour + ":" + dateYourCityMin + " " + oakAmPm;
+    if(oakHour >= 18 || oakHour < 7) {
+        document.getElementById("oak_office_card").style="background-color:#161616; color:#fff";
+        document.getElementById("oak_day").src="../img/contact/moon-01.svg"
+    }
+
+    var tyoHour = timeExchange(9);
+    var tyoAmPm = amPm(tyoHour);
+    var tyoHour12 = timeExchange12(tyoHour)
+    document.getElementById("tyo_time").innerHTML = tyoHour12 + ":" + dateYourCityMin + " " + tyoAmPm;
+    if(tyoHour >= 19 || tyoHour < 7) {
+        document.getElementById("tyo_office_card").style="background-color:#161616; color:#fff";
+        document.getElementById("tyo_day").src="../img/contact/moon-01.svg"
+    }
+
+    var sgHour = timeExchange(8); // 24시간제
+    var sgAmPm = amPm(sgHour);
+    document.getElementById("sg_time").innerHTML = sgHour + ":" + dateYourCityMin + " " + sgAmPm;
+    
+    var egHour = timeExchange(1);
+    var egAmPm = amPm(egHour);
+    document.getElementById("eg_time").innerHTML = egHour + ":" + dateYourCityMin + " " + egAmPm;
+
+    // 시간이 24보다 클 때 0부터 시작 => 24를 빼준다, 0보다 작을 때 24를 더해준다
+    function timeExchange(a) {
+        var exchangedHour = utcHour + a;
+        if (exchangedHour > 24) { exchangedHour -= 24}
+        else if (exchangedHour < 0) { exchangedHour += 24}
+        return exchangedHour;
+    }
+
+    function timeExchange12(a) {
+        var a;
+        if (a > 12) { a -= 12}
+        return a;
+    }
+
+    function amPm(a) {
+        var a;
+        if (a >= 12) { b = "PM"}
+        else{ b = "AM"}
+        return b;
+    }
+
+</script>
+
 </body>
+
+
+
+
 
 </html>
